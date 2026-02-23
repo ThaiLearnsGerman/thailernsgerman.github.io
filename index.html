@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>ThaiLearnsGerman — Beginner A1</title>
-  <link rel="stylesheet" href="./style.css" />
+  <meta name="theme-color" content="#6b4f3b" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -14,14 +15,14 @@
         <div class="brand-logo">TLG</div>
         <div class="brand-text">
           <div class="brand-title">ThaiLearnsGerman</div>
-          <div class="brand-sub">Thai + English · Beginner A1 · Teacher style</div>
+          <div class="brand-sub">Thai + English · Beginner A1 · Warm teacher style</div>
         </div>
       </div>
 
-      <nav class="navchips">
+      <nav class="navchips" aria-label="Navigation">
         <a class="chip" href="#free">Free Guide</a>
         <a class="chip" href="#steps">10 Steps</a>
-        <a class="chip" href="#smart">Progress</a>
+        <a class="chip" href="#smart">Smart Start</a>
       </nav>
     </div>
   </header>
@@ -34,49 +35,69 @@
         <div class="pill">ไทย + อังกฤษ · ระดับเริ่มต้น A1</div>
         <h1 class="hero-title">เรียนภาษาเยอรมันทีละขั้นตอน</h1>
         <p class="hero-sub">
-          Calm, warm, structured for beginners.  
+          Calm, warm, structured for beginners.<br/>
           Start with 20 minutes/day — no stress, only progress.
         </p>
 
         <div class="hero-actions" id="free">
-          <a class="btn primary" href="./free-guide.pdf" target="_blank">
-            ดาวน์โหลดคู่มือสำหรับผู้เริ่มต้นใช้ฟรี (PDF)
+          <!-- Download -->
+          <a class="btn primary" href="free-guide.pdf" download>
+            ดาวน์โหลดคู่มือสำหรับผู้เริ่มต้น ฟรี (PDF)
           </a>
+
+          <!-- Open (mobile friendly) -->
+          <a class="btn ghost" href="free-guide.pdf" target="_blank" rel="noopener">
+            Open PDF
+          </a>
+
           <a class="btn ghost" href="#smart">เริ่มเรียนรู้</a>
         </div>
+
+        <p class="hint">
+          If the button fails on mobile, open directly →
+          <a href="free-guide.pdf" target="_blank" rel="noopener">free-guide.pdf</a>
+        </p>
       </div>
     </section>
 
-    <!-- PROGRESS SYSTEM -->
+    <!-- SYSTEM -->
     <section class="grid-2">
       <div class="card">
-        <h2>Your Progress</h2>
-        <div id="nextAction" class="muted">Loading…</div>
+        <h2>Next action</h2>
+        <p id="nextAction" class="muted">Loading…</p>
 
         <div class="divider"></div>
 
+        <h3 class="small">Today</h3>
         <div class="row">
-          <button class="btn small" id="markTodayDone">Mark today done</button>
-          <button class="btn small ghost" id="resetToday">Undo</button>
+          <button class="btn small" id="markTodayDone" type="button">Mark today done ✅</button>
+          <button class="btn small ghost" id="resetToday" type="button">Undo</button>
         </div>
+
+        <p class="tiny muted">Streak = consecutive days you marked “done”.</p>
       </div>
 
       <div class="card">
+        <h2>Your progress</h2>
+
         <div class="stats">
           <div class="stat">
             <div class="stat-label">Level</div>
-            <div class="stat-value" id="statLevel">A1</div>
+            <div class="stat-value" id="statLevel">—</div>
           </div>
           <div class="stat">
             <div class="stat-label">Minutes/day</div>
-            <div class="stat-value" id="statMinutes">20</div>
+            <div class="stat-value" id="statMinutes">—</div>
           </div>
           <div class="stat">
             <div class="stat-label">Streak</div>
-            <div class="stat-value" id="statStreak">0</div>
+            <div class="stat-value" id="statStreak">—</div>
           </div>
         </div>
 
+        <div class="divider"></div>
+
+        <h3 class="small">System Score</h3>
         <div class="bar">
           <div class="bar-fill" id="barFill" style="width:0%"></div>
         </div>
@@ -87,51 +108,59 @@
     <!-- 10 STEPS -->
     <section class="card" id="steps">
       <h2>Start Learning in 10 Steps</h2>
-      <p class="muted">Follow this order. Each step is small and practical.</p>
+      <p class="muted">Follow this order. Tap “Done” to track your progress.</p>
 
       <div class="steps" id="stepsGrid">
-        <!-- JS will fill this -->
+        <!-- JS injects steps here -->
       </div>
     </section>
 
     <!-- SMART START -->
     <section class="grid-2" id="smart">
       <div class="card">
-        <h2>Smart Start (60s)</h2>
+        <h2>Smart Start (60 seconds)</h2>
+        <p class="muted">Saved on your phone (no account). Professional + light “game” feel.</p>
+
         <form id="smartForm" class="form">
-          <label class="label">1) Your level</label>
+          <label class="label" for="levelSelect">1) Your level</label>
           <select id="levelSelect" class="input">
-            <option value="A1">A1</option>
+            <option value="A1">A1 (beginner)</option>
             <option value="A2">A2</option>
             <option value="B1">B1</option>
+            <option value="B2">B2</option>
           </select>
 
-          <label class="label">2) Daily minutes</label>
-          <input id="minutesInput" class="input" type="number" value="20" min="5" max="120" step="5"/>
+          <label class="label" for="minutesInput">2) Daily minutes</label>
+          <input id="minutesInput" class="input" type="number" min="5" max="120" step="5" value="20" />
 
           <div class="row">
-            <button class="btn primary" type="submit">Save</button>
-            <button class="btn ghost" type="button" id="resetAll">Reset</button>
+            <button class="btn primary" type="submit">Save ✅</button>
+            <button class="btn ghost" type="button" id="resetAll">Reset all</button>
           </div>
+
+          <p class="tiny muted">Your data stays in your browser (localStorage).</p>
         </form>
       </div>
 
       <div class="card">
-        <h2>Backup / Import</h2>
+        <h2>Backup</h2>
+        <p class="muted">Copy/paste if you change phones.</p>
+
         <div class="row">
-          <button class="btn small" id="exportBtn">Export</button>
-          <button class="btn small ghost" id="importBtn">Import</button>
+          <button class="btn small" id="exportBtn" type="button">Export</button>
+          <button class="btn small ghost" id="importBtn" type="button">Import</button>
         </div>
-        <textarea id="backupBox" class="textarea" placeholder="Your backup data…"></textarea>
+
+        <textarea id="backupBox" class="textarea" placeholder="Export appears here…"></textarea>
+        <p class="tiny muted">Tip: save in Notes/WhatsApp.</p>
       </div>
     </section>
 
     <footer class="footer">
-      <p class="tiny muted">© ThaiLearnsGerman</p>
+      <p class="tiny muted">© ThaiLearnsGerman · Built for calm daily progress.</p>
     </footer>
-
   </main>
 
-  <script src="./app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
