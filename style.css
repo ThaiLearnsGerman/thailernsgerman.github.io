@@ -238,3 +238,26 @@ a{color:inherit}
   .card-pad{padding:18px}
   .btn{width:100%}
 }
+/* --- FIX: 10 steps cards overflow / going outside --- */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.item {
+  width: 100%;
+  min-width: 0;          /* belangrijk bij grid overflow */
+  overflow: hidden;      /* voorkomt dat content eruit steekt */
+}
+
+.item-title, .item-text {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
