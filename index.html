@@ -1,60 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>German Step Academy</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThaiLearnsGerman — Beginner German (A1)</title>
+
+  <!-- Font (optional, looks more premium) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="badge">Thai + English • Beginner A1</div>
+      <h1>Learn German Step by Step</h1>
+      <p>A calm, structured start for Thai beginners. 20 minutes per day. No stress.</p>
 
-<header class="hero">
-  <h1>Learn German Step by Step</h1>
-  <p>A structured beginner system for Thai students.</p>
-  <a href="#start" class="btn">Start Learning</a>
-</header>
+      <div class="cta-row">
+        <!-- IMPORTANT: relative link (no leading slash) -->
+        <a class="btn" href="free-guide.pdf" download>Download Free Beginner Guide (PDF)</a>
+        <a class="btn btn-ghost" href="#start">Start Learning</a>
+      </div>
 
-<section class="section">
-  <h2>Why Learn German?</h2>
-  <ul>
-    <li>Work opportunities in Germany</li>
-    <li>Ausbildung programs</li>
-    <li>University study</li>
-    <li>Higher income potential</li>
-  </ul>
-</section>
+      <p class="helper">
+        If the download button doesn’t work, open the PDF here:
+        <a class="link" href="free-guide.pdf" target="_blank" rel="noopener">free-guide.pdf</a>
+      </p>
+    </div>
+  </header>
 
-<section class="section" id="start">
-  <h2>Basic Sentence Structure</h2>
+  <main>
+    <section class="section">
+      <h2>Why Learn German?</h2>
+      <ul>
+        <li>Work opportunities in Germany</li>
+        <li>Ausbildung programs</li>
+        <li>Study & career growth</li>
+        <li>Better income potential</li>
+      </ul>
+      <p class="muted">You don’t need talent. You need structure.</p>
+    </section>
 
-  <div class="formula">
-    Subject + Verb + Object
-  </div>
+    <section class="section card" id="start">
+      <h2>Start in the Right Order</h2>
 
-  <p>German is logical and structured.</p>
-  <p><strong>Example:</strong> Ich lerne Deutsch.</p>
-</section>
+      <div class="formula">Subject + Verb + Object</div>
 
-<section class="section">
-  <h2>What You Will Learn</h2>
-  <ul>
-    <li>Alphabet & Pronunciation</li>
-    <li>Greetings</li>
-    <li>der, die, das</li>
-    <li>Daily vocabulary</li>
-    <li>Speaking confidence</li>
-  </ul>
-</section>
+      <p><strong>Example:</strong> Ich lerne Deutsch. <span class="muted">(I learn German.)</span></p>
+      <p class="muted">We build short sentences first. Confidence from day one.</p>
+    </section>
 
-<section class="section about">
-  <h2>About Me</h2>
-  <p>Hi, I'm Karim. German is my native language.</p>
-  <p>I created this system to make learning German simple and structured.</p>
-</section>
+    <section class="section">
+      <h2>What You Will Learn</h2>
+      <div class="grid">
+        <div class="mini-card">
+          <div class="mini-title">Alphabet & Pronunciation</div>
+          <div class="muted">Ä, Ö, Ü, ß — easy & clear.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-title">Greetings</div>
+          <div class="muted">Speak from day one.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-title">Articles</div>
+          <div class="muted">der / die / das — step by step.</div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-title">Daily Vocabulary</div>
+          <div class="muted">10 words per day.</div>
+        </div>
+      </div>
+    </section>
 
-<footer>
-  <p>© 2026 German Step Academy</p>
-</footer>
+    <section class="section card">
+      <h2>About</h2>
+      <p>Hi, I’m Karim. German is my native language.</p>
+      <p class="muted">I created this system to make learning German simple, structured, and calm.</p>
+    </section>
 
+    <section class="section cta-bottom">
+      <h2>Ready?</h2>
+      <p>Download the free guide and start today.</p>
+      <a class="btn" href="free-guide.pdf" download>Download Free Beginner Guide (PDF)</a>
+      <p class="helper">
+        Direct link:
+        <a class="link" href="free-guide.pdf" target="_blank" rel="noopener">free-guide.pdf</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© 2026 ThaiLearnsGerman</div>
+  </footer>
 </body>
 </html>
