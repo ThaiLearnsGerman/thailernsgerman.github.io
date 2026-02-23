@@ -2,99 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThaiLearnsGerman — Beginner German (A1)</title>
-
-  <!-- Font (optional, looks more premium) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ThaiLearnsGerman — A1 Beginner</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <header class="hero">
-    <div class="hero-inner">
-      <div class="badge">Thai + English • Beginner A1</div>
-      <h1>Learn German Step by Step</h1>
-      <p>A calm, structured start for Thai beginners. 20 minutes per day. No stress.</p>
-
-      <div class="cta-row">
-        <!-- IMPORTANT: relative link (no leading slash) -->
-        <a class="btn" href="free-guide.pdf" download>Download Free Beginner Guide (PDF)</a>
-        <a class="btn btn-ghost" href="#start">Start Learning</a>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <div class="brand-title">ThaiLearnsGerman</div>
+          <div class="brand-sub">Thai + English • Beginner A1 • 20 min/day</div>
+        </div>
       </div>
 
-      <p class="helper">
-        If the download button doesn’t work, open the PDF here:
-        <a class="link" href="free-guide.pdf" target="_blank" rel="noopener">free-guide.pdf</a>
-      </p>
+      <div class="nav">
+        <a class="chip" href="#steps">10 Steps</a>
+        <a class="chip" href="#guide">Free Guide</a>
+        <a class="chip" href="#start">Start</a>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <section class="section">
-      <h2>Why Learn German?</h2>
-      <ul>
-        <li>Work opportunities in Germany</li>
-        <li>Ausbildung programs</li>
-        <li>Study & career growth</li>
-        <li>Better income potential</li>
-      </ul>
-      <p class="muted">You don’t need talent. You need structure.</p>
-    </section>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card card-pad">
+          <div class="badge">⚡ Calm system • Real progress</div>
+          <div class="h1">Learn German step by step — without stress.</div>
+          <p class="p">A structured start for Thai beginners. Short daily practice, clear rules, and useful phrases from day one.</p>
 
-    <section class="section card" id="start">
-      <h2>Start in the Right Order</h2>
+          <div class="cta-row" id="guide">
+            <!-- Mobile-friendly open -->
+            <a class="btn btn-primary" href="free-guide.pdf" target="_blank" rel="noopener">Open Free Guide (PDF)</a>
+            <!-- Direct download -->
+            <a class="btn btn-ghost" href="free-guide.pdf" download>Download PDF</a>
+          </div>
 
-      <div class="formula">Subject + Verb + Object</div>
+          <div class="kpi">
+            <div class="kpi-box">
+              <div class="kpi-num">20 min</div>
+              <div class="kpi-lab">Daily routine</div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-num">A1</div>
+              <div class="kpi-lab">Beginner focus</div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-num">10 steps</div>
+              <div class="kpi-lab">Simple roadmap</div>
+            </div>
+          </div>
 
-      <p><strong>Example:</strong> Ich lerne Deutsch. <span class="muted">(I learn German.)</span></p>
-      <p class="muted">We build short sentences first. Confidence from day one.</p>
-    </section>
-
-    <section class="section">
-      <h2>What You Will Learn</h2>
-      <div class="grid">
-        <div class="mini-card">
-          <div class="mini-title">Alphabet & Pronunciation</div>
-          <div class="muted">Ä, Ö, Ü, ß — easy & clear.</div>
+          <div class="hr"></div>
+          <div class="small">
+            If the button fails on mobile: open the file here →
+            <a class="link" href="free-guide.pdf" target="_blank" rel="noopener">free-guide.pdf</a>
+          </div>
         </div>
-        <div class="mini-card">
-          <div class="mini-title">Greetings</div>
-          <div class="muted">Speak from day one.</div>
-        </div>
-        <div class="mini-card">
-          <div class="mini-title">Articles</div>
-          <div class="muted">der / die / das — step by step.</div>
-        </div>
-        <div class="mini-card">
-          <div class="mini-title">Daily Vocabulary</div>
-          <div class="muted">10 words per day.</div>
+
+        <div class="card card-pad">
+          <div class="h2">Quick Start</div>
+          <div class="item">
+            <div class="item-title">Rule #1</div>
+            <div class="item-text">Short sentences first. Confidence first. Then grammar.</div>
+          </div>
+          <div class="item" style="margin-top:12px">
+            <div class="item-title">Core pattern</div>
+            <div class="item-text"><strong>Subject + Verb + Object</strong><br/>Ich lerne Deutsch. (I learn German.)</div>
+          </div>
+          <div class="item" style="margin-top:12px">
+            <div class="item-title">Your mission</div>
+            <div class="item-text">Speak 1 useful sentence today. Not perfect. Just real.</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section card">
-      <h2>About</h2>
-      <p>Hi, I’m Karim. German is my native language.</p>
-      <p class="muted">I created this system to make learning German simple, structured, and calm.</p>
+    <section class="section card card-pad" id="steps">
+      <div class="h2">Start Learning in 10 Steps</div>
+      <div class="grid">
+        <div class="item"><div class="item-title">1) Sounds</div><div class="item-text">Ä/Ö/Ü/ß + pronunciation</div></div>
+        <div class="item"><div class="item-title">2) Greetings</div><div class="item-text">Hello, goodbye, polite basics</div></div>
+        <div class="item"><div class="item-title">3) Sentence pattern</div><div class="item-text">S + V + O</div></div>
+        <div class="item"><div class="item-title">4) Articles</div><div class="item-text">der / die / das (simple rules)</div></div>
+        <div class="item"><div class="item-title">5) 10 words/day</div><div class="item-text">Daily vocabulary system</div></div>
+        <div class="item"><div class="item-title">6) Verbs</div><div class="item-text">sein / haben / gehen / machen</div></div>
+        <div class="item"><div class="item-title">7) Questions</div><div class="item-text">W-questions + yes/no</div></div>
+        <div class="item"><div class="item-title">8) Mini dialogues</div><div class="item-text">Ordering, travel, meeting</div></div>
+        <div class="item"><div class="item-title">9) Listening</div><div class="item-text">Short daily audio practice</div></div>
+        <div class="item"><div class="item-title">10) 4-week plan</div><div class="item-text">Routine + checkpoints</div></div>
+      </div>
     </section>
 
-    <section class="section cta-bottom">
-      <h2>Ready?</h2>
-      <p>Download the free guide and start today.</p>
-      <a class="btn" href="free-guide.pdf" download>Download Free Beginner Guide (PDF)</a>
-      <p class="helper">
-        Direct link:
-        <a class="link" href="free-guide.pdf" target="_blank" rel="noopener">free-guide.pdf</a>
-      </p>
+    <section class="section card card-pad" id="start">
+      <div class="h2">Next: Make it “intelligent”</div>
+      <p class="p">We can add a smart mini-quiz + progress tracker (localStorage) — like your Risk Manager, but for language learning.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#steps">I want Step Quiz</a>
+        <a class="btn btn-ghost" href="#guide">I want Email Capture</a>
+      </div>
     </section>
+
+    <div class="footer">
+      © 2026 ThaiLearnsGerman • Built by Karim
+    </div>
   </main>
-
-  <footer class="footer">
-    <div>© 2026 ThaiLearnsGerman</div>
-  </footer>
 </body>
 </html>
