@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ThaiLearnsGerman — A1 Beginner</title>
+  <title>ThaiLearnsGerman — Beginner A1</title>
   <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -14,14 +14,14 @@
         <div class="logo"></div>
         <div>
           <div class="brand-title">ThaiLearnsGerman</div>
-          <div class="brand-sub">Thai + English • Beginner A1 • 20 min/day</div>
+          <div class="brand-sub">Thai + English • Beginner A1 • Teacher style</div>
         </div>
       </div>
 
       <div class="nav">
-        <a class="chip" href="#steps">10 Steps</a>
         <a class="chip" href="#guide">Free Guide</a>
-        <a class="chip" href="#start">Start</a>
+        <a class="chip" href="#steps">10 Steps</a>
+        <a class="chip" href="#smart">Smart Start</a>
       </div>
     </div>
   </div>
@@ -30,52 +30,53 @@
     <section class="hero">
       <div class="hero-grid">
         <div class="card card-pad">
-          <div class="badge">⚡ Calm system • Real progress</div>
-          <div class="h1">Learn German step by step — without stress.</div>
-          <p class="p">A structured start for Thai beginners. Short daily practice, clear rules, and useful phrases from day one.</p>
+          <div class="badge">🎓 Calm • Clear • Daily routine</div>
+          <div class="h1">Learn German step by step — smart & simple.</div>
+          <p class="p">
+            Built for Thai beginners. You get a clear roadmap, a free PDF guide, and a smart mini-check that tracks your progress on your phone.
+          </p>
 
           <div class="cta-row" id="guide">
-            <!-- Mobile-friendly open -->
             <a class="btn btn-primary" href="free-guide.pdf" target="_blank" rel="noopener">Open Free Guide (PDF)</a>
-            <!-- Direct download -->
             <a class="btn btn-ghost" href="free-guide.pdf" download>Download PDF</a>
+            <a class="btn" href="#smart">Do 60-sec Smart Check</a>
           </div>
 
           <div class="kpi">
             <div class="kpi-box">
               <div class="kpi-num">20 min</div>
-              <div class="kpi-lab">Daily routine</div>
+              <div class="kpi-lab">daily practice</div>
             </div>
             <div class="kpi-box">
               <div class="kpi-num">A1</div>
-              <div class="kpi-lab">Beginner focus</div>
+              <div class="kpi-lab">beginner focus</div>
             </div>
             <div class="kpi-box">
-              <div class="kpi-num">10 steps</div>
-              <div class="kpi-lab">Simple roadmap</div>
+              <div class="kpi-num">Track</div>
+              <div class="kpi-lab">progress on phone</div>
             </div>
           </div>
 
           <div class="hr"></div>
           <div class="small">
-            If the button fails on mobile: open the file here →
+            If the button fails on mobile, open directly →
             <a class="link" href="free-guide.pdf" target="_blank" rel="noopener">free-guide.pdf</a>
           </div>
         </div>
 
         <div class="card card-pad">
-          <div class="h2">Quick Start</div>
+          <div class="h2">Today’s micro lesson</div>
           <div class="item">
-            <div class="item-title">Rule #1</div>
-            <div class="item-text">Short sentences first. Confidence first. Then grammar.</div>
-          </div>
-          <div class="item" style="margin-top:12px">
             <div class="item-title">Core pattern</div>
             <div class="item-text"><strong>Subject + Verb + Object</strong><br/>Ich lerne Deutsch. (I learn German.)</div>
           </div>
           <div class="item" style="margin-top:12px">
-            <div class="item-title">Your mission</div>
-            <div class="item-text">Speak 1 useful sentence today. Not perfect. Just real.</div>
+            <div class="item-title">Teacher rule</div>
+            <div class="item-text">One useful sentence per day beats “perfect grammar” once per month.</div>
+          </div>
+          <div class="item" style="margin-top:12px">
+            <div class="item-title">Next action</div>
+            <div class="item-text">Scroll to <strong>Smart Start</strong> and do the 60-second check.</div>
           </div>
         </div>
       </div>
@@ -97,18 +98,208 @@
       </div>
     </section>
 
-    <section class="section card card-pad" id="start">
-      <div class="h2">Next: Make it “intelligent”</div>
-      <p class="p">We can add a smart mini-quiz + progress tracker (localStorage) — like your Risk Manager, but for language learning.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#steps">I want Step Quiz</a>
-        <a class="btn btn-ghost" href="#guide">I want Email Capture</a>
+    <section class="section card card-pad" id="smart">
+      <div class="h2">Smart Start (60 seconds)</div>
+      <p class="p">This mini-check saves your progress on your phone (no account needed). It makes the site feel “intelligent”.</p>
+
+      <div class="quiz">
+        <div class="qbox">
+          <div class="qtitle">1) Your level now</div>
+          <select class="select" id="level">
+            <option value="A0">A0 (total beginner)</option>
+            <option value="A1" selected>A1 (beginner)</option>
+            <option value="A2">A2 (basic)</option>
+          </select>
+
+          <div class="qtitle" style="margin-top:12px">2) Daily minutes</div>
+          <input class="input" id="minutes" type="number" min="5" max="120" value="20" />
+
+          <div class="qtitle" style="margin-top:12px">3) Today’s goal</div>
+          <select class="select" id="goal">
+            <option value="greet">Greetings</option>
+            <option value="sentence" selected>Build 1 sentence</option>
+            <option value="vocab">10 words</option>
+            <option value="listening">Listening</option>
+          </select>
+
+          <div class="qrow" style="margin-top:12px">
+            <button class="pill" id="saveBtn">💾 Save</button>
+            <button class="pill" id="doneBtn">✅ Mark today done</button>
+            <button class="pill" id="resetBtn">🧹 Reset</button>
+          </div>
+
+          <div class="status" id="statusBox">Status: not saved yet.</div>
+        </div>
+
+        <div class="qbox">
+          <div class="qtitle">Your progress</div>
+          <div class="small">Streak = days in a row you marked “done”.</div>
+
+          <div class="kpi" style="margin-top:10px">
+            <div class="kpi-box">
+              <div class="kpi-num" id="kLevel">A1</div>
+              <div class="kpi-lab">level</div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-num" id="kMinutes">20</div>
+              <div class="kpi-lab">min/day</div>
+            </div>
+            <div class="kpi-box">
+              <div class="kpi-num" id="kStreak">0</div>
+              <div class="kpi-lab">streak</div>
+            </div>
+          </div>
+
+          <div class="qtitle" style="margin-top:14px">Progress bar</div>
+          <div class="progress-wrap">
+            <div class="progress-bar" id="pbar"></div>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="qtitle">Quick test (A1)</div>
+          <div class="small">Choose the correct sentence order:</div>
+          <div class="qrow" style="margin-top:10px">
+            <button class="pill quizOpt" data-ok="0">Deutsch • lerne • Ich</button>
+            <button class="pill quizOpt" data-ok="1">Ich • lerne • Deutsch</button>
+            <button class="pill quizOpt" data-ok="0">Lerne • Deutsch • Ich</button>
+          </div>
+          <div class="status" id="quizResult">Quiz: not answered.</div>
+        </div>
       </div>
     </section>
 
     <div class="footer">
-      © 2026 ThaiLearnsGerman • Built by Karim
+      © 2026 ThaiLearnsGerman • Built by Karim • Smart progress runs locally in your browser
     </div>
   </main>
+
+  <script>
+    const KEY = "tlg_state_v1";
+
+    function todayISO(){
+      const d = new Date();
+      const y = d.getFullYear();
+      const m = String(d.getMonth()+1).padStart(2,"0");
+      const day = String(d.getDate()).padStart(2,"0");
+      return `${y}-${m}-${day}`;
+    }
+
+    function load(){
+      try{
+        const raw = localStorage.getItem(KEY);
+        return raw ? JSON.parse(raw) : null;
+      }catch(e){ return null; }
+    }
+
+    function save(state){
+      localStorage.setItem(KEY, JSON.stringify(state));
+    }
+
+    function computeProgress(state){
+      // simple score out of 100
+      let score = 0;
+      if(state.level) score += 25;
+      if(state.minutes && state.minutes >= 10) score += 25;
+      if(state.goal) score += 20;
+      if(state.streak && state.streak >= 1) score += 20;
+      if(state.quizOk) score += 10;
+      return Math.min(100, score);
+    }
+
+    function render(state){
+      const kLevel = document.getElementById("kLevel");
+      const kMinutes = document.getElementById("kMinutes");
+      const kStreak = document.getElementById("kStreak");
+      const pbar = document.getElementById("pbar");
+
+      kLevel.textContent = state?.level || "A1";
+      kMinutes.textContent = state?.minutes || 20;
+      kStreak.textContent = state?.streak || 0;
+
+      const prog = computeProgress(state || {});
+      pbar.style.width = prog + "%";
+    }
+
+    function setStatus(msg, kind){
+      const box = document.getElementById("statusBox");
+      box.textContent = "Status: " + msg;
+      box.classList.remove("good","warn");
+      if(kind) box.classList.add(kind);
+    }
+
+    // init
+    const levelEl = document.getElementById("level");
+    const minutesEl = document.getElementById("minutes");
+    const goalEl = document.getElementById("goal");
+
+    let state = load() || { level:"A1", minutes:20, goal:"sentence", streak:0, lastDone:null, quizOk:false };
+
+    // populate fields from state
+    levelEl.value = state.level || "A1";
+    minutesEl.value = state.minutes || 20;
+    goalEl.value = state.goal || "sentence";
+    render(state);
+    setStatus("loaded your saved progress.", "good");
+
+    // save button
+    document.getElementById("saveBtn").addEventListener("click", () => {
+      state.level = levelEl.value;
+      state.minutes = Number(minutesEl.value || 20);
+      state.goal = goalEl.value;
+      save(state);
+      render(state);
+      setStatus("saved ✔", "good");
+    });
+
+    // mark done (streak)
+    document.getElementById("doneBtn").addEventListener("click", () => {
+      const t = todayISO();
+      if(state.lastDone === t){
+        setStatus("already marked done today.", "warn");
+        return;
+      }
+      // if last done was yesterday, streak+1 else reset to 1
+      const last = state.lastDone ? new Date(state.lastDone) : null;
+      const now = new Date(t);
+      const yesterday = new Date(now);
+      yesterday.setDate(now.getDate()-1);
+
+      const lastISO = state.lastDone;
+      const yISO = `${yesterday.getFullYear()}-${String(yesterday.getMonth()+1).padStart(2,"0")}-${String(yesterday.getDate()).padStart(2,"0")}`;
+
+      if(lastISO === yISO) state.streak = (state.streak || 0) + 1;
+      else state.streak = 1;
+
+      state.lastDone = t;
+      save(state);
+      render(state);
+      setStatus("today marked done ✅ streak updated.", "good");
+    });
+
+    // reset
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      localStorage.removeItem(KEY);
+      state = { level:"A1", minutes:20, goal:"sentence", streak:0, lastDone:null, quizOk:false };
+      levelEl.value = "A1"; minutesEl.value = 20; goalEl.value = "sentence";
+      render(state);
+      document.getElementById("quizResult").textContent = "Quiz: not answered.";
+      setStatus("reset done.", "warn");
+    });
+
+    // quiz options
+    const quizResult = document.getElementById("quizResult");
+    document.querySelectorAll(".quizOpt").forEach(btn=>{
+      btn.addEventListener("click", () => {
+        const ok = btn.getAttribute("data-ok") === "1";
+        state.quizOk = ok;
+        save(state);
+        render(state);
+        quizResult.textContent = ok ? "Quiz: correct ✅ (S + V + O)" : "Quiz: not correct ❌ Try again.";
+        quizResult.classList.remove("good","warn");
+        quizResult.classList.add(ok ? "good" : "warn");
+      });
+    });
+  </script>
 </body>
 </html>
