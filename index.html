@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>ThaiLearnsGerman — Beginner A1</title>
-  <meta name="theme-color" content="#7A4B2E" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -12,197 +11,125 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand">
-        <div class="logo">TLG</div>
+        <div class="brand-logo">TLG</div>
         <div class="brand-text">
           <div class="brand-title">ThaiLearnsGerman</div>
-          <div class="brand-sub">Thai + English • Beginner A1 • Teacher style</div>
+          <div class="brand-sub">Thai + English · Beginner A1 · Teacher style</div>
         </div>
       </div>
 
-      <nav class="nav">
-        <a class="pill" href="#guide">Free Guide</a>
-        <a class="pill" href="#steps">10 Steps</a>
-        <a class="pill" href="#smart">Smart Start</a>
+      <nav class="navchips">
+        <a class="chip" href="#free">Free Guide</a>
+        <a class="chip" href="#steps">10 Steps</a>
+        <a class="chip" href="#smart">Progress</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
+
     <!-- HERO -->
     <section class="hero">
       <div class="hero-card">
-        <div class="hero-badge">ไทย + อังกฤษ • ระดับเริ่มต้น A1</div>
-
+        <div class="pill">ไทย + อังกฤษ · ระดับเริ่มต้น A1</div>
         <h1 class="hero-title">เรียนภาษาเยอรมันทีละขั้นตอน</h1>
-        <p class="hero-text">
-          Calm, warm, and structured for beginners. <br />
+        <p class="hero-sub">
+          Calm, warm, structured for beginners.  
           Start with 20 minutes/day — no stress, only progress.
         </p>
 
-        <div class="hero-actions" id="guide">
-          <a class="btn btn-primary" href="./free-guide.pdf" target="_blank" rel="noopener">
+        <div class="hero-actions" id="free">
+          <a class="btn primary" href="./free-guide.pdf" target="_blank">
             ดาวน์โหลดคู่มือสำหรับผู้เริ่มต้นใช้ฟรี (PDF)
           </a>
-          <a class="btn btn-ghost" href="#smart">เริ่มเรียนรู้</a>
+          <a class="btn ghost" href="#smart">เริ่มเรียนรู้</a>
         </div>
+      </div>
+    </section>
 
-        <p class="tiny">
-          If the button fails on mobile, open directly →
-          <a class="link" href="./free-guide.pdf" target="_blank" rel="noopener">free-guide.pdf</a>
-        </p>
+    <!-- PROGRESS SYSTEM -->
+    <section class="grid-2">
+      <div class="card">
+        <h2>Your Progress</h2>
+        <div id="nextAction" class="muted">Loading…</div>
+
+        <div class="divider"></div>
+
+        <div class="row">
+          <button class="btn small" id="markTodayDone">Mark today done</button>
+          <button class="btn small ghost" id="resetToday">Undo</button>
+        </div>
       </div>
 
-      <div class="hero-side">
-        <div class="note">
-          <div class="note-title">Next action</div>
-          <div class="note-text">
-            Scroll to <b>Smart Start</b> and do the 60-second check.
+      <div class="card">
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-label">Level</div>
+            <div class="stat-value" id="statLevel">A1</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Minutes/day</div>
+            <div class="stat-value" id="statMinutes">20</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Streak</div>
+            <div class="stat-value" id="statStreak">0</div>
           </div>
         </div>
 
-        <div class="note">
-          <div class="note-title">Teacher rule</div>
-          <div class="note-text">
-            Don’t learn everything at once. Small daily wins = fluent later.
-          </div>
+        <div class="bar">
+          <div class="bar-fill" id="barFill" style="width:0%"></div>
         </div>
+        <p class="tiny muted"><span id="barText">0%</span></p>
       </div>
     </section>
 
     <!-- 10 STEPS -->
-    <section class="section" id="steps">
-      <h2 class="section-title">Start Learning in 10 Steps</h2>
-      <p class="section-sub">
-        Follow this order. Each step is small, practical, and “real life”.
-      </p>
+    <section class="card" id="steps">
+      <h2>Start Learning in 10 Steps</h2>
+      <p class="muted">Follow this order. Each step is small and practical.</p>
 
-      <div class="grid steps-grid">
-        <article class="card step">
-          <div class="step-title">1) Sounds</div>
-          <div class="step-sub">Ä / Ö / Ü / ß + pronunciation</div>
-        </article>
-
-        <article class="card step">
-          <div class="step-title">2) Greetings</div>
-          <div class="step-sub">Hello, goodbye, polite basics</div>
-        </article>
-
-        <article class="card step">
-          <div class="step-title">3) Sentence pattern</div>
-          <div class="step-sub">S + V + O</div>
-        </article>
-
-        <article class="card step">
-          <div class="step-title">4) Articles</div>
-          <div class="step-sub">der / die / das (simple rules)</div>
-        </article>
-
-        <article class="card step">
-          <div class="step-title">5) 10 words/day</div>
-          <div class="step-sub">Daily vocabulary system</div>
-        </article>
-
-        <article class="card step">
-          <div class="step-title">6) Verbs</div>
-          <div class="step-sub">sein / haben / gehen / machen</div>
-        </article>
-
-        <article class="card step">
-          <div class="step-title">7) Questions</div>
-          <div class="step-sub">W-questions + yes/no</div>
-        </article>
-
-        <article class="card step">
-          <div class="step-title">8) Mini dialogues</div>
-          <div class="step-sub">Ordering, travel, meeting</div>
-        </article>
-
-        <article class="card step">
-          <div class="step-title">9) Listening</div>
-          <div class="step-sub">Short daily audio practice</div>
-        </article>
-
-        <article class="card step">
-          <div class="step-title">10) 4-week plan</div>
-          <div class="step-sub">Routine + checkpoints</div>
-        </article>
+      <div class="steps" id="stepsGrid">
+        <!-- JS will fill this -->
       </div>
     </section>
 
     <!-- SMART START -->
-    <section class="section" id="smart">
-      <h2 class="section-title">Smart Start (60 seconds)</h2>
-      <p class="section-sub">
-        This mini-check saves your progress on your phone (no account needed). It makes the site feel “intelligent”.
-      </p>
-
-      <div class="grid smart-grid">
-        <div class="card">
-          <h3 class="card-title">1) Your level now</h3>
-          <label class="label" for="level">Level</label>
-          <select id="level" class="input">
-            <option value="A1">A1 (beginner)</option>
+    <section class="grid-2" id="smart">
+      <div class="card">
+        <h2>Smart Start (60s)</h2>
+        <form id="smartForm" class="form">
+          <label class="label">1) Your level</label>
+          <select id="levelSelect" class="input">
+            <option value="A1">A1</option>
             <option value="A2">A2</option>
             <option value="B1">B1</option>
-            <option value="B2">B2</option>
           </select>
 
-          <label class="label" for="minutes">2) Daily minutes</label>
-          <input id="minutes" class="input" type="number" min="5" max="120" step="5" value="20" />
+          <label class="label">2) Daily minutes</label>
+          <input id="minutesInput" class="input" type="number" value="20" min="5" max="120" step="5"/>
 
           <div class="row">
-            <button class="btn btn-primary" id="savePlan">Save</button>
-            <button class="btn btn-ghost" id="markDone">Mark today ✅</button>
+            <button class="btn primary" type="submit">Save</button>
+            <button class="btn ghost" type="button" id="resetAll">Reset</button>
           </div>
+        </form>
+      </div>
 
-          <p class="tiny">
-            Tip: choose <b>20 min/day</b>. Consistency beats motivation.
-          </p>
+      <div class="card">
+        <h2>Backup / Import</h2>
+        <div class="row">
+          <button class="btn small" id="exportBtn">Export</button>
+          <button class="btn small ghost" id="importBtn">Import</button>
         </div>
-
-        <div class="card">
-          <h3 class="card-title">Your progress</h3>
-          <div class="stats">
-            <div class="stat">
-              <div class="stat-label">Level</div>
-              <div class="stat-value" id="statLevel">A1</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">Minutes/day</div>
-              <div class="stat-value" id="statMinutes">20</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">Streak</div>
-              <div class="stat-value" id="statStreak">0</div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <div class="progress-bar" id="progressBar" style="width: 0%"></div>
-          </div>
-          <div class="tiny" id="progressHint">Progress bar = your weekly consistency.</div>
-
-          <div class="divider"></div>
-
-          <div class="mini">
-            <div class="mini-title">Today’s micro-task</div>
-            <div class="mini-text" id="microTask">Say 3 greetings out loud.</div>
-          </div>
-        </div>
+        <textarea id="backupBox" class="textarea" placeholder="Your backup data…"></textarea>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer-inner">
-        <div>
-          <b>ThaiLearnsGerman</b> • Warm teacher style • Beginner-first
-        </div>
-        <div class="tiny">
-          PDF:
-          <a class="link" href="./free-guide.pdf" target="_blank" rel="noopener">free-guide.pdf</a>
-        </div>
-      </div>
+      <p class="tiny muted">© ThaiLearnsGerman</p>
     </footer>
+
   </main>
 
   <script src="./app.js"></script>
