@@ -153,7 +153,11 @@ a{color:inherit}
 .section{padding:14px 0}
 .h2{margin:0 0 12px; font-size:22px; letter-spacing:-.6px}
 
-.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
 @media(max-width:900px){.grid{grid-template-columns:1fr}}
 
 .item{
@@ -260,4 +264,5 @@ html, body {
   overflow-wrap: anywhere;
   word-break: break-word;
 }
+
 
