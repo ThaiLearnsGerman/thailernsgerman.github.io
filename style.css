@@ -264,5 +264,14 @@ html, body {
   overflow-wrap: anywhere;
   word-break: break-word;
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.item {
+  min-width: 0;
+}
+
 
 
