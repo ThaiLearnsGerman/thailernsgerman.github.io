@@ -343,3 +343,40 @@ body{
     font-size:28px;
   }
 }
+@media (max-width: 640px){
+  .brand-logo{
+    width:40px;
+    height:40px;
+    font-size:18px;
+  }
+
+  .brand-title{
+    font-size:16px;
+  }
+
+  .brand-sub{
+    font-size:12px;
+  }
+
+  .hero-text h1{
+    font-size:30px;
+    line-height:1.08;
+  }
+
+  .hero-badge{
+    font-size:12px;
+    padding:7px 12px;
+  }
+
+  .hero-buttons{
+    gap:10px;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .hero{
+    padding-top:24px;
+  }
+}
