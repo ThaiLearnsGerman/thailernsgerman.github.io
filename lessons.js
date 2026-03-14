@@ -36,7 +36,7 @@ async function loadLessons() {
           <span>${lesson.status || "live"}</span>
         </div>
         <h2>${lesson.title || "Untitled lesson"}</h2>
-        <p class="lesson-hook">${lesson.hook || ""}</p>
+        <p class="lesson-hook"><strong>Hook:</strong> ${lesson.hook || ""}</p>
         <p class="lesson-body">${lesson.mini_lesson || ""}</p>
         <p class="lesson-cta">${lesson.cta || ""}</p>
       </article>
