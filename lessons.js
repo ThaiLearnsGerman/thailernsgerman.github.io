@@ -28,17 +28,21 @@ async function loadLessons() {
     }
 
     lessonsContainer.innerHTML = lessons
-      .map(
-        (lesson) => `
-          <div style="padding:20px; border:1px solid #ccc; border-radius:12px; margin-top:20px;">
-            <h2>${lesson.title || "Untitled lesson"}</h2>
-            <p><strong>Hook:</strong> ${lesson.hook || ""}</p>
-            <p>${lesson.mini_lesson || ""}</p>
-            <p><strong>CTA:</strong> ${lesson.cta || ""}</p>
-          </div>
-        `
-      )
-      .join("");
+  .map(
+    (lesson) => `
+      <article class="lesson-card">
+        <div class="lesson-meta">
+          <span class="lesson-tag">${lesson.channel || "tiktok"}</span>
+          <span>${lesson.status || "live"}</span>
+        </div>
+        <h2>${lesson.title || "Untitled lesson"}</h2>
+        <p class="lesson-hook">${lesson.hook || ""}</p>
+        <p class="lesson-body">${lesson.mini_lesson || ""}</p>
+        <p class="lesson-cta">${lesson.cta || ""}</p>
+      </article>
+    `
+  )
+  .join("");
   } catch (error) {
     console.error("Error loading lessons:", error);
     lessonsContainer.innerHTML = `<p>Could not load lessons.</p>`;
