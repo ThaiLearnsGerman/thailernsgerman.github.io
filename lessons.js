@@ -1,5 +1,5 @@
 const SUPABASE_URL = "https://vtfodfeaepswndyrhkjv.supabase.co";
-const SUPABASE_ANON_KEY = "HIER_JOUW_SUPABASE_ANON_KEY";
+const SUPABASE_ANON_KEY = "sb_publishable_osHx_EQr3AQqmPrQRjihGA_Lq8K3ycE";
 
 const lessonsContainer = document.getElementById("lessonsContainer");
 
