@@ -467,9 +467,11 @@ body{
   background: white;
   border: 1px solid #e5e7eb;
   border-radius: 22px;
-  padding: 24px;
+  padding: 28px;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .lesson-card:hover {
