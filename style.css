@@ -514,14 +514,18 @@ body{
 
 .lesson-body {
   color: #4b5563;
-  line-height: 1.7;
+  line-height: 1.8;
   margin-bottom: 16px;
+  font-size: 1rem;
 }
 
 .lesson-cta {
   color: #2457d6;
   font-weight: 700;
   line-height: 1.5;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
 }
 
 @media (max-width: 768px) {
