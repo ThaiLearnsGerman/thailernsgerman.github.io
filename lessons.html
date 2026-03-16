@@ -51,6 +51,40 @@
     </section>
   </main>
 
+  <div class="chatbot-fab" id="chatToggle">💬</div>
+
+  <div class="chatbot-window" id="chatWindow">
+    <div class="chatbot-header">
+      <div>
+        <strong>German Helper Bot</strong>
+        <span>ThaiLearnsGerman assistant</span>
+      </div>
+      <button id="chatClose">✕</button>
+    </div>
+
+    <div class="chatbot-body">
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-message bot">
+          <div class="chat-bubble">
+            Hi 👋 I’m your German Helper Bot. Ask me something about greetings, lessons, or basic German.
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-quick-actions">
+        <button class="chat-quick-action" data-question="How do I say hello in German?">Say hello in German</button>
+        <button class="chat-quick-action" data-question="How should I start learning German?">How do I start?</button>
+        <button class="chat-quick-action" data-question="Can you help Thai learners?">Thai learner help</button>
+      </div>
+
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="Ask something..." />
+        <button id="chatSend">Send</button>
+      </div>
+    </div>
+  </div>
+
   <script src="/thailernsgerman.github.io/lessons.js?v=10"></script>
+  <script src="/thailernsgerman.github.io/chatbot.js?v=12"></script>
 </body>
 </html>
