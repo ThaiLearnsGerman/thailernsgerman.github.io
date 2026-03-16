@@ -47,14 +47,39 @@ async function loadLessonDetail() {
     lessonDetailContainer.innerHTML = `
   <article class="lesson-detail-card">
     <div class="lesson-detail-hero">
-      <div class="lesson-detail-hero-badge">Live Lesson</div>
-      <div class="lesson-detail-hero-icon">🎓</div>
-      <h1>${lesson.title || "Untitled lesson"}</h1>
-      <p class="lesson-detail-date">${formattedDate}</p>
-      <p class="lesson-detail-intro">
-        A focused lesson page generated from your live content system for Thai learners who want simple and clear German learning.
-      </p>
+  <div class="lesson-detail-hero-left">
+    <div class="lesson-detail-hero-badge">Live Lesson</div>
+    <div class="lesson-detail-hero-icon">🎓</div>
+    <h1>${lesson.title || "Untitled lesson"}</h1>
+    <p class="lesson-detail-date">${formattedDate}</p>
+    <p class="lesson-detail-intro">
+      A focused lesson page generated from your live content system for Thai learners who want simple and clear German learning.
+    </p>
+  </div>
+
+  <div class="lesson-hero-visual">
+    <div class="hero-orb hero-orb-one"></div>
+    <div class="hero-orb hero-orb-two"></div>
+
+    <div class="hero-visual-card main-card">
+      <span class="hero-card-label">German</span>
+      <strong>Hallo 👋</strong>
+      <p>Simple phrases. Clear lessons. Real confidence.</p>
     </div>
+
+    <div class="hero-visual-card small-card top-card">
+      <span>🇩🇪 Guten Morgen</span>
+    </div>
+
+    <div class="hero-visual-card small-card mid-card">
+      <span>🇹🇭 สวัสดี</span>
+    </div>
+
+    <div class="hero-visual-card small-card bottom-card">
+      <span>💬 Speak with confidence</span>
+    </div>
+  </div>
+</div>
 
     <div class="lesson-meta">
       <span class="lesson-tag">${lesson.channel || "tiktok"}</span>
