@@ -45,7 +45,21 @@ async function loadLessonDetail() {
       : "Recently published";
 
     lessonDetailContainer.innerHTML = `
+  <div class="lesson-detail-bg">
+    <div class="lesson-glow one"></div>
+    <div class="lesson-glow two"></div>
+    <div class="lesson-glow three"></div>
+  </div>
+
   <article class="lesson-detail-card">
+    <div class="lesson-detail-visual">
+      <div class="lesson-detail-icon">🎓</div>
+      <div class="lesson-detail-label">
+        <span>Live Lesson</span>
+        <strong>ThaiLearnsGerman</strong>
+      </div>
+    </div>
+
     <div class="lesson-detail-top">
       <div class="lesson-meta">
         <span class="lesson-tag">${lesson.channel || "tiktok"}</span>
