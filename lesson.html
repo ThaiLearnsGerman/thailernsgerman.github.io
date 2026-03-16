@@ -22,252 +22,252 @@
     </section>
   </main>
 
- <div class="chatbot-fab" id="chatToggle">💬</div>
+  <div class="chatbot-fab" id="chatToggle">💬</div>
 
-<div class="chatbot-window" id="chatWindow">
-  <div class="chatbot-header">
-    <div>
-      <strong>German Helper Bot</strong>
-      <span>ThaiLearnsGerman assistant</span>
+  <div class="chatbot-window" id="chatWindow">
+    <div class="chatbot-header">
+      <div>
+        <strong>German Helper Bot</strong>
+        <span>ThaiLearnsGerman assistant</span>
+      </div>
+      <button id="chatClose">✕</button>
     </div>
-    <button id="chatClose">✕</button>
-  </div>
 
-  <div class="chatbot-body">
-    <div class="chat-messages" id="chatMessages">
-      <div class="chat-message bot">
-        <div class="chat-bubble">
-          สวัสดี 👋 ฉันคือ German Helper Bot ถามได้เลยเรื่องคำทักทายภาษาเยอรมัน การเริ่มเรียน หรือบทเรียนพื้นฐาน
+    <div class="chatbot-body">
+      <div class="chat-messages" id="chatMessages">
+        <div class="chat-message bot">
+          <div class="chat-bubble">
+            สวัสดี 👋 ฉันคือ German Helper Bot ถามได้เลยเรื่องคำทักทายภาษาเยอรมัน การเริ่มเรียน หรือบทเรียนพื้นฐาน
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="chat-quick-actions">
-      <button class="chat-quick-action" data-question="บทเรียนนี้เกี่ยวกับอะไร">บทเรียนนี้เกี่ยวกับอะไร</button>
-      <button class="chat-quick-action" data-question="Hallo แปลว่าอะไร">Hallo คืออะไร</button>
-      <button class="chat-quick-action" data-question="Wie geht's แปลว่าอะไร">Wie geht's คืออะไร</button>
-      <button class="chat-quick-action" data-question="เริ่มจากตรงไหนดี">เริ่มจากตรงไหนดี</button>
-      <button class="chat-quick-action" data-question="ช่วยคนไทยเรียนเยอรมันได้ไหม">ช่วยคนไทยได้ไหม</button>
-    </div>
+      <div class="chat-quick-actions">
+        <button class="chat-quick-action" data-question="บทเรียนนี้เกี่ยวกับอะไร">บทเรียนนี้เกี่ยวกับอะไร</button>
+        <button class="chat-quick-action" data-question="Hallo แปลว่าอะไร">Hallo คืออะไร</button>
+        <button class="chat-quick-action" data-question="Wie geht's แปลว่าอะไร">Wie geht's คืออะไร</button>
+        <button class="chat-quick-action" data-question="เริ่มจากตรงไหนดี">เริ่มจากตรงไหนดี</button>
+        <button class="chat-quick-action" data-question="ช่วยคนไทยเรียนเยอรมันได้ไหม">ช่วยคนไทยได้ไหม</button>
+      </div>
 
-    <div class="chat-input-row">
-      <input type="text" id="chatInput" placeholder="Ask something..." />
-      <button id="chatSend">Send</button>
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="Ask something..." />
+        <button id="chatSend">Send</button>
+      </div>
     </div>
   </div>
-</div>
 
-<script src="lesson.js?v=11"></script>
-<script>
-  const chatToggle = document.getElementById("chatToggle");
-  const chatWindow = document.getElementById("chatWindow");
-  const chatClose = document.getElementById("chatClose");
-  const chatMessages = document.getElementById("chatMessages");
-  const chatInput = document.getElementById("chatInput");
-  const chatSend = document.getElementById("chatSend");
-  const quickActions = document.querySelectorAll(".chat-quick-action");
-  const lessonDetailContainer = document.getElementById("lessonDetailContainer");
+  <script src="lesson.js?v=11"></script>
+  <script>
+    const chatToggle = document.getElementById("chatToggle");
+    const chatWindow = document.getElementById("chatWindow");
+    const chatClose = document.getElementById("chatClose");
+    const chatMessages = document.getElementById("chatMessages");
+    const chatInput = document.getElementById("chatInput");
+    const chatSend = document.getElementById("chatSend");
+    const quickActions = document.querySelectorAll(".chat-quick-action");
+    const lessonDetailContainer = document.getElementById("lessonDetailContainer");
 
-  function addMessage(text, sender = "bot") {
-    const msg = document.createElement("div");
-    msg.className = `chat-message ${sender}`;
-    msg.innerHTML = `<div class="chat-bubble">${text}</div>`;
-    chatMessages.appendChild(msg);
-    chatMessages.scrollTop = chatMessages.scrollHeight;
-  }
+    function addMessage(text, sender = "bot") {
+      const msg = document.createElement("div");
+      msg.className = `chat-message ${sender}`;
+      msg.innerHTML = `<div class="chat-bubble">${text}</div>`;
+      chatMessages.appendChild(msg);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
 
-  function getLessonContext() {
-    const lessonTitle = lessonDetailContainer?.dataset?.lessonTitle || "";
-    const lessonMiniLesson = lessonDetailContainer?.dataset?.lessonMiniLesson || "";
-    return { lessonTitle, lessonMiniLesson };
-  }
+    function getLessonContext() {
+      const lessonTitle = lessonDetailContainer?.dataset?.lessonTitle || "";
+      const lessonMiniLesson = lessonDetailContainer?.dataset?.lessonMiniLesson || "";
+      return { lessonTitle, lessonMiniLesson };
+    }
 
-  function botReply(userText) {
-    const text = userText.toLowerCase();
-    const { lessonTitle, lessonMiniLesson } = getLessonContext();
-    const lessonText = `${lessonTitle} ${lessonMiniLesson}`.toLowerCase();
+    function botReply(userText) {
+      const text = userText.toLowerCase();
+      const { lessonTitle, lessonMiniLesson } = getLessonContext();
+      const lessonText = `${lessonTitle} ${lessonMiniLesson}`.toLowerCase();
 
-    const isGreetingLesson =
-      lessonText.includes("hallo") ||
-      lessonText.includes("guten morgen") ||
-      lessonText.includes("guten abend") ||
-      lessonText.includes("wie geht");
+      const isGreetingLesson =
+        lessonText.includes("hallo") ||
+        lessonText.includes("guten morgen") ||
+        lessonText.includes("guten abend") ||
+        lessonText.includes("wie geht");
 
-    if (
-      text.includes("this lesson") ||
-      text.includes("deze les") ||
-      text.includes("บทเรียนนี้") ||
-      text.includes("lesson about")
-    ) {
-      if (isGreetingLesson) {
+      if (
+        text.includes("บทเรียนนี้") ||
+        text.includes("this lesson") ||
+        text.includes("deze les") ||
+        text.includes("lesson about")
+      ) {
+        if (isGreetingLesson) {
+          return `
+            บทเรียนนี้เน้นเรื่อง <strong>German greetings</strong> 👋<br><br>
+            ตัวอย่างในบทนี้คือ:<br>
+            <strong>Hallo</strong> = สวัสดี<br>
+            <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
+            <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br><br>
+            เหมาะมากสำหรับผู้เริ่มต้น
+          `;
+        }
+
         return `
-          บทเรียนนี้เน้นเรื่อง <strong>German greetings</strong> 👋<br><br>
-          ตัวอย่างในบทนี้คือ:<br>
-          <strong>Hallo</strong> = สวัสดี<br>
-          <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
-          <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br><br>
-          เหมาะมากสำหรับผู้เริ่มต้น
+          บทเรียนนี้เกี่ยวกับ:<br><br>
+          <strong>${lessonTitle || "basic German"}</strong><br><br>
+          เนื้อหาหลักของหน้านี้คือการเรียนเยอรมันแบบง่าย ๆ ทีละขั้น
+        `;
+      }
+
+      if (
+        text.includes("สวัสดี") ||
+        text.includes("hello") ||
+        text.includes("hallo") ||
+        text.includes("hi")
+      ) {
+        if (isGreetingLesson) {
+          return `
+            ใน lesson นี้คำสำคัญคือ:<br><br>
+            <strong>Hallo</strong> = สวัสดี<br>
+            <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
+            <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br><br>
+            เริ่มจาก <strong>Hallo</strong> ก่อนง่ายที่สุด 👋
+          `;
+        }
+
+        return `
+          <strong>Hallo</strong> = สวัสดี 👋<br><br>
+          ใช้ได้เกือบทุกสถานการณ์สำหรับผู้เริ่มต้น
+        `;
+      }
+
+      if (
+        text.includes("start") ||
+        text.includes("begin") ||
+        text.includes("เริ่ม") ||
+        text.includes("เริ่มยังไง") ||
+        text.includes("เริ่มเรียน")
+      ) {
+        if (isGreetingLesson) {
+          return `
+            ถ้าจะเริ่มจาก lesson นี้ ให้จำ 3 คำก่อน:<br><br>
+            1. <strong>Hallo</strong> = สวัสดี<br>
+            2. <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
+            3. <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
+            แบบนี้จะตรงกับเนื้อหาของบทนี้ที่สุด
+          `;
+        }
+
+        return `
+          <strong>Start German step by step</strong><br><br>
+          เริ่มจากคำสั้น ๆ ก่อน แล้วค่อยเปิด lesson เพิ่มทีละบท
+        `;
+      }
+
+      if (
+        text.includes("thai") ||
+        text.includes("ไทย") ||
+        text.includes("คนไทย")
+      ) {
+        return `
+          แน่นอน 😊<br><br>
+          หน้านี้ถูกออกแบบให้คนไทยเรียนเยอรมันได้ง่ายขึ้น<br>
+          และ lesson นี้ตอนนี้เน้นเรื่อง:<br>
+          <strong>${lessonTitle || "German basics"}</strong>
+        `;
+      }
+
+      if (
+        text.includes("danke") ||
+        text.includes("thanks") ||
+        text.includes("thank you") ||
+        text.includes("ขอบคุณ")
+      ) {
+        return `
+          <strong>Danke</strong> = ขอบคุณ 🙏<br><br>
+          ถ้าอยากสุภาพขึ้น ใช้ <strong>Danke schön</strong><br>
+          ถ้าจะตอบกลับ ใช้ <strong>Bitte</strong>
+        `;
+      }
+
+      if (
+        text.includes("wie geht") ||
+        text.includes("สบายดีไหม")
+      ) {
+        return `
+          <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
+          ตอบง่าย ๆ ได้แบบนี้:<br>
+          <strong>Gut</strong> = ดี<br>
+          <strong>Sehr gut</strong> = ดีมาก<br>
+          <strong>Nicht schlecht</strong> = ไม่แย่
+        `;
+      }
+
+      if (
+        text.includes("lesson") ||
+        text.includes("learn") ||
+        text.includes("german") ||
+        text.includes("เยอรมัน") ||
+        text.includes("เรียน")
+      ) {
+        return `
+          ตอนนี้คุณอยู่ในบทเรียน:<br><br>
+          <strong>${lessonTitle || "German lesson"}</strong><br><br>
+          ถ้าถามเกี่ยวกับคำในบทนี้ ฉันจะช่วยอธิบายให้แบบง่าย ๆ ได้
         `;
       }
 
       return `
-        This lesson is about:<br><br>
-        <strong>${lessonTitle || "basic German"}</strong><br><br>
-        เนื้อหาหลักของหน้านี้คือการเรียนเยอรมันแบบง่าย ๆ ทีละขั้น
-      `;
-    }
-
-    if (
-      text.includes("สวัสดี") ||
-      text.includes("hello") ||
-      text.includes("hallo") ||
-      text.includes("hi")
-    ) {
-      if (isGreetingLesson) {
-        return `
-          ใน lesson นี้คำสำคัญคือ:<br><br>
-          <strong>Hallo</strong> = สวัสดี<br>
-          <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
-          <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br><br>
-          เริ่มจาก <strong>Hallo</strong> ก่อนง่ายที่สุด 👋
-        `;
-      }
-
-      return `
-        <strong>Hallo</strong> = สวัสดี 👋<br><br>
-        ใช้ได้เกือบทุกสถานการณ์สำหรับผู้เริ่มต้น
-      `;
-    }
-
-    if (
-      text.includes("start") ||
-      text.includes("begin") ||
-      text.includes("เริ่ม") ||
-      text.includes("เริ่มยังไง") ||
-      text.includes("เริ่มเรียน")
-    ) {
-      if (isGreetingLesson) {
-        return `
-          ถ้าจะเริ่มจาก lesson นี้ ให้จำ 3 คำก่อน:<br><br>
-          1. <strong>Hallo</strong> = สวัสดี<br>
-          2. <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
-          3. <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
-          แบบนี้จะตรงกับเนื้อหาของบทนี้ที่สุด
-        `;
-      }
-
-      return `
-        <strong>Start German step by step</strong><br><br>
-        เริ่มจากคำสั้น ๆ ก่อน แล้วค่อยเปิด lesson เพิ่มทีละบท
-      `;
-    }
-
-    if (
-      text.includes("thai") ||
-      text.includes("ไทย") ||
-      text.includes("คนไทย")
-    ) {
-      return `
-        แน่นอน 😊<br><br>
-        หน้านี้ถูกออกแบบให้คนไทยเรียนเยอรมันได้ง่ายขึ้น<br>
-        และ lesson นี้ตอนนี้เน้นเรื่อง:<br>
-        <strong>${lessonTitle || "German basics"}</strong>
-      `;
-    }
-
-    if (
-      text.includes("danke") ||
-      text.includes("thanks") ||
-      text.includes("thank you") ||
-      text.includes("ขอบคุณ")
-    ) {
-      return `
-        <strong>Danke</strong> = ขอบคุณ 🙏<br><br>
-        ถ้าอยากสุภาพขึ้น ใช้ <strong>Danke schön</strong><br>
-        ถ้าจะตอบกลับ ใช้ <strong>Bitte</strong>
-      `;
-    }
-
-    if (
-      text.includes("wie geht") ||
-      text.includes("สบายดีไหม")
-    ) {
-      return `
-        <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
-        ตอบง่าย ๆ ได้แบบนี้:<br>
-        <strong>Gut</strong> = ดี<br>
-        <strong>Sehr gut</strong> = ดีมาก<br>
-        <strong>Nicht schlecht</strong> = ไม่แย่
-      `;
-    }
-
-    if (
-      text.includes("lesson") ||
-      text.includes("learn") ||
-      text.includes("german") ||
-      text.includes("เยอรมัน") ||
-      text.includes("เรียน")
-    ) {
-      return `
-        ตอนนี้คุณอยู่ในบทเรียน:<br><br>
+        ตอนนี้ฉันรู้ว่าคุณอยู่ในบทเรียนนี้:<br><br>
         <strong>${lessonTitle || "German lesson"}</strong><br><br>
-        ถ้าถามเกี่ยวกับคำในบทนี้ ฉันจะช่วยอธิบายให้แบบง่าย ๆ ได้
+        ลองถามแบบนี้ได้:<br>
+        • บทเรียนนี้เกี่ยวกับอะไร<br>
+        • Hallo แปลว่าอะไร<br>
+        • เริ่มจากตรงไหนดี
       `;
     }
 
-    return `
-      ตอนนี้ฉันรู้ว่าคุณอยู่ในบทเรียนนี้:<br><br>
-      <strong>${lessonTitle || "German lesson"}</strong><br><br>
-      ลองถามแบบนี้ได้:<br>
-      • บทเรียนนี้เกี่ยวกับอะไร<br>
-      • Hallo แปลว่าอะไร<br>
-      • เริ่มจากตรงไหนดี
-    `;
-  }
+    function sendMessage() {
+      const value = chatInput.value.trim();
+      if (!value) return;
 
-  function sendMessage() {
-    const value = chatInput.value.trim();
-    if (!value) return;
+      addMessage(value, "user");
+      chatInput.value = "";
 
-    addMessage(value, "user");
-    chatInput.value = "";
-
-    setTimeout(() => {
-      addMessage(botReply(value), "bot");
-    }, 400);
-  }
-
-  if (chatToggle) {
-    chatToggle.addEventListener("click", () => {
-      chatWindow.classList.toggle("open");
-    });
-  }
-
-  if (chatClose) {
-    chatClose.addEventListener("click", () => {
-      chatWindow.classList.remove("open");
-    });
-  }
-
-  if (chatSend) {
-    chatSend.addEventListener("click", sendMessage);
-  }
-
-  if (chatInput) {
-    chatInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") sendMessage();
-    });
-  }
-
-  quickActions.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const question = btn.dataset.question;
-      addMessage(question, "user");
       setTimeout(() => {
-        addMessage(botReply(question), "bot");
+        addMessage(botReply(value), "bot");
       }, 400);
+    }
+
+    if (chatToggle) {
+      chatToggle.addEventListener("click", () => {
+        chatWindow.classList.toggle("open");
+      });
+    }
+
+    if (chatClose) {
+      chatClose.addEventListener("click", () => {
+        chatWindow.classList.remove("open");
+      });
+    }
+
+    if (chatSend) {
+      chatSend.addEventListener("click", sendMessage);
+    }
+
+    if (chatInput) {
+      chatInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") sendMessage();
+      });
+    }
+
+    quickActions.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const question = btn.dataset.question;
+        addMessage(question, "user");
+        setTimeout(() => {
+          addMessage(botReply(question), "bot");
+        }, 400);
+      });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
