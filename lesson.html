@@ -22,6 +22,183 @@
     </section>
   </main>
 
-  <script src="/thailernsgerman.github.io/lesson.js?v=10"></script>
+ <div class="chatbot-fab" id="chatToggle">💬</div>
+
+<div class="chatbot-window" id="chatWindow">
+  <div class="chatbot-header">
+    <div>
+      <strong>German Helper Bot</strong>
+      <span>ThaiLearnsGerman assistant</span>
+    </div>
+    <button id="chatClose">✕</button>
+  </div>
+
+  <div class="chatbot-body">
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-message bot">
+        <div class="chat-bubble">
+          สวัสดี 👋 ฉันคือ German Helper Bot ถามได้เลยเรื่องคำทักทายภาษาเยอรมัน การเริ่มเรียน หรือบทเรียนพื้นฐาน
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-quick-actions">
+      <button class="chat-quick-action" data-question="Hallo แปลว่าอะไร">Hallo คืออะไร</button>
+      <button class="chat-quick-action" data-question="Danke แปลว่าอะไร">Danke คืออะไร</button>
+      <button class="chat-quick-action" data-question="Wie geht's แปลว่าอะไร">Wie geht's คืออะไร</button>
+      <button class="chat-quick-action" data-question="เริ่มเรียนเยอรมันยังไง">เริ่มเรียนยังไง</button>
+      <button class="chat-quick-action" data-question="ช่วยคนไทยเรียนเยอรมันได้ไหม">ช่วยคนไทยได้ไหม</button>
+    </div>
+
+    <div class="chat-input-row">
+      <input type="text" id="chatInput" placeholder="Ask something..." />
+      <button id="chatSend">Send</button>
+    </div>
+  </div>
+</div>
+
+<script src="lesson.js?v=11"></script>
+<script>
+  const chatToggle = document.getElementById("chatToggle");
+  const chatWindow = document.getElementById("chatWindow");
+  const chatClose = document.getElementById("chatClose");
+  const chatMessages = document.getElementById("chatMessages");
+  const chatInput = document.getElementById("chatInput");
+  const chatSend = document.getElementById("chatSend");
+  const quickActions = document.querySelectorAll(".chat-quick-action");
+
+  function addMessage(text, sender = "bot") {
+    const msg = document.createElement("div");
+    msg.className = `chat-message ${sender}`;
+    msg.innerHTML = `<div class="chat-bubble">${text}</div>`;
+    chatMessages.appendChild(msg);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  function botReply(userText) {
+    const text = userText.toLowerCase();
+
+    if (
+      text.includes("สวัสดี") ||
+      text.includes("hello") ||
+      text.includes("hallo") ||
+      text.includes("hi")
+    ) {
+      return `
+        <strong>German greeting basics</strong><br><br>
+        <strong>Hallo</strong> = สวัสดี<br>
+        <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
+        <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br><br>
+        เริ่มต้นง่าย ๆ ใช้ <strong>Hallo</strong> ได้แทบทุกสถานการณ์ 👋
+      `;
+    }
+
+    if (
+      text.includes("start") ||
+      text.includes("begin") ||
+      text.includes("เริ่ม") ||
+      text.includes("เริ่มยังไง") ||
+      text.includes("เริ่มเรียน")
+    ) {
+      return `
+        <strong>Start German step by step</strong><br><br>
+        1. <strong>Hallo</strong> = สวัสดี<br>
+        2. <strong>Danke</strong> = ขอบคุณ<br>
+        3. <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
+        สำหรับคนไทย: ไม่ต้องรีบจำเยอะ เริ่มจากคำสั้น ๆ ก่อน แล้วค่อยเปิด lesson เพิ่ม
+      `;
+    }
+
+    if (
+      text.includes("thai") ||
+      text.includes("ไทย") ||
+      text.includes("คนไทย")
+    ) {
+      return `
+        แน่นอน 😊<br><br>
+        This site is built for <strong>Thai learners</strong> who want a calm and simple way to learn German.<br><br>
+        เป้าหมายคือ: เรียนแบบเข้าใจง่าย ไม่กดดัน และค่อย ๆ มั่นใจขึ้น
+      `;
+    }
+
+    if (
+      text.includes("danke") ||
+      text.includes("thanks") ||
+      text.includes("thank you") ||
+      text.includes("ขอบคุณ")
+    ) {
+      return `
+        <strong>Danke</strong> = ขอบคุณ 🙏<br><br>
+        ถ้าอยากสุภาพขึ้น ใช้ <strong>Danke schön</strong><br>
+        ถ้าอยากตอบกลับแบบง่าย ๆ ใช้ <strong>Bitte</strong>
+      `;
+    }
+
+    if (
+      text.includes("wie geht") ||
+      text.includes("สบายดีไหม")
+    ) {
+      return `
+        <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
+        ตอบง่าย ๆ ได้แบบนี้:<br>
+        <strong>Gut</strong> = ดี<br>
+        <strong>Sehr gut</strong> = ดีมาก<br>
+        <strong>Nicht schlecht</strong> = ไม่แย่
+      `;
+    }
+
+    return `
+      ฉันช่วยได้เรื่อง:<br><br>
+      • German greetings<br>
+      • Thai explanations<br>
+      • beginner words<br>
+      • simple lesson help
+    `;
+  }
+
+  function sendMessage() {
+    const value = chatInput.value.trim();
+    if (!value) return;
+
+    addMessage(value, "user");
+    chatInput.value = "";
+
+    setTimeout(() => {
+      addMessage(botReply(value), "bot");
+    }, 400);
+  }
+
+  if (chatToggle) {
+    chatToggle.addEventListener("click", () => {
+      chatWindow.classList.toggle("open");
+    });
+  }
+
+  if (chatClose) {
+    chatClose.addEventListener("click", () => {
+      chatWindow.classList.remove("open");
+    });
+  }
+
+  if (chatSend) {
+    chatSend.addEventListener("click", sendMessage);
+  }
+
+  if (chatInput) {
+    chatInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") sendMessage();
+    });
+  }
+
+  quickActions.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const question = btn.dataset.question;
+      addMessage(question, "user");
+      setTimeout(() => {
+        addMessage(botReply(question), "bot");
+      }, 400);
+    });
+  });
+</script>
 </body>
 </html>
