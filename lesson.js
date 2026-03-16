@@ -46,13 +46,18 @@ async function loadLessonDetail() {
 
     lessonDetailContainer.innerHTML = `
       <article class="lesson-detail-card">
-        <div class="lesson-meta">
-          <span class="lesson-tag">${lesson.channel || "tiktok"}</span>
-          <span>${lesson.status || "live"}</span>
-        </div>
+        <div class="lesson-detail-top">
+          <div class="lesson-meta">
+            <span class="lesson-tag">${lesson.channel || "tiktok"}</span>
+            <span>${lesson.status || "live"}</span>
+          </div>
 
-        <h1>${lesson.title || "Untitled lesson"}</h1>
-        <p class="lesson-date">${formattedDate}</p>
+          <h1>${lesson.title || "Untitled lesson"}</h1>
+          <p class="lesson-detail-date">${formattedDate}</p>
+          <p class="lesson-detail-intro">
+            A focused lesson page generated from your live content system.
+          </p>
+        </div>
 
         <section class="lesson-detail-section">
           <h3>Hook</h3>
@@ -69,7 +74,9 @@ async function loadLessonDetail() {
           <p>${lesson.cta || ""}</p>
         </section>
 
-        <a class="btn btn-secondary" href="lessons.html">← Back to lessons</a>
+        <div class="lesson-detail-actions">
+          <a class="lesson-back-btn" href="lessons.html">← Back to lessons</a>
+        </div>
       </article>
     `;
   } catch (error) {
