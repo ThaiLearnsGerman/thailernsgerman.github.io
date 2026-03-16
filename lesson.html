@@ -66,8 +66,8 @@
     const chatInput = document.getElementById("chatInput");
     const chatSend = document.getElementById("chatSend");
     const quickActions = document.querySelectorAll(".chat-quick-action");
-    const lessonDetailContainer = document.getElementById("lessonDetailContainer");
-
+    const lessonContextEl = document.getElementById("lessonDetailContainer");
+    
     function addMessage(text, sender = "bot") {
       const msg = document.createElement("div");
       msg.className = `chat-message ${sender}`;
@@ -77,8 +77,8 @@
     }
 
     function getLessonContext() {
-      const lessonTitle = lessonDetailContainer?.dataset?.lessonTitle || "";
-      const lessonMiniLesson = lessonDetailContainer?.dataset?.lessonMiniLesson || "";
+      const lessonTitle = lessonContextEl?.dataset?.lessonTitle || "";
+      const lessonMiniLesson = lessonContextEl?.dataset?.lessonMiniLesson || "";
       return { lessonTitle, lessonMiniLesson };
     }
 
