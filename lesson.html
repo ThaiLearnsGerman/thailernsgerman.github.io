@@ -27,7 +27,7 @@
   <div class="chatbot-window" id="chatWindow">
     <div class="chatbot-header">
       <div>
-        <strong>German Helper Bot</strong>
+        <strong>Hans der Lehrer</strong>
         <span>ThaiLearnsGerman assistant</span>
       </div>
       <button id="chatClose">✕</button>
@@ -37,7 +37,8 @@
       <div class="chat-messages" id="chatMessages">
         <div class="chat-message bot">
           <div class="chat-bubble">
-            สวัสดี 👋 ฉันคือ German Helper Bot ถามได้เลยเรื่องคำทักทายภาษาเยอรมัน การเริ่มเรียน หรือบทเรียนพื้นฐาน
+            สวัสดี 👋 ฉันคือ <strong>Hans der Lehrer</strong><br><br>
+            ถามได้เลยเรื่องคำทักทายภาษาเยอรมัน การเริ่มเรียน หรือคำศัพท์พื้นฐานในบทนี้
           </div>
         </div>
       </div>
@@ -51,7 +52,7 @@
       </div>
 
       <div class="chat-input-row">
-        <input type="text" id="chatInput" placeholder="Ask something..." />
+        <input type="text" id="chatInput" placeholder="ถาม Hans der Lehrer..." />
         <button id="chatSend">Send</button>
       </div>
     </div>
@@ -95,47 +96,46 @@
 
       if (
         text.includes("บทเรียนนี้") ||
+        text.includes("lesson") ||
         text.includes("this lesson") ||
-        text.includes("deze les") ||
-        text.includes("lesson about") ||
-        text.includes("waar gaat deze les over")
+        text.includes("deze les")
       ) {
         if (isGreetingLesson) {
           return `
-            <strong>Deze les gaat over German greetings</strong> 👋<br><br>
-            Je leert hier vooral basisbegroetingen zoals:<br>
+            <strong>บทเรียนนี้เกี่ยวกับ German greetings</strong> 👋<br><br>
+            ในบทนี้คุณจะได้เรียนคำพื้นฐาน เช่น:<br>
             • <strong>Hallo</strong> = สวัสดี<br>
             • <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
             • <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br>
             • <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
-            Dit is perfect voor beginners.
+            เหมาะมากสำหรับผู้เริ่มต้น
           `;
         }
 
         return `
-          <strong>Deze les gaat over:</strong><br><br>
-          ${lessonTitle || "basic German"}<br><br>
-          Ik kan je ook woorden uit deze les apart uitleggen.
+          <strong>บทเรียนนี้เกี่ยวกับ:</strong><br><br>
+          ${lessonTitle || "ภาษาเยอรมันพื้นฐาน"}<br><br>
+          ฉันช่วยอธิบายคำในบทนี้แบบง่าย ๆ ได้
         `;
       }
 
       if (text.includes("guten morgen")) {
         return `
           <strong>Guten Morgen</strong> = สวัสดีตอนเช้า ☀️<br><br>
-          Gebruik dit in de ochtend.<br><br>
-          <strong>Voorbeeld:</strong><br>
+          ใช้ในตอนเช้า<br><br>
+          <strong>ตัวอย่าง:</strong><br>
           Guten Morgen! Wie geht's?<br>
-          = Goedemorgen! Hoe gaat het?
+          = สวัสดีตอนเช้า สบายดีไหม
         `;
       }
 
       if (text.includes("guten abend")) {
         return `
           <strong>Guten Abend</strong> = สวัสดีตอนเย็น 🌙<br><br>
-          Gebruik dit in de avond.<br><br>
-          <strong>Voorbeeld:</strong><br>
-          Guten Abend, alles gut?<br>
-          = Goedenavond, alles goed?
+          ใช้ในตอนเย็น<br><br>
+          <strong>ตัวอย่าง:</strong><br>
+          Guten Abend!<br>
+          = สวัสดีตอนเย็น
         `;
       }
 
@@ -147,7 +147,7 @@
       ) {
         if (isGreetingLesson) {
           return `
-            ใน lesson นี้คำสำคัญคือ:<br><br>
+            ในบทนี้คำสำคัญคือ:<br><br>
             <strong>Hallo</strong> = สวัสดี<br>
             <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
             <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br><br>
@@ -167,139 +167,116 @@
       ) {
         return `
           <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
-          Simpele antwoorden:
-          <br>• <strong>Gut</strong> = ดี
-          <br>• <strong>Sehr gut</strong> = ดีมาก
-          <br>• <strong>Nicht schlecht</strong> = ไม่แย่
-          <br><br>
-          <strong>Mini practice:</strong><br>
-          Vraag: Wie geht's?<br>
-          Antwoord: Gut, danke.
+          ตอบง่าย ๆ ได้แบบนี้:<br>
+          • <strong>Gut</strong> = ดี<br>
+          • <strong>Sehr gut</strong> = ดีมาก<br>
+          • <strong>Nicht schlecht</strong> = ไม่แย่<br><br>
+          <strong>ตัวอย่าง:</strong><br>
+          Wie geht's?<br>
+          Gut, danke.
         `;
       }
 
       if (
         text.includes("danke") ||
-        text.includes("thanks") ||
-        text.includes("thank you") ||
         text.includes("ขอบคุณ")
       ) {
         return `
           <strong>Danke</strong> = ขอบคุณ 🙏<br><br>
-          Netter:
-          <br>• <strong>Danke schön</strong> = heel erg bedankt
-          <br>• <strong>Vielen Dank</strong> = hartelijk dank
-          <br><br>
-          Antwoord:
-          <br>• <strong>Bitte</strong> = alsjeblieft / graag gedaan
+          ถ้าอยากสุภาพขึ้น ใช้:<br>
+          • <strong>Danke schön</strong><br>
+          • <strong>Vielen Dank</strong><br><br>
+          ถ้าจะตอบกลับ ใช้ <strong>Bitte</strong>
         `;
       }
 
       if (
+        text.includes("ออกเสียง") ||
         text.includes("pronunciation") ||
-        text.includes("uitspraak") ||
-        text.includes("ausspraak") ||
-        text.includes("ออกเสียง")
+        text.includes("uitspraak")
       ) {
-        if (isGreetingLesson) {
-          return `
-            <strong>Uitspraak tip voor deze les</strong><br><br>
-            Focus eerst op duidelijk spreken, niet op perfect klinken.<br><br>
-            Bijvoorbeeld:
-            <br>• <strong>Hallo</strong> → “hal-lo”
-            <br>• <strong>Danke</strong> → “dan-ke”
-            <br><br>
-            Eerst vertrouwen, daarna perfectie 👍
-          `;
-        }
-
         return `
-          <strong>Uitspraak tip</strong><br><br>
-          Niet perfect vanaf dag 1 is oké.<br>
-          Eerst duidelijke woorden, daarna pas fijne uitspraak.
+          <strong>เคล็ดลับการออกเสียง</strong><br><br>
+          ยังไม่ต้องเป๊ะตั้งแต่วันแรกก็ได้ 👍<br><br>
+          เริ่มจากพูดให้ชัดก่อน เช่น:<br>
+          • <strong>Hallo</strong><br>
+          • <strong>Danke</strong><br>
+          • <strong>Guten Morgen</strong><br><br>
+          ก่อนอื่นเอาให้มั่นใจ แล้วค่อยพัฒนาเรื่องสำเนียง
         `;
       }
 
       if (
+        text.includes("เริ่ม") ||
         text.includes("start") ||
         text.includes("begin") ||
-        text.includes("เริ่ม") ||
-        text.includes("เริ่มยังไง") ||
-        text.includes("เริ่มเรียน") ||
-        text.includes("hoe begin ik")
+        text.includes("เริ่มยังไง")
       ) {
         if (isGreetingLesson) {
           return `
-            <strong>Begin met deze 3 woorden uit deze les:</strong><br><br>
+            <strong>เริ่มจาก 3 คำนี้ก่อน:</strong><br><br>
             1. <strong>Hallo</strong> = สวัสดี<br>
             2. <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
             3. <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
             <strong>Mini oefening:</strong><br>
-            Zeg: Hallo, wie geht's?
+            Hallo, wie geht's?
           `;
         }
 
         return `
-          <strong>Start German step by step</strong><br><br>
-          Begin met korte woorden en 1 simpele les tegelijk.<br>
-          Niet te veel ineens.
+          <strong>เริ่มเรียนภาษาเยอรมันแบบง่าย ๆ</strong><br><br>
+          เริ่มจากคำสั้น ๆ ก่อน แล้วค่อยเปิด lesson เพิ่มทีละบท
         `;
       }
 
       if (
-        text.includes("thai") ||
         text.includes("ไทย") ||
+        text.includes("thai") ||
         text.includes("คนไทย")
       ) {
         return `
           แน่นอน 😊<br><br>
-          Deze pagina is gebouwd voor <strong>Thai learners</strong> die Duits rustig en duidelijk willen leren.<br><br>
-          Huidige lesfocus:<br>
-          <strong>${lessonTitle || "German basics"}</strong>
+          หน้านี้ทำมาเพื่อช่วยให้คนไทยเรียนภาษาเยอรมันได้ง่ายขึ้น<br><br>
+          บทเรียนนี้เน้นเรื่อง:<br>
+          <strong>${lessonTitle || "ภาษาเยอรมันพื้นฐาน"}</strong>
         `;
       }
 
-      if (
-        text.includes("wat betekent") ||
-        text.includes("meaning") ||
-        text.includes("แปลว่าอะไร")
-      ) {
+      if (text.includes("แปลว่าอะไร")) {
         return `
-          Ik kan woorden uit deze les uitleggen 🙌<br><br>
-          Probeer bijvoorbeeld:
-          <br>• Hallo
-          <br>• Guten Morgen
-          <br>• Wie geht's?
-          <br>• Danke
+          ฉันช่วยอธิบายคำในบทนี้ได้ 🙌<br><br>
+          ลองถามแบบนี้:<br>
+          • Hallo คืออะไร<br>
+          • Guten Morgen คืออะไร<br>
+          • Wie geht's คืออะไร<br>
+          • Danke คืออะไร
         `;
       }
 
       if (
-        text.includes("lesson") ||
-        text.includes("learn") ||
-        text.includes("german") ||
         text.includes("เยอรมัน") ||
+        text.includes("german") ||
         text.includes("เรียน")
       ) {
         return `
-          Je zit nu in deze les:<br><br>
+          ตอนนี้คุณอยู่ในบทเรียน:<br><br>
           <strong>${lessonTitle || "German lesson"}</strong><br><br>
-          Ik kan je helpen met:
-          <br>• woordbetekenissen
-          <br>• simpele voorbeelden
-          <br>• beginnersuitleg
-          <br>• mini practice
+          ฉันช่วยได้เรื่อง:<br>
+          • คำศัพท์ในบทนี้<br>
+          • ตัวอย่างประโยค<br>
+          • คำอธิบายง่าย ๆ<br>
+          • mini practice
         `;
       }
 
       return `
-        <strong>Ik help je met deze les</strong> 📘<br><br>
-        Probeer een van deze vragen:
-        <br>• บทเรียนนี้เกี่ยวกับอะไร
-        <br>• Hallo แปลว่าอะไร
-        <br>• Guten Morgen คืออะไร
-        <br>• Wie geht's คืออะไร
-        <br>• เริ่มจากตรงไหนดี
+        <strong>Hans der Lehrer ช่วยคุณได้ในบทนี้</strong> 📘<br><br>
+        ลองถามแบบนี้:<br>
+        • บทเรียนนี้เกี่ยวกับอะไร<br>
+        • Hallo คืออะไร<br>
+        • Guten Morgen คืออะไร<br>
+        • Wie geht's คืออะไร<br>
+        • เริ่มจากตรงไหนดี
       `;
     }
 
