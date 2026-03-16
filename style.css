@@ -1393,3 +1393,158 @@ body{
 .hero-orb-two {
   animation: pulseGlow 8s ease-in-out infinite;
 }
+.lessons-hero-upgraded {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 30px;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 55%, #7db1ff 100%);
+  border-radius: 30px;
+  padding: 38px;
+  color: white;
+  margin-bottom: 34px;
+  overflow: hidden;
+  position: relative;
+}
+
+.lessons-hero-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.lessons-hero-upgraded .hero-badge {
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+}
+
+.lessons-hero-upgraded h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin: 16px 0 12px;
+  color: white;
+}
+
+.lessons-hero-upgraded p {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 680px;
+  line-height: 1.8;
+}
+
+.lessons-hero-visual {
+  position: relative;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(28px);
+  opacity: 0.42;
+}
+
+.orb-one {
+  width: 130px;
+  height: 130px;
+  background: rgba(255, 255, 255, 0.24);
+  top: 12px;
+  right: 30px;
+}
+
+.orb-two {
+  width: 100px;
+  height: 100px;
+  background: rgba(173, 216, 255, 0.5);
+  bottom: 20px;
+  left: 24px;
+}
+
+.overview-card {
+  position: absolute;
+  border-radius: 22px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.18);
+}
+
+.main-overview-card {
+  width: 240px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  z-index: 3;
+}
+
+.main-overview-card strong {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.main-overview-card p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.6;
+}
+
+.overview-label {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 10px;
+}
+
+.small-overview-card {
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.top-overview-card {
+  top: 18px;
+  left: 12px;
+}
+
+.bottom-overview-card {
+  right: 0;
+  bottom: 18px;
+}
+
+@media (max-width: 900px) {
+  .lessons-hero-upgraded {
+    grid-template-columns: 1fr;
+    padding: 26px;
+  }
+
+  .lessons-hero-visual {
+    min-height: 220px;
+  }
+
+  .main-overview-card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lessons-hero-upgraded h1 {
+    font-size: 2rem;
+  }
+
+  .main-overview-card {
+    width: 200px;
+    padding: 18px;
+  }
+
+  .small-overview-card {
+    font-size: 0.8rem;
+    padding: 10px 12px;
+  }
+}
