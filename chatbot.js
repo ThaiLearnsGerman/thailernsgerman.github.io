@@ -17,23 +17,68 @@ function addMessage(text, sender = "bot") {
 function botReply(userText) {
   const text = userText.toLowerCase();
 
-  if (text.includes("hello") || text.includes("hallo") || text.includes("hi")) {
-    return `A good German beginner greeting is <strong>Hallo</strong>. You can also say <strong>Guten Morgen</strong> in the morning.`;
+  // Thai greetings
+  if (
+    text.includes("สวัสดี") ||
+    text.includes("หวัดดี") ||
+    text.includes("hello") ||
+    text.includes("hallo") ||
+    text.includes("hi")
+  ) {
+    return `ภาษาเยอรมันพูดว่า <strong>Hallo</strong> ได้เลย 👋<br><br>
+    ถ้าเป็นตอนเช้า ใช้ <strong>Guten Morgen</strong><br>
+    ถ้าเป็นตอนเย็น ใช้ <strong>Guten Abend</strong>`;
   }
 
-  if (text.includes("pronunciation") || text.includes("ausspraak") || text.includes("uitspraak")) {
-    return `Start simple: focus first on clear words and confidence. You do not need perfect pronunciation from day one.`;
+  // Thai learner / Thai language questions
+  if (
+    text.includes("thai") ||
+    text.includes("ไทย") ||
+    text.includes("คนไทย")
+  ) {
+    return `แน่นอน 😊 โปรเจกต์นี้สร้างมาสำหรับคนไทยที่อยากเริ่มเรียนเยอรมันแบบง่าย ๆ ชัดเจน และไม่กดดันเกินไป`;
   }
 
-  if (text.includes("lesson") || text.includes("learn") || text.includes("german")) {
-    return `You can explore the lessons page and open one lesson in detail. The goal is simple, clear progress step by step.`;
+  // How to start learning
+  if (
+    text.includes("start") ||
+    text.includes("begin") ||
+    text.includes("how do i start") ||
+    text.includes("เริ่ม") ||
+    text.includes("เริ่มยังไง") ||
+    text.includes("เริ่มเรียน")
+  ) {
+    return `เริ่มจากคำง่าย ๆ ก่อน:<br><br>
+    <strong>Hallo</strong> = สวัสดี<br>
+    <strong>Danke</strong> = ขอบคุณ<br>
+    <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
+    จากนั้นค่อยเปิด lesson แล้วฝึกทีละนิด`;
   }
 
-  if (text.includes("thai")) {
-    return `This project is made for Thai learners who want a softer and clearer start in German.`;
+  // Pronunciation
+  if (
+    text.includes("pronunciation") ||
+    text.includes("uitspraak") ||
+    text.includes("ausprache") ||
+    text.includes("ออกเสียง")
+  ) {
+    return `ไม่ต้องออกเสียงเป๊ะตั้งแต่วันแรกก็ได้ 👍<br><br>
+    โฟกัสที่คำง่าย ๆ และความมั่นใจก่อน แล้วค่อยพัฒนาเรื่องเสียงทีหลัง`;
   }
 
-  return `Good question. Right now I can help with greetings, basic learning tips, and how this German lesson site works.`;
+  // Lesson / learning questions
+  if (
+    text.includes("lesson") ||
+    text.includes("learn") ||
+    text.includes("german") ||
+    text.includes("เยอรมัน") ||
+    text.includes("เรียน")
+  ) {
+    return `คุณสามารถเปิด lessons แล้วกดเข้าไปดูทีละบทได้เลย 📚<br><br>
+    เป้าหมายคือเรียนแบบสั้น ชัดเจน และค่อย ๆ มั่นใจขึ้น`;
+  }
+
+  return `ฉันช่วยได้เรื่องคำทักทายภาษาเยอรมัน, วิธีเริ่มเรียน, และคำอธิบายง่าย ๆ สำหรับคนไทย 😊`;
 }
 
 function sendMessage() {
