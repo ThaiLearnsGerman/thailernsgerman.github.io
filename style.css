@@ -592,3 +592,54 @@ body{
   padding-top: 14px;
   border-top: 1px solid #e5e7eb;
 }
+.lesson-detail-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px 80px;
+}
+
+.lesson-detail-wrap {
+  margin-top: 20px;
+}
+
+.lesson-detail-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.lesson-detail-card h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.lesson-detail-section {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.lesson-detail-section h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #2457d6;
+}
+
+.lesson-detail-section p {
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .lesson-detail-card {
+    padding: 22px;
+  }
+
+  .lesson-detail-card h1 {
+    font-size: 1.6rem;
+  }
+}
