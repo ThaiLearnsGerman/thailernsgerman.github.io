@@ -1331,3 +1331,65 @@ body{
     padding: 10px 12px;
   }
 }
+@keyframes floatSlow {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floatSoft {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-6px) translateX(2px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    opacity: 0.38;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.38;
+  }
+}
+
+.hero-visual-card.main-card {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.top-card {
+  animation: floatSoft 5s ease-in-out infinite;
+}
+
+.mid-card {
+  animation: floatSoft 6.5s ease-in-out infinite;
+}
+
+.bottom-card {
+  animation: floatSoft 5.8s ease-in-out infinite;
+}
+
+.hero-orb-one {
+  animation: pulseGlow 7s ease-in-out infinite;
+}
+
+.hero-orb-two {
+  animation: pulseGlow 8s ease-in-out infinite;
+}
