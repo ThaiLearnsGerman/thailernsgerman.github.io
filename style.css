@@ -552,3 +552,43 @@ body{
     padding: 20px;
   }
 }
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 28px;
+  margin-top: 36px;
+  align-items: start;
+}
+
+.lesson-card {
+  height: 100%;
+}
+
+.lesson-date {
+  font-size: 0.82rem;
+  color: #8a8f98;
+  margin-bottom: 14px;
+}
+
+.lesson-body {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.lesson-hook {
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.lesson-cta {
+  color: #2457d6;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+}
