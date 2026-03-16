@@ -45,32 +45,20 @@ async function loadLessonDetail() {
       : "Recently published";
 
     lessonDetailContainer.innerHTML = `
-  <div class="lesson-detail-bg">
-    <div class="lesson-glow one"></div>
-    <div class="lesson-glow two"></div>
-    <div class="lesson-glow three"></div>
-  </div>
-
   <article class="lesson-detail-card">
-    <div class="lesson-detail-visual">
-      <div class="lesson-detail-icon">🎓</div>
-      <div class="lesson-detail-label">
-        <span>Live Lesson</span>
-        <strong>ThaiLearnsGerman</strong>
-      </div>
-    </div>
-
-    <div class="lesson-detail-top">
-      <div class="lesson-meta">
-        <span class="lesson-tag">${lesson.channel || "tiktok"}</span>
-        <span>${lesson.status || "live"}</span>
-      </div>
-
+    <div class="lesson-detail-hero">
+      <div class="lesson-detail-hero-badge">Live Lesson</div>
+      <div class="lesson-detail-hero-icon">🎓</div>
       <h1>${lesson.title || "Untitled lesson"}</h1>
       <p class="lesson-detail-date">${formattedDate}</p>
       <p class="lesson-detail-intro">
         A focused lesson page generated from your live content system for Thai learners who want simple and clear German learning.
       </p>
+    </div>
+
+    <div class="lesson-meta">
+      <span class="lesson-tag">${lesson.channel || "tiktok"}</span>
+      <span>${lesson.status || "live"}</span>
     </div>
 
     <section class="lesson-detail-section">
