@@ -45,40 +45,40 @@ async function loadLessonDetail() {
       : "Recently published";
 
     lessonDetailContainer.innerHTML = `
-      <article class="lesson-detail-card">
-        <div class="lesson-detail-top">
-          <div class="lesson-meta">
-            <span class="lesson-tag">${lesson.channel || "tiktok"}</span>
-            <span>${lesson.status || "live"}</span>
-          </div>
+  <article class="lesson-detail-card">
+    <div class="lesson-detail-top">
+      <div class="lesson-meta">
+        <span class="lesson-tag">${lesson.channel || "tiktok"}</span>
+        <span>${lesson.status || "live"}</span>
+      </div>
 
-          <h1>${lesson.title || "Untitled lesson"}</h1>
-          <p class="lesson-detail-date">${formattedDate}</p>
-          <p class="lesson-detail-intro">
-            A focused lesson page generated from your live content system.
-          </p>
-        </div>
+      <h1>${lesson.title || "Untitled lesson"}</h1>
+      <p class="lesson-detail-date">${formattedDate}</p>
+      <p class="lesson-detail-intro">
+        A focused lesson page generated from your live content system for Thai learners who want simple and clear German learning.
+      </p>
+    </div>
 
-        <section class="lesson-detail-section">
-          <h3>Hook</h3>
-          <p>${lesson.hook || ""}</p>
-        </section>
+    <section class="lesson-detail-section">
+      <h3>Hook</h3>
+      <p>${lesson.hook || ""}</p>
+    </section>
 
-        <section class="lesson-detail-section">
-          <h3>Mini lesson</h3>
-          <p>${lesson.mini_lesson || ""}</p>
-        </section>
+    <section class="lesson-detail-section">
+      <h3>Mini lesson</h3>
+      <p>${lesson.mini_lesson || ""}</p>
+    </section>
 
-        <section class="lesson-detail-section">
-          <h3>CTA</h3>
-          <p>${lesson.cta || ""}</p>
-        </section>
+    <section class="lesson-detail-section">
+      <h3>CTA</h3>
+      <p>${lesson.cta || ""}</p>
+    </section>
 
-        <div class="lesson-detail-actions">
-          <a class="lesson-back-btn" href="lessons.html">← Back to lessons</a>
-        </div>
-      </article>
-    `;
+    <div class="lesson-detail-actions">
+      <a class="lesson-back-btn" href="lessons.html">← Back to lessons</a>
+    </div>
+  </article>
+`;
   } catch (error) {
     console.error("Error loading lesson detail:", error);
     lessonDetailContainer.innerHTML = `<p>Could not load lesson.</p>`;
