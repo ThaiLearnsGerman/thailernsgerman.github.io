@@ -17,56 +17,98 @@ function addMessage(text, sender = "bot") {
 function botReply(userText) {
   const text = userText.toLowerCase();
 
-  // Thai greetings
+  // Greetings
   if (
     text.includes("สวัสดี") ||
-    text.includes("หวัดดี") ||
     text.includes("hello") ||
     text.includes("hallo") ||
     text.includes("hi")
   ) {
-    return `ภาษาเยอรมันพูดว่า <strong>Hallo</strong> ได้เลย 👋<br><br>
-    ถ้าเป็นตอนเช้า ใช้ <strong>Guten Morgen</strong><br>
-    ถ้าเป็นตอนเย็น ใช้ <strong>Guten Abend</strong>`;
+    return `
+      <strong>German greeting basics</strong><br><br>
+      <strong>Hallo</strong> = สวัสดี<br>
+      <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
+      <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br><br>
+      เริ่มต้นง่าย ๆ ใช้ <strong>Hallo</strong> ได้แทบทุกสถานการณ์ 👋
+    `;
   }
 
-  // Thai learner / Thai language questions
+  // Start learning
+  if (
+    text.includes("start") ||
+    text.includes("begin") ||
+    text.includes("เริ่ม") ||
+    text.includes("เริ่มยังไง") ||
+    text.includes("เริ่มเรียน")
+  ) {
+    return `
+      <strong>Start German step by step</strong><br><br>
+      1. <strong>Hallo</strong> = สวัสดี<br>
+      2. <strong>Danke</strong> = ขอบคุณ<br>
+      3. <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
+      สำหรับคนไทย: ไม่ต้องรีบจำเยอะ เริ่มจากคำสั้น ๆ ก่อน แล้วค่อยเปิด lesson เพิ่ม
+    `;
+  }
+
+  // Thai learners
   if (
     text.includes("thai") ||
     text.includes("ไทย") ||
     text.includes("คนไทย")
   ) {
-    return `แน่นอน 😊 โปรเจกต์นี้สร้างมาสำหรับคนไทยที่อยากเริ่มเรียนเยอรมันแบบง่าย ๆ ชัดเจน และไม่กดดันเกินไป`;
-  }
-
-  // How to start learning
-  if (
-    text.includes("start") ||
-    text.includes("begin") ||
-    text.includes("how do i start") ||
-    text.includes("เริ่ม") ||
-    text.includes("เริ่มยังไง") ||
-    text.includes("เริ่มเรียน")
-  ) {
-    return `เริ่มจากคำง่าย ๆ ก่อน:<br><br>
-    <strong>Hallo</strong> = สวัสดี<br>
-    <strong>Danke</strong> = ขอบคุณ<br>
-    <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
-    จากนั้นค่อยเปิด lesson แล้วฝึกทีละนิด`;
+    return `
+      แน่นอน 😊<br><br>
+      This site is built for <strong>Thai learners</strong> who want a calm and simple way to learn German.<br><br>
+      เป้าหมายคือ: เรียนแบบเข้าใจง่าย ไม่กดดัน และค่อย ๆ มั่นใจขึ้น
+    `;
   }
 
   // Pronunciation
   if (
     text.includes("pronunciation") ||
     text.includes("uitspraak") ||
-    text.includes("ausprache") ||
     text.includes("ออกเสียง")
   ) {
-    return `ไม่ต้องออกเสียงเป๊ะตั้งแต่วันแรกก็ได้ 👍<br><br>
-    โฟกัสที่คำง่าย ๆ และความมั่นใจก่อน แล้วค่อยพัฒนาเรื่องเสียงทีหลัง`;
+    return `
+      <strong>Pronunciation tip</strong><br><br>
+      ไม่ต้องออกเสียงเป๊ะตั้งแต่วันแรกก็ได้ 👍<br><br>
+      Focus first on:
+      <br>• clear words
+      <br>• confidence
+      <br>• short phrases
+      <br><br>
+      แล้วค่อยพัฒนาสำเนียงทีหลัง
+    `;
   }
 
-  // Lesson / learning questions
+  // Specific beginner words
+  if (
+    text.includes("danke") ||
+    text.includes("thanks") ||
+    text.includes("thank you") ||
+    text.includes("ขอบคุณ")
+  ) {
+    return `
+      <strong>Danke</strong> = ขอบคุณ 🙏<br><br>
+      ถ้าอยากสุภาพขึ้น ใช้ <strong>Danke schön</strong><br>
+      ถ้าอยากตอบกลับแบบง่าย ๆ ใช้ <strong>Bitte</strong>
+    `;
+  }
+
+  if (
+    text.includes("wie geht") ||
+    text.includes("สบายดีไหม")
+  ) {
+    return `
+      <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
+      ตอบง่าย ๆ ได้แบบนี้:<br>
+      <strong>Gut</strong> = ดี<br>
+      <strong>Sehr gut</strong> = ดีมาก<br>
+      <strong>Nicht schlecht</strong> = ไม่แย่
+    `;
+  }
+
+  // Lesson / learning
   if (
     text.includes("lesson") ||
     text.includes("learn") ||
@@ -74,56 +116,24 @@ function botReply(userText) {
     text.includes("เยอรมัน") ||
     text.includes("เรียน")
   ) {
-    return `คุณสามารถเปิด lessons แล้วกดเข้าไปดูทีละบทได้เลย 📚<br><br>
-    เป้าหมายคือเรียนแบบสั้น ชัดเจน และค่อย ๆ มั่นใจขึ้น`;
+    return `
+      คุณสามารถกดเข้าไปดู lesson แต่ละบทได้เลย 📚<br><br>
+      <strong>Hook</strong> = ประโยคเปิดหรือไอเดียหลัก<br>
+      <strong>Mini lesson</strong> = คำอธิบายสั้น ๆ<br>
+      <strong>CTA</strong> = สิ่งที่ให้คนทำต่อ<br><br>
+      This helps you learn step by step.
+    `;
   }
 
-  return `ฉันช่วยได้เรื่องคำทักทายภาษาเยอรมัน, วิธีเริ่มเรียน, และคำอธิบายง่าย ๆ สำหรับคนไทย 😊`;
+  return `
+    ฉันช่วยได้เรื่อง:<br><br>
+    • German greetings<br>
+    • Thai explanations<br>
+    • beginner words<br>
+    • simple lesson help<br><br>
+    ลองถามแบบนี้ได้:<br>
+    <strong>Hallo แปลว่าอะไร</strong><br>
+    <strong>เริ่มเรียนเยอรมันยังไง</strong><br>
+    <strong>Danke คืออะไร</strong>
+  `;
 }
-
-function sendMessage() {
-  const value = chatInput.value.trim();
-  if (!value) return;
-
-  addMessage(value, "user");
-  chatInput.value = "";
-
-  setTimeout(() => {
-    addMessage(botReply(value), "bot");
-  }, 500);
-}
-
-if (chatToggle) {
-  chatToggle.addEventListener("click", () => {
-    chatWindow.classList.toggle("open");
-  });
-}
-
-if (chatClose) {
-  chatClose.addEventListener("click", () => {
-    chatWindow.classList.remove("open");
-  });
-}
-
-if (chatSend) {
-  chatSend.addEventListener("click", sendMessage);
-}
-
-if (chatInput) {
-  chatInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-      sendMessage();
-    }
-  });
-}
-
-quickActions.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const question = btn.dataset.question;
-    addMessage(question, "user");
-
-    setTimeout(() => {
-      addMessage(botReply(question), "bot");
-    }, 450);
-  });
-});
