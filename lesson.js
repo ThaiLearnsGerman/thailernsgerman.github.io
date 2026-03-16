@@ -41,8 +41,13 @@ async function loadLessonDetail() {
     }
 
     const formattedDate = lesson.published_at
-      ? new Date(lesson.published_at).toLocaleDateString("en-GB")
-      : "Recently published";
+  ? new Date(lesson.published_at).toLocaleDateString("en-GB")
+  : "Recently published";
+
+lessonDetailContainer.dataset.lessonTitle = lesson.title || "";
+lessonDetailContainer.dataset.lessonMiniLesson = lesson.mini_lesson || "";
+
+lessonDetailContainer.innerHTML = `
 
     lessonDetailContainer.innerHTML = `
   <article class="lesson-detail-card">
