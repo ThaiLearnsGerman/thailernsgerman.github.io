@@ -894,3 +894,132 @@ body{
     border-radius: 16px;
   }
 }
+.lesson-detail-page {
+  position: relative;
+}
+
+.lesson-detail-wrap {
+  position: relative;
+}
+
+.lesson-detail-visual {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.lesson-detail-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2457d6 0%, #7db1ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: white;
+  box-shadow: 0 12px 24px rgba(36, 87, 214, 0.22);
+}
+
+.lesson-detail-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lesson-detail-label span {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2457d6;
+}
+
+.lesson-detail-label strong {
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.lesson-detail-card {
+  position: relative;
+  z-index: 2;
+}
+
+.lesson-detail-bg {
+  position: absolute;
+  inset: -40px -30px auto -30px;
+  height: 260px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.lesson-glow {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(50px);
+  opacity: 0.32;
+}
+
+.lesson-glow.one {
+  width: 220px;
+  height: 220px;
+  background: #8bb8ff;
+  top: 0;
+  left: 30px;
+}
+
+.lesson-glow.two {
+  width: 180px;
+  height: 180px;
+  background: #d8b4fe;
+  top: 30px;
+  right: 60px;
+}
+
+.lesson-glow.three {
+  width: 140px;
+  height: 140px;
+  background: #93c5fd;
+  top: 120px;
+  left: 45%;
+}
+
+.lesson-detail-card::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 120px;
+  height: 120px;
+  border-radius: 24px;
+  background: radial-gradient(circle, rgba(36, 87, 214, 0.08) 0%, rgba(36, 87, 214, 0) 70%);
+  pointer-events: none;
+}
+
+.lesson-detail-section {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lesson-detail-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+
+@media (max-width: 768px) {
+  .lesson-detail-visual {
+    align-items: flex-start;
+  }
+
+  .lesson-detail-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    font-size: 1.2rem;
+  }
+
+  .lesson-detail-bg {
+    inset: -20px -10px auto -10px;
+    height: 180px;
+  }
+}
