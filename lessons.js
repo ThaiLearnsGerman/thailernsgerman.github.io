@@ -28,20 +28,26 @@ async function loadLessons() {
     }
 
     lessonsContainer.innerHTML = lessons
-  .map(
-    (lesson) => `
+  .map((lesson) => {
+    const formattedDate = lesson.published_at
+      ? new Date(lesson.published_at).toLocaleDateString("en-GB")
+      : "Recently published";
+
+    return `
       <article class="lesson-card">
         <div class="lesson-meta">
           <span class="lesson-tag">${lesson.channel || "tiktok"}</span>
           <span>${lesson.status || "live"}</span>
         </div>
+
         <h2>${lesson.title || "Untitled lesson"}</h2>
+        <p class="lesson-date">${formattedDate}</p>
         <p class="lesson-hook"><strong>Hook:</strong> ${lesson.hook || ""}</p>
         <p class="lesson-body">${lesson.mini_lesson || ""}</p>
         <p class="lesson-cta">${lesson.cta || ""}</p>
       </article>
-    `
-  )
+    `;
+  })
   .join("");
   } catch (error) {
     console.error("Error loading lessons:", error);
