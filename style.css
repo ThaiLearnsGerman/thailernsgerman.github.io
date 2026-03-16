@@ -1185,3 +1185,149 @@ body{
     padding: 24px 22px 26px;
   }
 }
+.lesson-detail-hero {
+  padding: 36px 36px 28px;
+  background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 55%, #7db1ff 100%);
+  color: white;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.lesson-detail-hero-left {
+  position: relative;
+  z-index: 2;
+}
+
+.lesson-hero-visual {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(30px);
+  opacity: 0.45;
+}
+
+.hero-orb-one {
+  width: 140px;
+  height: 140px;
+  background: rgba(255, 255, 255, 0.25);
+  top: 20px;
+  right: 40px;
+}
+
+.hero-orb-two {
+  width: 100px;
+  height: 100px;
+  background: rgba(173, 216, 255, 0.5);
+  bottom: 20px;
+  left: 30px;
+}
+
+.hero-visual-card {
+  position: absolute;
+  border-radius: 22px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.18);
+}
+
+.hero-visual-card.main-card {
+  width: 240px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  z-index: 3;
+}
+
+.hero-visual-card.main-card strong {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.hero-visual-card.main-card p {
+  margin: 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-card-label {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 10px;
+}
+
+.hero-visual-card.small-card {
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.top-card {
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.mid-card {
+  right: 0;
+  top: 95px;
+  z-index: 4;
+}
+
+.bottom-card {
+  left: 25px;
+  bottom: 12px;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .lesson-detail-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-hero-visual {
+    min-height: 240px;
+    margin-top: 10px;
+  }
+
+  .hero-visual-card.main-card {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lesson-hero-visual {
+    min-height: 220px;
+  }
+
+  .hero-visual-card.main-card {
+    width: 200px;
+    padding: 18px;
+  }
+
+  .hero-visual-card.main-card strong {
+    font-size: 1.35rem;
+  }
+
+  .hero-visual-card.small-card {
+    font-size: 0.8rem;
+    padding: 10px 12px;
+  }
+}
