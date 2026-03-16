@@ -43,10 +43,10 @@
     </div>
 
     <div class="chat-quick-actions">
+      <button class="chat-quick-action" data-question="บทเรียนนี้เกี่ยวกับอะไร">บทเรียนนี้เกี่ยวกับอะไร</button>
       <button class="chat-quick-action" data-question="Hallo แปลว่าอะไร">Hallo คืออะไร</button>
-      <button class="chat-quick-action" data-question="Danke แปลว่าอะไร">Danke คืออะไร</button>
       <button class="chat-quick-action" data-question="Wie geht's แปลว่าอะไร">Wie geht's คืออะไร</button>
-      <button class="chat-quick-action" data-question="เริ่มเรียนเยอรมันยังไง">เริ่มเรียนยังไง</button>
+      <button class="chat-quick-action" data-question="เริ่มจากตรงไหนดี">เริ่มจากตรงไหนดี</button>
       <button class="chat-quick-action" data-question="ช่วยคนไทยเรียนเยอรมันได้ไหม">ช่วยคนไทยได้ไหม</button>
     </div>
 
@@ -66,6 +66,7 @@
   const chatInput = document.getElementById("chatInput");
   const chatSend = document.getElementById("chatSend");
   const quickActions = document.querySelectorAll(".chat-quick-action");
+  const lessonDetailContainer = document.getElementById("lessonDetailContainer");
 
   function addMessage(text, sender = "bot") {
     const msg = document.createElement("div");
@@ -75,8 +76,46 @@
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 
+  function getLessonContext() {
+    const lessonTitle = lessonDetailContainer?.dataset?.lessonTitle || "";
+    const lessonMiniLesson = lessonDetailContainer?.dataset?.lessonMiniLesson || "";
+    return { lessonTitle, lessonMiniLesson };
+  }
+
   function botReply(userText) {
     const text = userText.toLowerCase();
+    const { lessonTitle, lessonMiniLesson } = getLessonContext();
+    const lessonText = `${lessonTitle} ${lessonMiniLesson}`.toLowerCase();
+
+    const isGreetingLesson =
+      lessonText.includes("hallo") ||
+      lessonText.includes("guten morgen") ||
+      lessonText.includes("guten abend") ||
+      lessonText.includes("wie geht");
+
+    if (
+      text.includes("this lesson") ||
+      text.includes("deze les") ||
+      text.includes("บทเรียนนี้") ||
+      text.includes("lesson about")
+    ) {
+      if (isGreetingLesson) {
+        return `
+          บทเรียนนี้เน้นเรื่อง <strong>German greetings</strong> 👋<br><br>
+          ตัวอย่างในบทนี้คือ:<br>
+          <strong>Hallo</strong> = สวัสดี<br>
+          <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
+          <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br><br>
+          เหมาะมากสำหรับผู้เริ่มต้น
+        `;
+      }
+
+      return `
+        This lesson is about:<br><br>
+        <strong>${lessonTitle || "basic German"}</strong><br><br>
+        เนื้อหาหลักของหน้านี้คือการเรียนเยอรมันแบบง่าย ๆ ทีละขั้น
+      `;
+    }
 
     if (
       text.includes("สวัสดี") ||
@@ -84,12 +123,19 @@
       text.includes("hallo") ||
       text.includes("hi")
     ) {
+      if (isGreetingLesson) {
+        return `
+          ใน lesson นี้คำสำคัญคือ:<br><br>
+          <strong>Hallo</strong> = สวัสดี<br>
+          <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
+          <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br><br>
+          เริ่มจาก <strong>Hallo</strong> ก่อนง่ายที่สุด 👋
+        `;
+      }
+
       return `
-        <strong>German greeting basics</strong><br><br>
-        <strong>Hallo</strong> = สวัสดี<br>
-        <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
-        <strong>Guten Abend</strong> = สวัสดีตอนเย็น<br><br>
-        เริ่มต้นง่าย ๆ ใช้ <strong>Hallo</strong> ได้แทบทุกสถานการณ์ 👋
+        <strong>Hallo</strong> = สวัสดี 👋<br><br>
+        ใช้ได้เกือบทุกสถานการณ์สำหรับผู้เริ่มต้น
       `;
     }
 
@@ -100,12 +146,19 @@
       text.includes("เริ่มยังไง") ||
       text.includes("เริ่มเรียน")
     ) {
+      if (isGreetingLesson) {
+        return `
+          ถ้าจะเริ่มจาก lesson นี้ ให้จำ 3 คำก่อน:<br><br>
+          1. <strong>Hallo</strong> = สวัสดี<br>
+          2. <strong>Guten Morgen</strong> = สวัสดีตอนเช้า<br>
+          3. <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
+          แบบนี้จะตรงกับเนื้อหาของบทนี้ที่สุด
+        `;
+      }
+
       return `
         <strong>Start German step by step</strong><br><br>
-        1. <strong>Hallo</strong> = สวัสดี<br>
-        2. <strong>Danke</strong> = ขอบคุณ<br>
-        3. <strong>Wie geht's?</strong> = สบายดีไหม<br><br>
-        สำหรับคนไทย: ไม่ต้องรีบจำเยอะ เริ่มจากคำสั้น ๆ ก่อน แล้วค่อยเปิด lesson เพิ่ม
+        เริ่มจากคำสั้น ๆ ก่อน แล้วค่อยเปิด lesson เพิ่มทีละบท
       `;
     }
 
@@ -116,8 +169,9 @@
     ) {
       return `
         แน่นอน 😊<br><br>
-        This site is built for <strong>Thai learners</strong> who want a calm and simple way to learn German.<br><br>
-        เป้าหมายคือ: เรียนแบบเข้าใจง่าย ไม่กดดัน และค่อย ๆ มั่นใจขึ้น
+        หน้านี้ถูกออกแบบให้คนไทยเรียนเยอรมันได้ง่ายขึ้น<br>
+        และ lesson นี้ตอนนี้เน้นเรื่อง:<br>
+        <strong>${lessonTitle || "German basics"}</strong>
       `;
     }
 
@@ -130,7 +184,7 @@
       return `
         <strong>Danke</strong> = ขอบคุณ 🙏<br><br>
         ถ้าอยากสุภาพขึ้น ใช้ <strong>Danke schön</strong><br>
-        ถ้าอยากตอบกลับแบบง่าย ๆ ใช้ <strong>Bitte</strong>
+        ถ้าจะตอบกลับ ใช้ <strong>Bitte</strong>
       `;
     }
 
@@ -147,12 +201,27 @@
       `;
     }
 
+    if (
+      text.includes("lesson") ||
+      text.includes("learn") ||
+      text.includes("german") ||
+      text.includes("เยอรมัน") ||
+      text.includes("เรียน")
+    ) {
+      return `
+        ตอนนี้คุณอยู่ในบทเรียน:<br><br>
+        <strong>${lessonTitle || "German lesson"}</strong><br><br>
+        ถ้าถามเกี่ยวกับคำในบทนี้ ฉันจะช่วยอธิบายให้แบบง่าย ๆ ได้
+      `;
+    }
+
     return `
-      ฉันช่วยได้เรื่อง:<br><br>
-      • German greetings<br>
-      • Thai explanations<br>
-      • beginner words<br>
-      • simple lesson help
+      ตอนนี้ฉันรู้ว่าคุณอยู่ในบทเรียนนี้:<br><br>
+      <strong>${lessonTitle || "German lesson"}</strong><br><br>
+      ลองถามแบบนี้ได้:<br>
+      • บทเรียนนี้เกี่ยวกับอะไร<br>
+      • Hallo แปลว่าอะไร<br>
+      • เริ่มจากตรงไหนดี
     `;
   }
 
