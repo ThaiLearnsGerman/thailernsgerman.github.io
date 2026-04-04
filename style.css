@@ -18016,7 +18016,10 @@ body.dialogues-lesson-page .questions-hero-lead{
 body.dialogues-lesson-page .questions-hero-image-large{
   min-height:420px !important;
   border-radius:24px !important;
-  background:#efe0cf center/cover no-repeat !important;
+  background-color:#efe0cf !important;
+  background-position:center !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
 }
 
 body.dialogues-lesson-page .section-head{
