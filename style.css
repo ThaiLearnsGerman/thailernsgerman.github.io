@@ -17526,17 +17526,6 @@ body.dialogues-lesson-page .questions-value-card p{
 body.dialogues-lesson-page .dialogues-hero-stage{
   position:relative;
   min-height:420px;
-  height:100%;
-}
-
-body.dialogues-lesson-page .dialogues-hero-real-image{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:26px;
-  box-shadow:inset 0 0 0 1px rgba(122,74,47,.06);
 }
 
 body.dialogues-lesson-page .dialogues-hero-image-large{
