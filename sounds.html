@@ -13,7 +13,7 @@
       <div class="brand-mark">TLG</div>
       <div class="brand-copy">
         <strong>ThaiLearnsGerman</strong>
-        <span>Warm. Clear. Creative.</span>
+        <span>เรียนเยอรมัน · ง่ายขึ้น</span>
       </div>
     </a>
 
@@ -52,10 +52,10 @@
       </div>
 
       <div class="sounds-pill-row">
-        <span>Thai → German</span>
-        <span>audio first</span>
-        <span>mouth tips</span>
-        <span>Bangkok intro</span>
+        <span>ไทย → เยอรมัน</span>
+        <span>ฟังก่อน</span>
+        <span>เทคนิคปาก</span>
+        <span>Bangkok เริ่มต้น</span>
       </div>
 
       <div class="sounds-value-grid">
@@ -89,7 +89,7 @@
       <!-- WHY SOUNDS FIRST -->
       <section class="sounds-info-strip">
         <article class="sounds-info-card">
-          <div class="sounds-info-kicker">Why first?</div>
+          <div class="sounds-info-kicker">ทำไมต้องเริ่มก่อน</div>
           <h3>ทำไมต้องเริ่มจาก Sounds</h3>
           <p>
             เพราะหลายคนรีบจำคำศัพท์ก่อน แต่พอฟังจริงกลับจับเสียงไม่ออก
@@ -98,7 +98,7 @@
         </article>
 
         <article class="sounds-info-card">
-          <div class="sounds-info-kicker">Pronunciation</div>
+          <div class="sounds-info-kicker">การออกเสียง</div>
           <h3>โฟกัสที่ปาก ลม และจังหวะ</h3>
           <p>
             เสียงเยอรมันบางเสียงไม่เหมือนไทยเลย เราจะแยกแบบง่าย ๆ:
@@ -110,7 +110,7 @@
       <!-- SOUND GROUPS -->
       <section class="sounds-shell" id="sound-groups">
         <div class="section-head center">
-          <div class="section-kicker">Sound groups</div>
+          <div class="section-kicker">กลุ่มเสียง</div>
           <h2>4 กลุ่มเสียงแรกที่ต้องเริ่มให้ชัด</h2>
         </div>
 
@@ -159,7 +159,7 @@
 
           <article class="sound-card">
             <div class="sound-card-top">
-              <div class="sound-badge">long / short</div>
+              <div class="sound-badge">ยาว / สั้น</div>
               <button class="sound-play-btn" type="button" data-audio="assets/audio/sounds-length.mp3">▶</button>
             </div>
             <h3>ยาว vs สั้น</h3>
@@ -176,7 +176,7 @@
       <!-- MOUTH / PRONUNCIATION -->
       <section class="sounds-shell">
         <div class="section-head center">
-          <div class="section-kicker">Mouth guide</div>
+          <div class="section-kicker">คู่มือออกเสียง</div>
           <h2>ดูปากยังไงให้พูดตามง่ายขึ้น</h2>
         </div>
 
@@ -204,7 +204,7 @@
       <!-- MINI QUIZ -->
       <section class="sounds-shell">
         <div class="section-head center">
-          <div class="section-kicker">Mini practice</div>
+          <div class="section-kicker">ฝึกสั้น ๆ</div>
           <h2>ฟังแล้วเลือกให้ถูก</h2>
         </div>
 
@@ -214,7 +214,7 @@
               <strong>ข้อทดลอง</strong>
               <p>สมมติว่าคุณได้ยินเสียง <b>sch</b> — ข้อไหนใกล้ที่สุด?</p>
             </div>
-            <button class="quiz-play-btn" type="button" data-audio="assets/audio/quiz-sch.mp3">▶ Play</button>
+            <button class="quiz-play-btn" type="button" data-audio="assets/audio/quiz-sch.mp3">▶ เล่น</button>
           </div>
 
           <div class="quiz-options">
@@ -255,7 +255,7 @@
       <!-- NEXT STEP -->
       <section class="sounds-bottom-cta">
         <div>
-          <div class="section-kicker">Next stop</div>
+          <div class="section-kicker">ขั้นต่อไป</div>
           <h2>เมื่อพร้อมแล้ว ค่อยไป Greetings ใน Frankfurt</h2>
           <p>
             ตอนที่หูเริ่มจับเสียงได้แล้ว การทักทายแรกจะไม่รู้สึกหนักเกินไป
@@ -284,7 +284,7 @@
 
         currentAudio = new Audio(audioSrc);
         currentAudio.play().catch(() => {
-          alert('Nog geen audio-bestand gekoppeld. Voeg later het bestand toe aan assets/audio/.');
+          alert('ยังไม่มีไฟล์เสียง — จะเพิ่มในภายหลัง');
         });
       });
     });
@@ -297,10 +297,10 @@
         const isCorrect = button.dataset.correct === 'true';
 
         if (isCorrect) {
-          quizFeedback.textContent = 'Goed zo ✨ Dit is de klankgroep “sch”.';
+          quizFeedback.textContent = 'ถูกต้อง ✨ นี่คือกลุ่มเสียง “sch”';
           quizFeedback.className = 'quiz-feedback is-correct';
         } else {
-          quizFeedback.textContent = 'Bijna — luister nog een keer en vergelijk de luchtige begin-klank.';
+          quizFeedback.textContent = 'เกือบแล้ว — ลองฟังอีกครั้งแล้วสังเกตเสียงเริ่มต้นที่นุ่มกว่า';
           quizFeedback.className = 'quiz-feedback is-wrong';
         }
       });
