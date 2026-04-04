@@ -1,0 +1,1312 @@
+/* =========================================
+   DIALOGUES CLEAN CSS — RESET / GOLD
+   For current dialogues.html
+========================================= */
+
+body.questions-lesson-page.dialogues-lesson-page{
+  background:
+    linear-gradient(180deg, #d39b72 0%, #d8a67d 20%, #e3bc99 46%, #f0d8bf 72%, #f6e9da 100%) !important;
+  color:#5a3722 !important;
+}
+
+/* ===== TOPBAR ===== */
+body.questions-lesson-page.dialogues-lesson-page .topbar{
+  background: linear-gradient(180deg, #cf956b 0%, #d29a72 100%) !important;
+  border-bottom: 1px solid rgba(117,72,41,.08) !important;
+  box-shadow: none !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .topbar-inner{
+  max-width: 1220px !important;
+  min-height: 78px !important;
+  padding: 0 24px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 28px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .brand{
+  display:flex !important;
+  align-items:center !important;
+  gap:14px !important;
+  text-decoration:none !important;
+  flex-shrink:0 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .brand-mark{
+  width:42px !important;
+  height:42px !important;
+  border-radius:13px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  background:#7f4d35 !important;
+  color:#fff !important;
+  font-weight:700 !important;
+  font-size:16px !important;
+  line-height:1 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .brand-copy{
+  display:flex !important;
+  flex-direction:column !important;
+  line-height:1.1 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .brand-copy strong{
+  color:#4f301f !important;
+  font-size:18px !important;
+  font-weight:800 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .brand-copy span{
+  color:#7b5a46 !important;
+  font-size:12px !important;
+  margin-top:3px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .topnav{
+  display:flex !important;
+  align-items:center !important;
+  gap:34px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .topnav a{
+  color:#5a3722 !important;
+  font-weight:600 !important;
+  text-decoration:none !important;
+  font-size:15px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .topnav a:hover{
+  color:#8e5a31 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .topbar-stats{
+  display:flex !important;
+  align-items:center !important;
+  gap:12px !important;
+  margin-left:auto !important;
+  flex-shrink:0 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .top-pill{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-height:42px !important;
+  padding:0 16px !important;
+  border-radius:999px !important;
+  background:#fbf5ed !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  color:#5a3722 !important;
+  font-size:15px !important;
+  font-weight:700 !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .top-pill-ghost{
+  width:46px !important;
+  min-width:46px !important;
+  padding:0 !important;
+}
+
+/* ===== PAGE ===== */
+body.questions-lesson-page.dialogues-lesson-page .questions-main.dialogues-main-wrap{
+  padding-top:14px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-layout{
+  max-width:1280px !important;
+  margin:0 auto !important;
+  padding:0 20px 110px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-main{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:22px !important;
+}
+
+/* ===== SHELLS ===== */
+body.questions-lesson-page.dialogues-lesson-page .questions-hero-shell.dialogues-hero-shell,
+body.questions-lesson-page.dialogues-lesson-page .questions-shell.dialogues-shell{
+  background: linear-gradient(180deg, #f7ecdf 0%, #f1e0ce 100%) !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  border-radius:28px !important;
+  box-shadow:0 8px 20px rgba(101,58,31,.05) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-hero-shell.dialogues-hero-shell{
+  padding:22px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-shell.dialogues-shell{
+  padding:22px 24px !important;
+}
+
+/* ===== HERO ===== */
+body.questions-lesson-page.dialogues-lesson-page .questions-hero-layout.dialogues-hero-layout{
+  display:grid !important;
+  grid-template-columns:minmax(0,1.06fr) minmax(340px,.84fr) !important;
+  gap:24px !important;
+  align-items:start !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-hero-copy.dialogues-hero-copy h1{
+  margin:8px 0 14px !important;
+  font-size:58px !important;
+  line-height:1.02 !important;
+  letter-spacing:-.03em !important;
+  color:#56331f !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-hero-lead{
+  margin:0 0 18px !important;
+  max-width:60ch !important;
+  color:#745845 !important;
+  font-size:16px !important;
+  line-height:1.75 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-hero-actions{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:12px !important;
+  margin:0 0 16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .hero-btn{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-height:46px !important;
+  padding:0 18px !important;
+  border-radius:999px !important;
+  text-decoration:none !important;
+  font-weight:700 !important;
+  transition:transform .18s ease, box-shadow .18s ease !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .hero-btn:hover{
+  transform:translateY(-2px) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .hero-btn-primary{
+  background: linear-gradient(180deg, #efb34f 0%, #e39b28 100%) !important;
+  color:#fff !important;
+  box-shadow:0 10px 18px rgba(227,155,40,.20) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .hero-btn-secondary{
+  background:#fbf4eb !important;
+  color:#6f4d35 !important;
+  border:1px solid rgba(127,79,47,.10) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-pill-row{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:10px !important;
+  margin:0 0 18px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-pill-row span{
+  display:inline-flex !important;
+  align-items:center !important;
+  min-height:34px !important;
+  padding:0 14px !important;
+  border-radius:999px !important;
+  background:#fbf3ea !important;
+  color:#7a5a45 !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  font-size:13px !important;
+  font-weight:600 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-value-grid{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:14px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-value-card{
+  padding:16px !important;
+  border-radius:20px !important;
+  background:#fbf5ee !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  box-shadow:0 6px 16px rgba(101,58,31,.04) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-value-card strong{
+  display:block !important;
+  margin-bottom:8px !important;
+  color:#553522 !important;
+  font-size:16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-value-card p{
+  margin:0 !important;
+  color:#775d4c !important;
+  line-height:1.65 !important;
+  font-size:14px !important;
+}
+
+/* ===== HERO IMAGE CARD ===== */
+body.questions-lesson-page.dialogues-lesson-page .questions-hero-stage.dialogues-hero-stage{
+  position:relative !important;
+  width:100% !important;
+  max-width:420px !important;
+  margin-left:auto !important;
+  align-self:start !important;
+
+  padding:60px 12px 12px !important;
+  box-sizing:border-box !important;
+
+  border-radius:24px !important;
+  overflow:hidden !important;
+  background:#ead4bd !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(127,79,47,.08),
+    0 8px 18px rgba(101,58,31,.06) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hero-real-image{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  max-width:100% !important;
+  border-radius:18px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-stage-badge{
+  position:absolute !important;
+  top:16px !important;
+  left:16px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  min-height:34px !important;
+  padding:0 14px !important;
+  border-radius:999px !important;
+  background:rgba(255,248,240,.95) !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  color:#7a5a45 !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  z-index:2 !important;
+}
+
+/* ===== SECTION HEADS ===== */
+body.questions-lesson-page.dialogues-lesson-page .section-head{
+  margin-bottom:16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .section-kicker,
+body.questions-lesson-page.dialogues-lesson-page .small-badge{
+  display:inline-flex !important;
+  align-items:center !important;
+  min-height:30px !important;
+  padding:0 12px !important;
+  border-radius:999px !important;
+  background:#efd09f !important;
+  color:#94602f !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  letter-spacing:.03em !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .section-head h2{
+  margin:10px 0 0 !important;
+  font-size:38px !important;
+  line-height:1.12 !important;
+  letter-spacing:-.02em !important;
+  color:#53311f !important;
+}
+
+/* ===== GENERIC CARDS ===== */
+body.questions-lesson-page.dialogues-lesson-page .questions-type-card,
+body.questions-lesson-page.dialogues-lesson-page .questions-word-card,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-note-card,
+body.questions-lesson-page.dialogues-lesson-page .questions-exercise-card,
+body.questions-lesson-page.dialogues-lesson-page .question-scene-card,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-video-box,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-minigame-box,
+body.questions-lesson-page.dialogues-lesson-page .questions-text-box,
+body.questions-lesson-page.dialogues-lesson-page .questions-hans-card{
+  background:#fbf5ee !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  box-shadow:0 6px 16px rgba(101,58,31,.04) !important;
+  border-radius:22px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-type-card,
+body.questions-lesson-page.dialogues-lesson-page .questions-word-card,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-note-card,
+body.questions-lesson-page.dialogues-lesson-page .questions-exercise-card{
+  padding:18px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-type-card p,
+body.questions-lesson-page.dialogues-lesson-page .questions-word-card p,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-note-card p,
+body.questions-lesson-page.dialogues-lesson-page .questions-exercise-card p,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-video-box p,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-minigame-box p,
+body.questions-lesson-page.dialogues-lesson-page .questions-text-box p,
+body.questions-lesson-page.dialogues-lesson-page .questions-hans-card p{
+  margin:0 !important;
+  color:#765845 !important;
+  line-height:1.75 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-two-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-type-card h3{
+  margin:10px 0 8px !important;
+  font-size:22px !important;
+  color:#553522 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-word-grid{
+  display:grid !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  gap:16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-word-card strong{
+  display:block !important;
+  margin-bottom:8px !important;
+  font-size:18px !important;
+  color:#553522 !important;
+}
+
+/* ===== CAST ===== */
+body.questions-lesson-page.dialogues-lesson-page .dialogues-cast-grid{
+  gap:18px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-cast-card{
+  padding:18px !important;
+  min-height:350px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:flex-start !important;
+  background:#fbf5ee !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  box-shadow:0 6px 16px rgba(101,58,31,.04) !important;
+  border-radius:22px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-cast-portrait{
+  width:min(100%,180px) !important;
+  aspect-ratio:2 / 3 !important;
+  margin:0 auto 14px auto !important;
+  overflow:hidden !important;
+  border-radius:18px !important;
+  background:#efdbc7 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-cast-portrait img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  display:block !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-character-front-copy strong{
+  display:block !important;
+  margin-bottom:8px !important;
+  font-size:20px !important;
+  color:#4f301f !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-character-front-copy p{
+  margin:0 !important;
+  color:#775d4c !important;
+  font-size:14px !important;
+  line-height:1.7 !important;
+}
+
+/* ===== SCENES ===== */
+body.questions-lesson-page.dialogues-lesson-page .question-scene-card{
+  padding:22px !important;
+  overflow:visible !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .question-scene-head{
+  margin-bottom:16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .question-scene-head span{
+  display:inline-flex !important;
+  align-items:center !important;
+  min-height:30px !important;
+  padding:0 12px !important;
+  border-radius:999px !important;
+  background:#f9e7cf !important;
+  color:#986333 !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .question-scene-head h3{
+  margin:10px 0 0 !important;
+  font-size:28px !important;
+  line-height:1.2 !important;
+  color:#4f301f !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-audio-row{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:10px !important;
+  margin:0 0 16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-audio-btn{
+  min-height:40px !important;
+  padding:0 16px !important;
+  border-radius:999px !important;
+  border:0 !important;
+  background:linear-gradient(180deg,#efb34f 0%, #e39b28 100%) !important;
+  color:#fff !important;
+  font-weight:700 !important;
+  box-shadow:0 10px 18px rgba(227,155,40,.20) !important;
+  cursor:pointer !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-audio-btn-ghost{
+  background:#fbf4eb !important;
+  color:#6f4d35 !important;
+  border:1px solid rgba(127,79,47,.10) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-script-card{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:12px !important;
+  margin-bottom:16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-line-block{
+  padding:16px 18px !important;
+  border-radius:18px !important;
+  background:#fffaf5 !important;
+  border:1px solid rgba(127,79,47,.07) !important;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-line-block.is-playing{
+  transform:translateY(-1px) !important;
+  background:linear-gradient(180deg, #fffaf3 0%, #fff2db 100%) !important;
+  border-color:rgba(223,170,73,.45) !important;
+  box-shadow:0 10px 24px rgba(185,132,44,.14) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-line-top{
+  display:flex !important;
+  align-items:flex-start !important;
+  justify-content:space-between !important;
+  gap:12px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-line-de{
+  margin:0 !important;
+  flex:1 1 auto !important;
+  font-size:17px !important;
+  font-weight:700 !important;
+  color:#573421 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-line-th{
+  font-size:15px !important;
+  line-height:1.7 !important;
+  color:#7b5c47 !important;
+  margin-top:6px !important;
+  margin-bottom:4px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-line-pron{
+  font-size:13px !important;
+  line-height:1.6 !important;
+  color:#a47a54 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-line-audio-btn{
+  width:34px !important;
+  min-width:34px !important;
+  height:34px !important;
+  padding:0 !important;
+  border-radius:10px !important;
+  border:1px solid rgba(127,79,47,.10) !important;
+  background:#fff !important;
+  color:#6a4b39 !important;
+  box-shadow:0 4px 10px rgba(101,58,31,.06) !important;
+  cursor:pointer !important;
+  flex-shrink:0 !important;
+  font-weight:700 !important;
+  line-height:1 !important;
+  transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease, background .16s ease, color .16s ease !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-line-audio-btn.is-playing{
+  background:#f0b63e !important;
+  color:#fff !important;
+  border-color:#e0a22d !important;
+  box-shadow:0 10px 20px rgba(224,165,41,.24) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-audio-btn.is-playing{
+  transform:translateY(-1px) !important;
+  box-shadow:0 10px 20px rgba(224,165,41,.28) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-now-playing-bar{
+  display:flex !important;
+  align-items:center !important;
+  gap:12px !important;
+  margin:14px 0 18px !important;
+  padding:12px 14px !important;
+  border-radius:16px !important;
+  background:linear-gradient(180deg, #fffaf0 0%, #f8efe0 100%) !important;
+  border:1px solid rgba(155,104,46,.10) !important;
+  box-shadow:0 8px 20px rgba(101,58,31,.05) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-now-playing-label{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  padding:6px 10px !important;
+  border-radius:999px !important;
+  background:#f0dfbf !important;
+  color:#875629 !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  letter-spacing:.02em !important;
+  white-space:nowrap !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-now-playing-text{
+  color:#6f5138 !important;
+  font-size:14px !important;
+  line-height:1.4 !important;
+  font-weight:600 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page [data-shadowing-trigger]{
+  margin:0 0 18px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page [data-shadowing-trigger].is-playing{
+  background:#efe7fb !important;
+  color:#6a46a3 !important;
+  border-color:#d7c8f1 !important;
+  box-shadow:0 10px 22px rgba(106,70,163,.16) !important;
+}
+
+/* ===== NOTE GRID ===== */
+body.questions-lesson-page.dialogues-lesson-page .dialogue-note-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+  gap:14px !important;
+  margin-bottom:16px !important;
+  align-items:start !important;
+  overflow:visible !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-note-card{
+  overflow:visible !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-video-box,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-minigame-box{
+  padding:18px !important;
+  margin-top:16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-video-box h4,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-minigame-box h4{
+  margin:10px 0 8px !important;
+  font-size:21px !important;
+  color:#533220 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .quiz-options{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:10px !important;
+  margin-top:12px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .question-quiz-option{
+  min-height:40px !important;
+  padding:0 14px !important;
+  border-radius:999px !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  background:#fff !important;
+  color:#6a4b39 !important;
+  cursor:pointer !important;
+  font-weight:600 !important;
+}
+
+/* ===== GRAMMAR POPUP ===== */
+body.questions-lesson-page.dialogues-lesson-page .dialogue-grammar-card{
+  position:relative !important;
+  z-index:20 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-grammar-popover-wrap{
+  position:relative !important;
+  display:inline-block !important;
+  margin-top:10px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-mini-toggle{
+  margin-top:0 !important;
+  border:none !important;
+  background:#f3e4c8 !important;
+  color:#8b5b2f !important;
+  border-radius:999px !important;
+  padding:8px 12px !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  cursor:pointer !important;
+  position:relative !important;
+  z-index:22 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-grammar-extra[hidden]{
+  display:none !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-grammar-extra{
+  position:absolute !important;
+  top:calc(100% + 10px) !important;
+  left:0 !important;
+  width:min(390px, calc(100vw - 72px)) !important;
+  padding:14px !important;
+  border-radius:18px !important;
+  background:#fffaf5 !important;
+  border:1px solid rgba(127,79,47,.10) !important;
+  box-shadow:0 18px 34px rgba(101,58,31,.14) !important;
+  z-index:50 !important;
+  display:grid !important;
+  gap:8px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-grammar-extra::before{
+  content:"" !important;
+  position:absolute !important;
+  top:-8px !important;
+  left:18px !important;
+  width:14px !important;
+  height:14px !important;
+  background:#fffaf5 !important;
+  border-left:1px solid rgba(127,79,47,.10) !important;
+  border-top:1px solid rgba(127,79,47,.10) !important;
+  transform:rotate(45deg) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-grammar-example{
+  padding:8px 10px !important;
+  border-radius:12px !important;
+  background:#fff8ee !important;
+  color:#6c513a !important;
+  font-size:13px !important;
+  line-height:1.45 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-grammar-wrong{
+  background:#fff1ef !important;
+  color:#a14c44 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-grammar-right{
+  background:#eefaf2 !important;
+  color:#2f7a52 !important;
+}
+
+/* ===== PRACTICE ===== */
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-shell{
+  overflow:hidden !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-head{
+  display:flex !important;
+  align-items:flex-start !important;
+  justify-content:space-between !important;
+  gap:24px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-subline{
+  margin:10px 0 0 !important;
+  color:#7a5c48 !important;
+  line-height:1.75 !important;
+  max-width:62ch !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-progress{
+  min-width:240px !important;
+  padding:14px 16px !important;
+  border-radius:18px !important;
+  background:#fbf5ee !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  box-shadow:0 6px 16px rgba(101,58,31,.04) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-progress-label{
+  display:block !important;
+  margin-bottom:8px !important;
+  color:#8c6a52 !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  text-transform:uppercase !important;
+  letter-spacing:.04em !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-progress-bar{
+  width:100% !important;
+  height:10px !important;
+  border-radius:999px !important;
+  background:#efe3d4 !important;
+  overflow:hidden !important;
+  margin-bottom:8px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-progress-bar span{
+  display:block !important;
+  height:100% !important;
+  border-radius:999px !important;
+  background:linear-gradient(90deg,#efb34f 0%, #e39b28 100%) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-progress strong{
+  color:#5a3722 !important;
+  font-size:14px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-toprow{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:10px !important;
+  margin:18px 0 18px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-mode-pill{
+  display:inline-flex !important;
+  align-items:center !important;
+  min-height:36px !important;
+  padding:0 14px !important;
+  border-radius:999px !important;
+  background:#fbf3ea !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  color:#7b5b46 !important;
+  font-size:13px !important;
+  font-weight:700 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-mode-pill.is-active{
+  background:linear-gradient(180deg,#efb34f 0%, #e39b28 100%) !important;
+  color:#fff !important;
+  border-color:transparent !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-exercise-grid{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-grid{
+  margin-top:4px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-card{
+  position:relative !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-exercise-card span{
+  display:inline-flex !important;
+  width:30px !important;
+  height:30px !important;
+  align-items:center !important;
+  justify-content:center !important;
+  border-radius:999px !important;
+  background:#f7e1c0 !important;
+  color:#9b6635 !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  margin-bottom:10px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-exercise-card strong{
+  display:block !important;
+  margin-bottom:8px !important;
+  color:#533220 !important;
+  font-size:18px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .questions-exercise-card div{
+  margin-top:12px !important;
+  padding:12px 14px !important;
+  border-radius:14px !important;
+  background:#fffaf5 !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  color:#7a5943 !important;
+  line-height:1.6 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-tag{
+  display:inline-flex !important;
+  margin-top:12px !important;
+  padding:6px 10px !important;
+  border-radius:999px !important;
+  background:#fffaf5 !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  color:#8c6a52 !important;
+  font-size:11px !important;
+  font-weight:700 !important;
+  text-transform:uppercase !important;
+  letter-spacing:.03em !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-audio-placeholder{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:10px !important;
+  margin-top:12px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-bottom{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:20px !important;
+  margin-top:20px !important;
+  padding:18px !important;
+  border-radius:22px !important;
+  background:#fbf5ee !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  box-shadow:0 6px 16px rgba(101,58,31,.04) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-tip strong{
+  display:block !important;
+  margin-bottom:6px !important;
+  color:#573421 !important;
+  font-size:16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-tip p{
+  margin:0 !important;
+  color:#7a5c48 !important;
+  line-height:1.7 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-actions{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:10px !important;
+}
+
+/* ===== HANS SECTION ===== */
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-panel{
+  display:grid !important;
+  grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr) !important;
+  gap:20px !important;
+  align-items:stretch !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-panel-left,
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-card{
+  padding:22px !important;
+  border-radius:24px !important;
+  background:#fbf5ee !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  box-shadow:0 6px 16px rgba(101,58,31,.04) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-badge-row{
+  display:flex !important;
+  align-items:center !important;
+  gap:10px !important;
+  margin-bottom:12px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-icon{
+  width:44px !important;
+  height:44px !important;
+  border-radius:14px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  background:linear-gradient(180deg,#f6c76c 0%, #eba83a 100%) !important;
+  font-size:22px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-panel-left h3{
+  margin:0 0 12px !important;
+  font-size:32px !important;
+  line-height:1.12 !important;
+  color:#4f301f !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-panel-left p{
+  margin:0 !important;
+  color:#765845 !important;
+  line-height:1.8 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-mini-points{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:12px !important;
+  margin:18px 0 18px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-mini-point{
+  padding:14px !important;
+  border-radius:18px !important;
+  background:#fffaf5 !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-mini-point strong{
+  display:block !important;
+  margin-bottom:6px !important;
+  color:#573421 !important;
+  font-size:14px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-mini-point span{
+  color:#80614c !important;
+  font-size:13px !important;
+  line-height:1.6 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-card-top strong{
+  display:block !important;
+  color:#573421 !important;
+  font-size:20px !important;
+  margin-bottom:4px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-card-top small{
+  color:#8a6852 !important;
+  font-size:13px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-quick-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:10px !important;
+  margin:18px 0 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-open-btn{
+  width:100% !important;
+  justify-content:center !important;
+}
+
+/* ===== FLOATING HANS ===== */
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-fab{
+  position:fixed !important;
+  right:22px !important;
+  bottom:22px !important;
+  z-index:1200 !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:10px !important;
+  border:0 !important;
+  border-radius:999px !important;
+  padding:10px 14px !important;
+  background:linear-gradient(180deg,#f4c266 0%, #e7a33a 100%) !important;
+  color:#56331f !important;
+  box-shadow:0 12px 22px rgba(101,58,31,.18) !important;
+  cursor:pointer !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-fab-owl{
+  width:42px !important;
+  height:42px !important;
+  border-radius:999px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  background:rgba(255,255,255,.38) !important;
+  font-size:22px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-fab-copy{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  line-height:1.1 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-fab-copy strong{
+  font-size:15px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-fab-copy small{
+  font-size:11px !important;
+  opacity:.8 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-floating{
+  position:fixed !important;
+  right:22px !important;
+  bottom:82px !important;
+  width:340px !important;
+  z-index:1199 !important;
+  opacity:0 !important;
+  transform:translateY(16px) scale(.98) !important;
+  pointer-events:none !important;
+  transition:all .22s ease !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-floating.is-open{
+  opacity:1 !important;
+  transform:translateY(0) scale(1) !important;
+  pointer-events:auto !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-floating .hans-sidechat{
+  background:linear-gradient(180deg,#fff8f0 0%, #f1deca 100%) !important;
+  border:1px solid rgba(127,79,47,.10) !important;
+  box-shadow:0 18px 34px rgba(101,58,31,.14) !important;
+  border-radius:24px !important;
+  overflow:hidden !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1180px){
+  body.questions-lesson-page.dialogues-lesson-page .topbar-inner{
+    gap:18px !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .topnav{
+    gap:20px !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .questions-hero-layout.dialogues-hero-layout{
+    grid-template-columns:1fr !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .questions-hero-stage.dialogues-hero-stage{
+    max-width:480px !important;
+    margin:0 auto !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .questions-word-grid,
+  body.questions-lesson-page.dialogues-lesson-page .questions-exercise-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-panel{
+    grid-template-columns:1fr !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-mini-points{
+    grid-template-columns:1fr !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-head,
+  body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-bottom{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+  }
+}
+
+@media (max-width: 780px){
+  body.questions-lesson-page.dialogues-lesson-page .dialogues-layout{
+    padding:0 12px 100px !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .questions-hero-copy.dialogues-hero-copy h1{
+    font-size:36px !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .section-head h2{
+    font-size:30px !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .questions-value-grid,
+  body.questions-lesson-page.dialogues-lesson-page .questions-two-grid,
+  body.questions-lesson-page.dialogues-lesson-page .questions-word-grid,
+  body.questions-lesson-page.dialogues-lesson-page .questions-character-grid,
+  body.questions-lesson-page.dialogues-lesson-page .dialogue-note-grid,
+  body.questions-lesson-page.dialogues-lesson-page .questions-exercise-grid{
+    grid-template-columns:1fr !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .questions-hero-stage.dialogues-hero-stage{
+    max-width:100% !important;
+    padding:56px 8px 8px !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .dialogue-grammar-extra{
+    width:min(320px, calc(100vw - 56px)) !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-fab{
+    right:14px !important;
+    bottom:14px !important;
+  }
+
+  body.questions-lesson-page.dialogues-lesson-page .dialogues-hans-floating{
+    right:14px !important;
+    bottom:74px !important;
+    width:calc(100vw - 28px) !important;
+    max-width:360px !important;
+  }
+}
+/* ===== DIALOGUES PRACTICE INTERACTIVE PASS 1 ===== */
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-quiz-options,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-order-options{
+  margin-top:12px !important;
+  padding:0 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  gap:10px !important;
+  background:transparent !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-quiz-option,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-order-chip{
+  width:100% !important;
+  min-height:44px !important;
+  padding:12px 14px !important;
+  border-radius:14px !important;
+  border:1px solid rgba(127,79,47,.10) !important;
+  background:#fffaf5 !important;
+  color:#6a4b39 !important;
+  text-align:left !important;
+  font-weight:600 !important;
+  cursor:pointer !important;
+  transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease, background .15s ease !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-quiz-option:hover,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-order-chip:hover{
+  transform:translateY(-1px) !important;
+  box-shadow:0 8px 16px rgba(101,58,31,.08) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-quiz-option.is-correct,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-order-chip.is-correct{
+  background:#eefaf2 !important;
+  border-color:#7ec59a !important;
+  color:#2f7a52 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-quiz-option.is-wrong,
+body.questions-lesson-page.dialogues-lesson-page .dialogue-order-chip.is-wrong{
+  background:#fff1ef !important;
+  border-color:#e3a19a !important;
+  color:#a14c44 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-order-chip.is-locked{
+  opacity:1 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogue-practice-feedback{
+  min-height:22px !important;
+  margin-top:12px !important;
+  color:#7a5c48 !important;
+  font-size:13px !important;
+  font-weight:600 !important;
+}
+/* ===== DIALOGUES COMPLETION STATE ===== */
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-complete-box[hidden]{
+  display:none !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-complete-box{
+  margin-top:20px !important;
+  padding:22px !important;
+  border-radius:24px !important;
+  background:linear-gradient(180deg, #fff8ef 0%, #f7ead8 100%) !important;
+  border:1px solid rgba(127,79,47,.10) !important;
+  box-shadow:0 12px 28px rgba(101,58,31,.08) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-complete-box h3{
+  margin:12px 0 10px !important;
+  font-size:28px !important;
+  line-height:1.15 !important;
+  color:#53311f !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-complete-box p{
+  margin:0 !important;
+  max-width:62ch !important;
+  color:#765845 !important;
+  line-height:1.75 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-complete-rewards{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:14px !important;
+  margin-top:18px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-complete-reward{
+  padding:16px !important;
+  border-radius:18px !important;
+  background:#fffaf5 !important;
+  border:1px solid rgba(127,79,47,.08) !important;
+  box-shadow:0 6px 16px rgba(101,58,31,.04) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-complete-reward strong{
+  display:block !important;
+  margin-bottom:6px !important;
+  color:#573421 !important;
+  font-size:16px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-complete-reward span{
+  color:#8a6852 !important;
+  font-size:13px !important;
+  line-height:1.5 !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-complete-actions{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:12px !important;
+  margin-top:18px !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-card.is-complete{
+  box-shadow:0 10px 22px rgba(101,58,31,.08) !important;
+}
+
+body.questions-lesson-page.dialogues-lesson-page .dialogues-practice-shell.is-complete{
+  box-shadow:0 12px 28px rgba(101,58,31,.08) !important;
+}
+
+@media (max-width: 780px){
+  body.questions-lesson-page.dialogues-lesson-page .dialogues-complete-rewards{
+    grid-template-columns:1fr !important;
+  }
+}

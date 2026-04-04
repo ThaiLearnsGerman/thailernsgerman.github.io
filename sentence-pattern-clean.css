@@ -1,0 +1,1255 @@
+body.questions-lesson-page.sentence-pattern-page {
+  background:
+    linear-gradient(180deg, #d39b72 0%, #d8a67d 20%, #e3bc99 46%, #f0d8bf 72%, #f6e9da 100%) !important;
+  color: #5a3722 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .topbar {
+  background: linear-gradient(180deg, #cf956b 0%, #d29a72 100%) !important;
+  border-bottom: 1px solid rgba(117, 72, 41, .08) !important;
+  box-shadow: none !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .topbar-inner {
+  max-width: 1220px !important;
+  min-height: 78px !important;
+  padding: 0 24px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 28px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  text-decoration: none !important;
+  flex-shrink: 0 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .brand-mark {
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 13px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #7f4d35 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .brand-copy {
+  display: flex !important;
+  flex-direction: column !important;
+  line-height: 1.1 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .brand-copy strong {
+  color: #4f301f !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .brand-copy span {
+  color: #7b5a46 !important;
+  font-size: 12px !important;
+  margin-top: 3px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .topnav {
+  display: flex !important;
+  align-items: center !important;
+  gap: 34px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .topnav a {
+  color: #5a3722 !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  font-size: 15px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .topbar-stats {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin-left: auto !important;
+  flex-shrink: 0 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .top-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 42px !important;
+  padding: 0 16px !important;
+  border-radius: 999px !important;
+  background: #fbf5ed !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  color: #5a3722 !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .top-pill-ghost {
+  width: 46px !important;
+  min-width: 46px !important;
+  padding: 0 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-main-wrap {
+  padding-top: 14px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-layout {
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 20px 110px !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 340px !important;
+  gap: 22px !important;
+  align-items: start !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-main {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 22px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-shell {
+  background: linear-gradient(180deg, #f7ecdf 0%, #f1e0ce 100%) !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  border-radius: 28px !important;
+  box-shadow: 0 8px 20px rgba(101, 58, 31, .05) !important;
+  padding: 22px 24px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-shell {
+  padding: 22px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.06fr) minmax(320px, .94fr) !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .section-kicker,
+body.questions-lesson-page.sentence-pattern-page .small-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 30px !important;
+  padding: 0 12px !important;
+  border-radius: 999px !important;
+  background: #efd09f !important;
+  color: #94602f !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: .03em !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-copy h1 {
+  margin: 10px 0 14px !important;
+  font-size: 58px !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.03em !important;
+  color: #56331f !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-lead,
+body.questions-lesson-page.sentence-pattern-page .sentence-section-sub {
+  color: #745845 !important;
+  line-height: 1.75 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin: 18px 0 16px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .hero-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 46px !important;
+  padding: 0 18px !important;
+  border-radius: 999px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .hero-btn-primary {
+  background: linear-gradient(180deg, #efb34f 0%, #e39b28 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 18px rgba(227, 155, 40, .20) !important;
+  border: none !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .hero-btn-secondary {
+  background: #fbf4eb !important;
+  color: #6f4d35 !important;
+  border: 1px solid rgba(127, 79, 47, .10) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-pill-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin: 0 0 18px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-pill-row span {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 34px !important;
+  padding: 0 14px !important;
+  border-radius: 999px !important;
+  background: #fbf3ea !important;
+  color: #7a5a45 !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-value-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-value-card,
+body.questions-lesson-page.sentence-pattern-page .sentence-info-card,
+body.questions-lesson-page.sentence-pattern-page .sentence-category-card,
+body.questions-lesson-page.sentence-pattern-page .sentence-rule-card,
+body.questions-lesson-page.sentence-pattern-page .sentence-sound-card,
+body.questions-lesson-page.sentence-pattern-page .sentence-example-card,
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-card,
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-card,
+body.questions-lesson-page.sentence-pattern-page .sentence-next-box {
+  padding: 18px !important;
+  border-radius: 22px !important;
+  background: #fbf5ee !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  box-shadow: 0 6px 16px rgba(101, 58, 31, .04) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-value-card strong,
+body.questions-lesson-page.sentence-pattern-page .sentence-info-card h3,
+body.questions-lesson-page.sentence-pattern-page .sentence-rule-card strong,
+body.questions-lesson-page.sentence-pattern-page .sentence-category-card strong,
+body.questions-lesson-page.sentence-pattern-page .sentence-sound-card strong {
+  display: block !important;
+  margin-bottom: 8px !important;
+  color: #553522 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage {
+  min-height: 420px !important;
+  border-radius: 24px !important;
+  background:
+    radial-gradient(circle at top left, rgba(255, 245, 232, .95) 0%, rgba(241, 224, 206, .85) 38%, rgba(232, 204, 176, .85) 100%) !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 22px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-floating-card {
+  position: absolute !important;
+  width: 220px !important;
+  padding: 16px !important;
+  border-radius: 20px !important;
+  background: #fffaf5 !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  box-shadow: 0 8px 18px rgba(101, 58, 31, .08) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-floating-card span {
+  display: block !important;
+  font-size: 12px !important;
+  color: #94602f !important;
+  font-weight: 700 !important;
+  margin-bottom: 6px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-floating-card strong {
+  display: block !important;
+  font-size: 20px !important;
+  color: #53311f !important;
+  line-height: 1.2 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-floating-card small {
+  display: block !important;
+  margin-top: 6px !important;
+  color: #7b5c47 !important;
+  line-height: 1.5 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sf-1 {
+  top: 28px;
+  left: 24px;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sf-2 {
+  top: 86px;
+  right: 24px;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sf-3 {
+  bottom: 92px;
+  left: 42px;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sf-4 {
+  bottom: 26px;
+  right: 30px;
+}
+
+body.questions-lesson-page.sentence-pattern-page .section-head {
+  margin-bottom: 16px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .section-head h2 {
+  margin: 10px 0 0 !important;
+  font-size: 38px !important;
+  line-height: 1.12 !important;
+  color: #53311f !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-two-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-category-grid,
+body.questions-lesson-page.sentence-pattern-page .sentence-rules-grid,
+body.questions-lesson-page.sentence-pattern-page .sentence-sound-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-category-card ul {
+  margin: 10px 0 0 !important;
+  padding-left: 18px !important;
+  color: #765845 !important;
+  line-height: 1.75 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-alert-box {
+  display: flex !important;
+  gap: 12px !important;
+  align-items: flex-start !important;
+  padding: 16px 18px !important;
+  border-radius: 20px !important;
+  background: #fff4df !important;
+  border: 1px solid rgba(227, 155, 40, .18) !important;
+  margin-bottom: 16px !important;
+  color: #6e492d !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-table {
+  border-radius: 22px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-table-head,
+body.questions-lesson-page.sentence-pattern-page .sentence-table-row {
+  display: grid !important;
+  grid-template-columns: 1.2fr 1fr 1fr .8fr !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-table-head>div {
+  padding: 14px 16px !important;
+  background: #f1deca !important;
+  color: #6d4930 !important;
+  font-weight: 800 !important;
+  font-size: 13px !important;
+  border-right: 1px solid rgba(127, 79, 47, .08) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-table-row>div {
+  padding: 14px 16px !important;
+  background: #fffaf5 !important;
+  color: #765845 !important;
+  border-top: 1px solid rgba(127, 79, 47, .08) !important;
+  border-right: 1px solid rgba(127, 79, 47, .08) !important;
+  line-height: 1.6 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-flow-box {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-bottom: 16px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-flow-step {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 44px !important;
+  padding: 0 16px !important;
+  border-radius: 999px !important;
+  background: #fffaf5 !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  color: #6d4a33 !important;
+  font-weight: 700 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-example-pair {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-head {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  gap: 24px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-progress {
+  min-width: 240px !important;
+  padding: 14px 16px !important;
+  border-radius: 18px !important;
+  background: #fbf5ee !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-progress-label {
+  display: block !important;
+  margin-bottom: 8px !important;
+  color: #8c6a52 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-progress-bar {
+  width: 100% !important;
+  height: 10px !important;
+  border-radius: 999px !important;
+  background: #efe3d4 !important;
+  overflow: hidden !important;
+  margin-bottom: 8px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-progress-bar span {
+  display: block !important;
+  height: 100% !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, #efb34f 0%, #e39b28 100%) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  margin-top: 16px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-card span {
+  display: inline-flex !important;
+  width: 30px !important;
+  height: 30px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 999px !important;
+  background: #f7e1c0 !important;
+  color: #9b6635 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-card strong {
+  display: block !important;
+  margin-bottom: 8px !important;
+  color: #533220 !important;
+  font-size: 18px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-quiz-options,
+body.questions-lesson-page.sentence-pattern-page .sentence-order-options {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  margin-top: 12px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-quiz-option,
+body.questions-lesson-page.sentence-pattern-page .sentence-order-chip {
+  width: 100% !important;
+  min-height: 44px !important;
+  padding: 12px 14px !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(127, 79, 47, .10) !important;
+  background: #fffaf5 !important;
+  color: #6a4b39 !important;
+  text-align: left !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-quiz-option.is-correct,
+body.questions-lesson-page.sentence-pattern-page .sentence-order-chip.is-correct {
+  background: #eefaf2 !important;
+  border-color: #7ec59a !important;
+  color: #2f7a52 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-quiz-option.is-wrong,
+body.questions-lesson-page.sentence-pattern-page .sentence-order-chip.is-wrong {
+  background: #fff1ef !important;
+  border-color: #e3a19a !important;
+  color: #a14c44 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-feedback {
+  min-height: 22px !important;
+  margin-top: 12px !important;
+  color: #7a5c48 !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-practice-tag {
+  display: inline-flex !important;
+  margin-top: 12px !important;
+  padding: 6px 10px !important;
+  border-radius: 999px !important;
+  background: #fffaf5 !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  color: #8c6a52 !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-audio-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-top: 12px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-complete-box[hidden] {
+  display: none !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-complete-box {
+  margin-top: 20px !important;
+  padding: 22px !important;
+  border-radius: 24px !important;
+  background: linear-gradient(180deg, #fff8ef 0%, #f7ead8 100%) !important;
+  border: 1px solid rgba(127, 79, 47, .10) !important;
+  box-shadow: 0 12px 28px rgba(101, 58, 31, .08) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-complete-box h3 {
+  margin: 12px 0 10px !important;
+  font-size: 28px !important;
+  color: #53311f !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-complete-rewards {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin-top: 18px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-complete-reward {
+  padding: 16px !important;
+  border-radius: 18px !important;
+  background: #fffaf5 !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-complete-reward strong {
+  display: block !important;
+  margin-bottom: 6px !important;
+  color: #573421 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-complete-reward span {
+  color: #8a6852 !important;
+  font-size: 13px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-complete-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  margin-top: 18px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-next-box {
+  padding: 22px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-sidebar {
+  position: sticky !important;
+  top: 100px !important;
+}
+
+@media (max-width: 1180px) {
+  body.questions-lesson-page.sentence-pattern-page .sentence-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-sidebar {
+    position: static !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-category-grid,
+  body.questions-lesson-page.sentence-pattern-page .sentence-rules-grid,
+  body.questions-lesson-page.sentence-pattern-page .sentence-sound-grid,
+  body.questions-lesson-page.sentence-pattern-page .sentence-value-grid,
+  body.questions-lesson-page.sentence-pattern-page .sentence-practice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 780px) {
+  body.questions-lesson-page.sentence-pattern-page .sentence-layout {
+    padding: 0 12px 100px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-copy h1 {
+    font-size: 36px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .section-head h2 {
+    font-size: 30px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-two-grid,
+  body.questions-lesson-page.sentence-pattern-page .sentence-category-grid,
+  body.questions-lesson-page.sentence-pattern-page .sentence-rules-grid,
+  body.questions-lesson-page.sentence-pattern-page .sentence-sound-grid,
+  body.questions-lesson-page.sentence-pattern-page .sentence-value-grid,
+  body.questions-lesson-page.sentence-pattern-page .sentence-example-pair,
+  body.questions-lesson-page.sentence-pattern-page .sentence-practice-grid,
+  body.questions-lesson-page.sentence-pattern-page .sentence-complete-rewards {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-practice-head {
+    flex-direction: column !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-table-head,
+  body.questions-lesson-page.sentence-pattern-page .sentence-table-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-floating-card {
+    position: relative !important;
+    width: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    margin-bottom: 12px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage {
+    min-height: auto !important;
+  }
+}
+
+/* ===== SENTENCE HERO FIX: same family as Dialogues ===== */
+
+body.questions-lesson-page.sentence-pattern-page .questions-hero-shell.sentence-hero-shell {
+  padding: 22px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .questions-hero-layout.sentence-hero-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, .95fr) !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .questions-hero-copy.sentence-hero-copy h1 {
+  margin: 8px 0 14px !important;
+  font-size: 58px !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.03em !important;
+  color: #56331f !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage {
+  position: relative !important;
+  min-height: 420px !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  background: #ead4bd !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(127, 79, 47, .08),
+    0 8px 18px rgba(101, 58, 31, .06) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-real-image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 420px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage .questions-stage-badge {
+  position: absolute !important;
+  top: 16px !important;
+  left: 16px !important;
+  z-index: 2 !important;
+}
+
+@media (max-width:1180px) {
+  body.questions-lesson-page.sentence-pattern-page .questions-hero-layout.sentence-hero-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage {
+    min-height: 360px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-real-image {
+    min-height: 360px !important;
+  }
+}
+
+@media (max-width:780px) {
+  body.questions-lesson-page.sentence-pattern-page .questions-hero-copy.sentence-hero-copy h1 {
+    font-size: 36px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage {
+    min-height: 300px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-real-image {
+    min-height: 300px !important;
+  }
+}
+
+/* ===== SENTENCE LAYOUT FIX: no old sidebar ===== */
+
+body.questions-lesson-page.sentence-pattern-page .sentence-layout {
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 20px 110px !important;
+  display: block !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-main {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 22px !important;
+}
+
+/* ===== SENTENCE HANS SECTION ===== */
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-panel {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr) !important;
+  gap: 20px !important;
+  align-items: stretch !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-panel-left,
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-open-card {
+  padding: 22px !important;
+  border-radius: 24px !important;
+  background: #fbf5ee !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  box-shadow: 0 6px 16px rgba(101, 58, 31, .04) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-badge-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 12px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-icon {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(180deg, #f6c76c 0%, #eba83a 100%) !important;
+  font-size: 22px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-panel-left h3 {
+  margin: 0 0 12px !important;
+  font-size: 32px !important;
+  line-height: 1.12 !important;
+  color: #4f301f !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-panel-left p {
+  margin: 0 !important;
+  color: #765845 !important;
+  line-height: 1.8 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-mini-points {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+  margin: 18px 0 18px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-mini-point {
+  padding: 14px !important;
+  border-radius: 18px !important;
+  background: #fffaf5 !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-mini-point strong {
+  display: block !important;
+  margin-bottom: 6px !important;
+  color: #573421 !important;
+  font-size: 14px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-mini-point span {
+  color: #80614c !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-card-top strong {
+  display: block !important;
+  color: #573421 !important;
+  font-size: 20px !important;
+  margin-bottom: 4px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-card-top small {
+  color: #8a6852 !important;
+  font-size: 13px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-quick-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  margin: 18px 0 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-open-btn {
+  width: 100% !important;
+  justify-content: center !important;
+}
+
+/* ===== FLOATING HANS ===== */
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-fab {
+  position: fixed !important;
+  right: 22px !important;
+  bottom: 22px !important;
+  z-index: 1200 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  padding: 10px 14px !important;
+  background: linear-gradient(180deg, #f4c266 0%, #e7a33a 100%) !important;
+  color: #56331f !important;
+  box-shadow: 0 12px 22px rgba(101, 58, 31, .18) !important;
+  cursor: pointer !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-fab-owl {
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 999px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(255, 255, 255, .38) !important;
+  font-size: 22px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-fab-copy {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  line-height: 1.1 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-fab-copy strong {
+  font-size: 15px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-fab-copy small {
+  font-size: 11px !important;
+  opacity: .8 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-floating {
+  position: fixed !important;
+  right: 22px !important;
+  bottom: 82px !important;
+  width: 340px !important;
+  z-index: 1199 !important;
+  opacity: 0 !important;
+  transform: translateY(16px) scale(.98) !important;
+  pointer-events: none !important;
+  transition: all .22s ease !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-floating.is-open {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+  pointer-events: auto !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hans-floating .hans-sidechat {
+  background: linear-gradient(180deg, #fff8f0 0%, #f1deca 100%) !important;
+  border: 1px solid rgba(127, 79, 47, .10) !important;
+  box-shadow: 0 18px 34px rgba(101, 58, 31, .14) !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+}
+
+@media (max-width:980px) {
+  body.questions-lesson-page.sentence-pattern-page .sentence-hans-panel {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hans-mini-points {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width:780px) {
+  body.questions-lesson-page.sentence-pattern-page .sentence-layout {
+    padding: 0 12px 100px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hans-fab {
+    right: 14px !important;
+    bottom: 14px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hans-floating {
+    right: 14px !important;
+    bottom: 74px !important;
+    width: calc(100vw - 28px) !important;
+    max-width: 360px !important;
+  }
+}
+
+/* ===== SENTENCE PASS 3: table + grammar premium ===== */
+
+body.questions-lesson-page.sentence-pattern-page .sentence-top15-shell {
+  overflow: hidden !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-focus-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin: 0 0 16px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-focus-row span {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 34px !important;
+  padding: 0 14px !important;
+  border-radius: 999px !important;
+  background: #fbf3ea !important;
+  color: #7a5a45 !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-table-premium {
+  border-radius: 22px !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  box-shadow: 0 8px 20px rgba(101, 58, 31, .05) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-table-premium .sentence-table-head,
+body.questions-lesson-page.sentence-pattern-page .sentence-table-premium .sentence-table-row {
+  display: grid !important;
+  grid-template-columns: 1.15fr 1fr 1fr .75fr .5fr !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-table-premium .sentence-table-head>div {
+  padding: 14px 16px !important;
+  background: #f1deca !important;
+  color: #6d4930 !important;
+  font-weight: 800 !important;
+  font-size: 13px !important;
+  border-right: 1px solid rgba(127, 79, 47, .08) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-table-premium .sentence-table-row>div {
+  padding: 14px 16px !important;
+  background: #fffaf5 !important;
+  color: #765845 !important;
+  border-top: 1px solid rgba(127, 79, 47, .08) !important;
+  border-right: 1px solid rgba(127, 79, 47, .08) !important;
+  line-height: 1.6 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-table-premium .sentence-table-row.is-key>div {
+  background: linear-gradient(180deg, #fffaf3 0%, #fff3e1 100%) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-row-audio {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-row-audio-btn {
+  width: 36px !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(127, 79, 47, .10) !important;
+  background: #fff !important;
+  color: #6a4b39 !important;
+  box-shadow: 0 4px 10px rgba(101, 58, 31, .06) !important;
+  cursor: pointer !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  padding: 0 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-row-audio-btn:hover {
+  transform: translateY(-1px) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-micro-note {
+  margin-top: 16px !important;
+  padding: 14px 16px !important;
+  border-radius: 18px !important;
+  background: #fff7eb !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  color: #765845 !important;
+  line-height: 1.7 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-micro-note strong {
+  color: #573421 !important;
+}
+
+/* grammar richer */
+body.questions-lesson-page.sentence-pattern-page .sentence-rules-grid-rich .sentence-rule-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-rule-note {
+  margin-top: 12px !important;
+  padding: 10px 12px !important;
+  border-radius: 14px !important;
+  background: #fffaf5 !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  color: #7a5c48 !important;
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-mistake-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  margin-top: 18px !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-mistake-card {
+  padding: 18px !important;
+  border-radius: 20px !important;
+  background: #fbf5ee !important;
+  border: 1px solid rgba(127, 79, 47, .08) !important;
+  box-shadow: 0 6px 16px rgba(101, 58, 31, .04) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-mistake-card strong {
+  display: block !important;
+  margin: 8px 0 !important;
+  color: #553522 !important;
+  line-height: 1.45 !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-mistake-card p {
+  margin: 0 !important;
+  color: #765845 !important;
+  line-height: 1.7 !important;
+}
+
+@media (max-width:1180px) {
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-table-premium .sentence-table-head,
+  body.questions-lesson-page.sentence-pattern-page .sentence-table-premium .sentence-table-row {
+    grid-template-columns: 1.1fr .95fr .95fr .7fr .45fr !important;
+  }
+}
+
+@media (max-width:780px) {
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-table-premium .sentence-table-head,
+  body.questions-lesson-page.sentence-pattern-page .sentence-table-premium .sentence-table-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-mistake-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ===== SENTENCE HERO FINAL IMAGE ===== */
+
+body.questions-lesson-page.sentence-pattern-page .questions-hero-layout.sentence-hero-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.05fr) minmax(380px, .95fr) !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage {
+  position: relative !important;
+  min-height: 420px !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  background: #ead4bd !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(127, 79, 47, .08),
+    0 8px 18px rgba(101, 58, 31, .06) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-real-image {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 420px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage .questions-stage-badge {
+  position: absolute !important;
+  top: 16px !important;
+  left: 16px !important;
+  z-index: 2 !important;
+}
+
+@media (max-width:1180px) {
+  body.questions-lesson-page.sentence-pattern-page .questions-hero-layout.sentence-hero-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage {
+    min-height: 360px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-real-image {
+    min-height: 360px !important;
+  }
+}
+
+@media (max-width:780px) {
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage {
+    min-height: 300px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-real-image {
+    min-height: 300px !important;
+  }
+}
+
+/* ===== SENTENCE HERO FINAL IMAGE ===== */
+
+body.questions-lesson-page.sentence-pattern-page .questions-hero-layout.sentence-hero-layout{
+  display:grid !important;
+  grid-template-columns:minmax(0,1.05fr) minmax(380px,.95fr) !important;
+  gap:24px !important;
+  align-items:stretch !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage{
+  position:relative !important;
+  min-height:420px !important;
+  border-radius:24px !important;
+  overflow:hidden !important;
+  background:#ead4bd !important;
+  box-shadow:
+    inset 0 0 0 1px rgba(127,79,47,.08),
+    0 8px 18px rgba(101,58,31,.06) !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-real-image{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  min-height:420px !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+}
+
+body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage .questions-stage-badge{
+  position:absolute !important;
+  top:16px !important;
+  left:16px !important;
+  z-index:2 !important;
+}
+
+@media (max-width:1180px){
+  body.questions-lesson-page.sentence-pattern-page .questions-hero-layout.sentence-hero-layout{
+    grid-template-columns:1fr !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage{
+    min-height:360px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-real-image{
+    min-height:360px !important;
+  }
+}
+
+@media (max-width:780px){
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-stage{
+    min-height:300px !important;
+  }
+
+  body.questions-lesson-page.sentence-pattern-page .sentence-hero-real-image{
+    min-height:300px !important;
+  }
+}
