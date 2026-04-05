@@ -7,494 +7,612 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="vocabulary-clean.css" />
 </head>
-<body class="vocabulary-lesson-page">
+
+<body class="questions-lesson-page vocabulary-lesson-page">
   <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="index.html">
-        <div class="brand-logo">TLG</div>
-        <div>
-          <div class="brand-title">ThaiLearnsGerman</div>
-          <div class="brand-sub">Warm. Clear. Creative.</div>
+    <div class="container topbar-inner">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">TLG</div>
+        <div class="brand-copy">
+          <strong>ThaiLearnsGerman</strong>
+          <span>Warm. Clear. Creative.</span>
         </div>
       </a>
 
-      <nav class="nav-links">
+      <nav class="topnav">
         <a href="index.html">Home</a>
         <a href="learn.html">Learn</a>
         <a href="bootcamp.html">Bootcamp</a>
       </nav>
+
+      <div class="topbar-stats">
+        <span class="top-pill">🪙 124</span>
+        <span class="top-pill">⭐ 7/10 XP</span>
+        <span class="top-pill top-pill-ghost"></span>
+      </div>
     </div>
   </header>
 
-  <main>
-    <div class="container lesson-layout">
-      <div class="lesson-main">
+  <main class="questions-main vocabulary-main-wrap">
+    <div class="container questions-layout vocabulary-layout">
+      <div class="questions-main-col vocabulary-main">
 
         <!-- HERO -->
-        <section class="hero hero-small">
-          <div class="learn-hero-card">
-            <div class="learn-hero-copy">
-              <div class="badge">บทเรียน 07 • Mission Markt</div>
-              <h1>สร้างคลังคำศัพท์ที่ใช้ได้จริง บนตลาดใน Nürnberg</h1>
-              <p>
-                วันนี้ Mali เดินผ่านตลาดใน Nürnberg และเรียนคำศัพท์แบบที่ใช้ได้จริง
-                ไม่ใช่แค่จำคำเดี่ยว แต่เรียนเป็นกลุ่ม พร้อม artikel, plural
-                และประโยคสั้น ๆ ที่ใช้ในชีวิตประจำวัน
+        <section class="questions-hero-shell vocabulary-hero-shell">
+          <div class="questions-hero-layout vocabulary-hero-layout">
+            <div class="questions-hero-copy vocabulary-hero-copy">
+              <div class="section-kicker">Nürnberg • Mission Markt</div>
+
+              <h1>เรียนคำศัพท์เยอรมันแบบใช้ได้จริง บนตลาดใน Nürnberg</h1>
+
+              <p class="questions-hero-lead">
+                ในบทนี้ Mali เดินผ่านตลาดใน Nürnberg และไม่ได้แค่จำคำเดี่ยว
+                แต่เรียนคำเป็นกลุ่ม พร้อม <b>artikel</b>, <b>plural</b>,
+                คำช่วยพูดจริง และประโยคสั้น ๆ ที่ใช้ได้ทันทีในชีวิตประจำวัน
               </p>
 
-              <div class="learn-hero-chips">
-                <span class="learn-chip">Nürnberg</span>
-                <span class="learn-chip">Mission Markt</span>
-                <span class="learn-chip">Vocabulary + Artikel</span>
+              <div class="questions-hero-actions">
+                <a href="#markt-zonen" class="hero-btn hero-btn-primary">เริ่มที่ตลาด</a>
+                <a href="#sprech-chunks" class="hero-btn hero-btn-secondary">ดูคำที่ใช้พูดจริง</a>
+              </div>
+
+              <div class="questions-pill-row">
+                <span>Nürnberg market scene</span>
+                <span>Artikel + Plural</span>
+                <span>Thai support</span>
+                <span>Speakable vocabulary</span>
+              </div>
+
+              <div class="questions-value-grid">
+                <article class="questions-value-card">
+                  <strong>เรียนเป็นฉาก</strong>
+                  <p>คำศัพท์ผูกกับตลาดจริง จึงจำง่ายกว่า list ธรรมดา</p>
+                </article>
+
+                <article class="questions-value-card">
+                  <strong>ไม่ใช่แค่คำเดี่ยว</strong>
+                  <p>เรียน noun พร้อม artikel และ plural ตั้งแต่แรก</p>
+                </article>
+
+                <article class="questions-value-card">
+                  <strong>พูดได้จริง</strong>
+                  <p>มี chunks, mini-sentences และคำกริยาที่ใช้เอาตัวรอดได้</p>
+                </article>
               </div>
             </div>
 
-            <div class="learn-hero-visual">
-              <div class="learn-floating-card lf-1">
+            <div class="questions-hero-stage vocabulary-hero-stage">
+              <div
+                class="questions-hero-image-large vocabulary-hero-image"
+                style="background-image:url('assets/img/learn/thumb-vocabulary-market.png');"
+              ></div>
+
+              <div class="questions-stage-badge">Lesson 07 • Vocabulary</div>
+
+              <div class="vocabulary-stage-card stage-card-a">
                 <span>Markt</span>
                 <strong>der Apfel</strong>
-                <small>คำของจริงในตลาด</small>
+                <small>die Äpfel</small>
               </div>
 
-              <div class="learn-floating-card lf-2">
+              <div class="vocabulary-stage-card stage-card-b">
                 <span>Chunk</span>
                 <strong>Ich möchte zwei Äpfel.</strong>
                 <small>ใช้ได้จริงทันที</small>
               </div>
-
-              <div class="learn-floating-card lf-3">
-                <span>Nürnberg</span>
-                <strong>Mission Markt</strong>
-                <small>เมือง + บทเรียน + สถานการณ์</small>
-              </div>
             </div>
           </div>
         </section>
 
-        <!-- WHY THIS LESSON -->
-        <section class="section">
+        <!-- WHY -->
+        <section class="questions-shell vocabulary-shell">
           <div class="section-head">
-            <div class="section-kicker">Warum das wichtig ist</div>
-            <h2 class="learn-section-title">ทำไม vocabulary ต้องเรียนเป็นฉากจริง</h2>
-            <p class="learn-section-sub">
-              ผู้เรียนไทยหลายคนจำคำศัพท์แยกเป็นคำเดี่ยว
-              แต่ถ้าเรียนผ่านฉากจริง เช่น ตลาด เมือง คาเฟ่ หรือร้านค้า
-              คำจะเชื่อมกับภาพ เสียง และสถานการณ์ได้ดีกว่า
+            <div class="section-kicker">Warum diese Seite wichtig ist</div>
+            <h2>ทำไม Vocabulary สำหรับ Thai learners ต้องออกแบบต่างจากเดิม</h2>
+            <p class="section-subline">
+              ถ้าให้ผู้เรียนไทยจำคำแบบสุ่มยาว ๆ มักจะจำยากและใช้ไม่ออก
+              แต่ถ้าเรียนผ่านฉากจริง สี คำแปลไทย artikel และประโยคสั้น ๆ
+              สมองจะจับ pattern ได้เร็วกว่า
             </p>
           </div>
 
-          <div class="dialogue-grid dialogue-grid-two">
-            <div class="dialogue-card">
-              <strong>คำเดี่ยวจำยากกว่า</strong><br><br>
-              ถ้าคุณจำแค่ “Apfel” หรือ “Tasche”
-              คุณจะใช้จริงได้ช้ากว่า และมักลืม artikel
-            </div>
+          <div class="questions-two-grid vocabulary-two-grid">
+            <article class="questions-type-card">
+              <div class="small-badge">Thai vs Deutsch</div>
+              <h3>ภาษาไทยไม่มี der / die / das</h3>
+              <p>
+                สำหรับคนไทย เรื่อง grammatical gender เป็นของใหม่มาก
+                เพราะในภาษาไทยไม่มีระบบ artikel แบบภาษาเยอรมัน
+              </p>
+            </article>
 
-            <div class="dialogue-card">
-              <strong>คำในสถานการณ์จำง่ายกว่า</strong><br><br>
-              ที่ตลาดใน Nürnberg คุณจะได้เห็นคำในบริบทจริง
-              เช่น ราคา จำนวน ของกิน และการถามซื้อ
-            </div>
-          </div>
-        </section>
-
-        <!-- THAI LEARNER NOTE -->
-        <section class="section">
-          <div class="section-head">
-            <div class="section-kicker">Thai learner note</div>
-            <h2 class="learn-section-title">ทำไมเรื่องนี้ยากสำหรับผู้เรียนชาวไทย</h2>
-          </div>
-
-          <div class="mini-practice-box">
-            <h3>ภาษาไทยกับภาษาเยอรมันคิดไม่เหมือนกัน</h3>
-            <p>
-              ในภาษาไทยไม่มี artikel แบบ <strong>der / die / das</strong>
-              และคำนามไม่ได้เปลี่ยนรูปแบบแบบเดียวกับภาษาเยอรมัน
-              เพราะฉะนั้นถ้าคุณรู้สึกว่าเรื่องนี้แปลกหรือไม่เป็นธรรมชาติ
-              นั่นเป็นเรื่องปกติ
-            </p>
+            <article class="questions-type-card">
+              <div class="small-badge">Golden rule</div>
+              <h3>อย่าเรียนคำนามเดี่ยว</h3>
+              <p>
+                อย่าเรียนแค่ <b>Apfel</b><br />
+                ให้เรียน <b>der Apfel – die Äpfel</b><br />
+                และถ้าเป็นไปได้ ให้มีประโยคสั้นเพิ่มด้วย
+              </p>
+            </article>
           </div>
         </section>
 
         <!-- MARKET ZONES -->
-        <section class="section">
+        <section class="questions-shell vocabulary-shell" id="markt-zonen">
           <div class="section-head">
             <div class="section-kicker">Marktzonen</div>
-            <h2 class="learn-section-title">เรียนคำศัพท์เป็นโซนบนตลาดใน Nürnberg</h2>
-            <p class="learn-section-sub">
-              แต่ละโซนมีคำที่ใช้จริง พร้อม artikel, plural และคำแปลไทย
+            <h2>เรียนคำศัพท์เป็นโซนเล็ก ๆ บนตลาดใน Nürnberg</h2>
+            <p class="section-subline">
+              ไม่เกินประมาณ 10 หน่วยต่อบล็อก เพื่อให้สแกนง่าย จำง่าย และเอาไปพูดได้จริง
             </p>
           </div>
 
-          <div class="vocab-word-grid">
-            <div class="vocab-word-card">
-              <div class="vocab-word-head">
+          <div class="vocab-zone-grid">
+            <article class="vocab-zone-card">
+              <div class="vocab-zone-head">
                 <span>Obst</span>
                 <h3>ผลไม้</h3>
               </div>
-              <div class="vocab-word-list">
-                <div class="vocab-word-item">
-                  <strong class="tone-der">der Apfel</strong>
-                  <small>die Äpfel • แอปเปิล</small>
-                </div>
-                <div class="vocab-word-item">
-                  <strong class="tone-die">die Banane</strong>
-                  <small>die Bananen • กล้วย</small>
-                </div>
-                <div class="vocab-word-item">
-                  <strong class="tone-die">die Orange</strong>
-                  <small>die Orangen • ส้ม</small>
-                </div>
-              </div>
-            </div>
 
-            <div class="vocab-word-card">
-              <div class="vocab-word-head">
+              <div class="vocab-row">
+                <div class="vocab-row-head">
+                  <strong class="tone-der">der Apfel</strong>
+                  <span class="tone-plural">die Äpfel</span>
+                </div>
+                <div class="vocab-row-meta">แอปเปิล</div>
+              </div>
+
+              <div class="vocab-row">
+                <div class="vocab-row-head">
+                  <strong class="tone-die">die Banane</strong>
+                  <span class="tone-plural">die Bananen</span>
+                </div>
+                <div class="vocab-row-meta">กล้วย</div>
+              </div>
+
+              <div class="vocab-row">
+                <div class="vocab-row-head">
+                  <strong class="tone-die">die Orange</strong>
+                  <span class="tone-plural">die Orangen</span>
+                </div>
+                <div class="vocab-row-meta">ส้ม</div>
+              </div>
+            </article>
+
+            <article class="vocab-zone-card">
+              <div class="vocab-zone-head">
                 <span>Gemüse</span>
                 <h3>ผัก</h3>
               </div>
-              <div class="vocab-word-list">
-                <div class="vocab-word-item">
-                  <strong class="tone-die">die Tomate</strong>
-                  <small>die Tomaten • มะเขือเทศ</small>
-                </div>
-                <div class="vocab-word-item">
-                  <strong class="tone-die">die Kartoffel</strong>
-                  <small>die Kartoffeln • มันฝรั่ง</small>
-                </div>
-                <div class="vocab-word-item">
-                  <strong class="tone-der">der Salat</strong>
-                  <small>die Salate • สลัด</small>
-                </div>
-              </div>
-            </div>
 
-            <div class="vocab-word-card">
-              <div class="vocab-word-head">
-                <span>Bäckerei</span>
-                <h3>ขนมปัง / ของกิน</h3>
+              <div class="vocab-row">
+                <div class="vocab-row-head">
+                  <strong class="tone-die">die Tomate</strong>
+                  <span class="tone-plural">die Tomaten</span>
+                </div>
+                <div class="vocab-row-meta">มะเขือเทศ</div>
               </div>
-              <div class="vocab-word-list">
-                <div class="vocab-word-item">
-                  <strong class="tone-das">das Brot</strong>
-                  <small>die Brote • ขนมปัง</small>
+
+              <div class="vocab-row">
+                <div class="vocab-row-head">
+                  <strong class="tone-die">die Kartoffel</strong>
+                  <span class="tone-plural">die Kartoffeln</span>
                 </div>
-                <div class="vocab-word-item">
-                  <strong class="tone-der">der Käse</strong>
-                  <small>die Käse • ชีส</small>
-                </div>
-                <div class="vocab-word-item">
-                  <strong class="tone-das">das Wasser</strong>
-                  <small>die Wasser / meestal geen plural in Alltag</small>
-                </div>
+                <div class="vocab-row-meta">มันฝรั่ง</div>
               </div>
-            </div>
+
+              <div class="vocab-row">
+                <div class="vocab-row-head">
+                  <strong class="tone-der">der Salat</strong>
+                  <span class="tone-plural">die Salate</span>
+                </div>
+                <div class="vocab-row-meta">สลัด / ผักสลัด</div>
+              </div>
+            </article>
+
+            <article class="vocab-zone-card">
+              <div class="vocab-zone-head">
+                <span>Markt basics</span>
+                <h3>คำพื้นฐานบนตลาด</h3>
+              </div>
+
+              <div class="vocab-row">
+                <div class="vocab-row-head">
+                  <strong class="tone-der">der Preis</strong>
+                  <span class="tone-plural">die Preise</span>
+                </div>
+                <div class="vocab-row-meta">ราคา</div>
+              </div>
+
+              <div class="vocab-row">
+                <div class="vocab-row-head">
+                  <strong class="tone-der">der Stand</strong>
+                  <span class="tone-plural">die Stände</span>
+                </div>
+                <div class="vocab-row-meta">แผง / บูธ</div>
+              </div>
+
+              <div class="vocab-row">
+                <div class="vocab-row-head">
+                  <strong class="tone-die">die Tüte</strong>
+                  <span class="tone-plural">die Tüten</span>
+                </div>
+                <div class="vocab-row-meta">ถุง</div>
+              </div>
+            </article>
           </div>
         </section>
 
-        <!-- GOLD RULE -->
-        <section class="section">
+        <!-- SURVIVAL VERBS -->
+        <section class="questions-shell vocabulary-shell">
           <div class="section-head">
-            <div class="section-kicker">Goldene Regel</div>
-            <h2 class="learn-section-title">อย่าเรียนคำนามเดี่ยว</h2>
-          </div>
-
-          <div class="vocab-gold-box">
-            <p class="vocab-gold-line">อย่าเรียน <strong>Apfel</strong></p>
-            <p class="vocab-gold-arrow">→</p>
-            <p class="vocab-gold-line">ให้เรียน <strong>der Apfel – die Äpfel</strong></p>
-          </div>
-
-          <div class="mini-practice-box">
-            <p>
-              นี่คือกฎที่สำคัญที่สุดของหน้านี้:
-              <strong>เรียนคำนามพร้อม artikel และ plural เสมอ</strong>
+            <div class="section-kicker">Überlebens-Verben</div>
+            <h2>คำกริยาที่ช่วยให้เริ่มพูดได้จริง</h2>
+            <p class="section-subline">
+              สำหรับผู้เริ่มต้น คำกริยาในรูป <b>Ich-Form</b> ใช้งานได้เร็วกว่าการจำ infinitiv ลอย ๆ
             </p>
           </div>
+
+          <div class="vocab-verb-grid">
+            <article class="vocab-verb-card">
+              <strong>ich möchte</strong>
+              <p>ฉันอยาก / ฉันต้องการ</p>
+              <small class="vocab-pronounce">อิค เมิคเทอะ</small>
+            </article>
+
+            <article class="vocab-verb-card">
+              <strong>ich nehme</strong>
+              <p>ฉันเอา / ฉันขอเอา</p>
+              <small class="vocab-pronounce">อิค เนเมอะ</small>
+            </article>
+
+            <article class="vocab-verb-card">
+              <strong>ich kaufe</strong>
+              <p>ฉันซื้อ</p>
+              <small class="vocab-pronounce">อิค เคาเฟอะ</small>
+            </article>
+
+            <article class="vocab-verb-card">
+              <strong>ich suche</strong>
+              <p>ฉันหา</p>
+              <small class="vocab-pronounce">อิค ซูเคอะ</small>
+            </article>
+
+            <article class="vocab-verb-card">
+              <strong>ich brauche</strong>
+              <p>ฉันต้องการ / จำเป็นต้องมี</p>
+              <small class="vocab-pronounce">อิค เบร้าเคอะ</small>
+            </article>
+          </div>
         </section>
 
-        <!-- QUICK ARTICLE SUPPORT -->
-        <section class="section">
+        <!-- ARTICLE SUPPORT -->
+        <section class="questions-shell vocabulary-shell">
           <div class="section-head">
             <div class="section-kicker">Artikelhilfe</div>
-            <h2 class="learn-section-title">ความช่วยเหลือเรื่อง artikel แบบสั้นและใช้ได้จริง</h2>
-            <p class="learn-section-sub">
-              ส่วนนี้เป็น support สำหรับ vocabulary ไม่ใช่ grammar หนัก
-            </p>
+            <h2>artikel help แบบสั้น ใช้งานได้จริง และไม่หนักเกินไป</h2>
           </div>
 
-          <div class="vocab-color-grid">
-            <div class="vocab-color-card vocab-color-der">
+          <div class="vocab-support-grid">
+            <article class="vocab-support-card vocab-support-card-der">
               <span>Blau</span>
               <strong>der</strong>
-              <small>maskulin</small>
-            </div>
-            <div class="vocab-color-card vocab-color-die">
+              <p>maskulin</p>
+            </article>
+
+            <article class="vocab-support-card vocab-support-card-die">
               <span>Rot</span>
               <strong>die</strong>
-              <small>feminin</small>
-            </div>
-            <div class="vocab-color-card vocab-color-das">
+              <p>feminin</p>
+            </article>
+
+            <article class="vocab-support-card vocab-support-card-das">
               <span>Grün</span>
               <strong>das</strong>
-              <small>neutrum</small>
-            </div>
-            <div class="vocab-color-card vocab-color-plural">
+              <p>neutrum</p>
+            </article>
+
+            <article class="vocab-support-card vocab-support-card-plural">
               <span>Orange</span>
               <strong>die</strong>
-              <small>Plural</small>
-            </div>
+              <p>Plural</p>
+            </article>
           </div>
 
-          <div class="mini-practice-box" style="margin-top: 18px;">
-            <h3>สำคัญมาก</h3>
-            <p>
-              grammatical gender ในภาษาเยอรมัน
-              ไม่ได้เกี่ยวกับชีววิทยาเสมอไป
-              เพราะฉะนั้นอย่าพยายามหาเหตุผลทุกคำ —
-              ให้จำคำเป็นชุดและดู pattern ช่วย
-            </p>
-          </div>
-        </section>
+          <div class="questions-two-grid vocabulary-two-grid vocabulary-article-grid">
+            <article class="questions-type-card">
+              <div class="small-badge">Sehr wichtig</div>
+              <h3>เพศของคำ ไม่ได้เกี่ยวกับชีววิทยาเสมอไป</h3>
+              <p>
+                อย่าพยายามหาเหตุผลทุกคำจาก “ผู้ชาย/ผู้หญิง/สิ่งของ”
+                เพราะ grammatical gender ในเยอรมันมักต้องจำเป็น pattern และเป็นชุด
+              </p>
+            </article>
 
-        <!-- SIGNAL ENDINGS -->
-        <section class="section">
-          <div class="section-head">
-            <div class="section-kicker">Signal-Endungen</div>
-            <h2 class="learn-section-title">pattern บางอย่างช่วยเดา artikel ได้</h2>
-          </div>
-
-          <div class="vocab-pattern-grid">
-            <div class="vocab-pattern-card">
-              <span class="vocab-pattern-label tone-der">der</span>
-              <h3>มักเป็น der</h3>
-              <p>-ant, -ent, -ismus, -or, -ling</p>
-            </div>
-            <div class="vocab-pattern-card">
-              <span class="vocab-pattern-label tone-die">die</span>
-              <h3>มักเป็น die</h3>
-              <p>-ung, -heit, -keit, -schaft, -ität</p>
-            </div>
-            <div class="vocab-pattern-card">
-              <span class="vocab-pattern-label tone-das">das</span>
-              <h3>มักเป็น das</h3>
-              <p>-chen, -lein, -um, -ment</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- MINI MARKET DIALOGUE -->
-        <section class="section">
-          <div class="section-head">
-            <div class="section-kicker">Szene in Nürnberg</div>
-            <h2 class="learn-section-title">mini-dialogue บนตลาด</h2>
-          </div>
-
-          <div class="dialogue-scene-card">
-            <div class="dialogue-scene-head">
-              <span>Szene 1</span>
-              <h3>Mali auf dem Markt</h3>
-            </div>
-
-            <div class="dialogue-lines">
-              <div class="dialogue-line"><strong>Mali:</strong> Guten Tag. Was kostet <strong>der Apfel</strong>?</div>
-              <div class="dialogue-line"><strong>Verkäufer:</strong> Ein Euro fünfzig.</div>
-              <div class="dialogue-line"><strong>Mali:</strong> Ich nehme zwei <strong>Äpfel</strong>, bitte.</div>
-            </div>
-
-            <div class="dialogue-meaning-box">
-              <p>เรียนทั้งคำศัพท์ ราคา จำนวน และ plural ในสถานการณ์จริงพร้อมกัน</p>
-            </div>
+            <article class="questions-type-card">
+              <div class="small-badge">Pattern</div>
+              <h3>signal endings ช่วยได้ แต่ไม่ใช่ทุกครั้ง</h3>
+              <div class="vocab-chip-list">
+                <span class="tone-der">-ant / -ent / -ismus</span>
+                <span class="tone-die">-ung / -heit / -keit</span>
+                <span class="tone-das">-chen / -lein / -ment</span>
+              </div>
+            </article>
           </div>
         </section>
 
         <!-- CHUNKS -->
-        <section class="section">
+        <section class="questions-shell vocabulary-shell" id="sprech-chunks">
           <div class="section-head">
-            <div class="section-kicker">Chunks</div>
-            <h2 class="learn-section-title">จำเป็นก้อนคำที่ใช้ได้จริงบนตลาด</h2>
+            <div class="section-kicker">Speakable chunks</div>
+            <h2>จำเป็นก้อนคำที่เอาไปใช้บนตลาดได้ทันที</h2>
+            <p class="section-subline">
+              คำพวกนี้สำคัญมาก เพราะช่วยให้ผู้เรียนไทย “เริ่มพูด” แทนที่จะรู้แต่คำศัพท์เฉย ๆ
+            </p>
           </div>
 
           <div class="vocab-chunk-grid">
-            <div class="vocab-chunk-card">
+            <article class="vocab-chunk-card">
               <span>Chunk 1</span>
-              <strong>Ich suche ...</strong>
-              <small>ฉันกำลังหา...</small>
-            </div>
+              <strong>Ich möchte zwei Äpfel.</strong>
+              <small>ฉันต้องการแอปเปิล 2 ลูก</small>
+              <em class="vocab-pronounce">อิค เมิคเทอะ ซไว แอพเฟิล</em>
+            </article>
 
-            <div class="vocab-chunk-card">
+            <article class="vocab-chunk-card">
               <span>Chunk 2</span>
               <strong>Was kostet das?</strong>
               <small>อันนี้ราคาเท่าไร</small>
-            </div>
+              <em class="vocab-pronounce">วาส คอสเท็ท ดาส</em>
+            </article>
 
-            <div class="vocab-chunk-card">
+            <article class="vocab-chunk-card">
               <span>Chunk 3</span>
-              <strong>Ich möchte ...</strong>
-              <small>ฉันต้องการ...</small>
+              <strong>Haben Sie Bananen?</strong>
+              <small>คุณมีกล้วยไหม</small>
+              <em class="vocab-pronounce">ฮาเบิน ซี บานาเนน</em>
+            </article>
+
+            <article class="vocab-chunk-card">
+              <span>Chunk 4</span>
+              <strong>Ich nehme das Brot.</strong>
+              <small>ฉันเอาขนมปังอันนี้</small>
+              <em class="vocab-pronounce">อิค เนเมอะ ดาส โบรท</em>
+            </article>
+          </div>
+        </section>
+
+        <!-- MINI DIALOGUE -->
+        <section class="questions-shell vocabulary-shell">
+          <div class="section-head">
+            <div class="section-kicker">Szene in Nürnberg</div>
+            <h2>Mali kauft auf dem Markt</h2>
+          </div>
+
+          <article class="vocab-scene-card">
+            <div class="vocab-scene-head">
+              <span>Mission Markt</span>
+              <h3>บทสนทนาสั้นที่ใช้คำจริง + ราคา + plural</h3>
             </div>
 
-            <div class="vocab-chunk-card">
-              <span>Chunk 4</span>
-              <strong>Haben Sie ... ?</strong>
-              <small>คุณมี...ไหม</small>
+            <div class="vocab-dialogue-line">
+              <strong>Mali:</strong>
+              <span>Guten Tag. Was kostet <b>der Apfel</b>?</span>
             </div>
-          </div>
+
+            <div class="vocab-dialogue-line">
+              <strong>Verkäufer:</strong>
+              <span>Ein Euro fünfzig.</span>
+            </div>
+
+            <div class="vocab-dialogue-line">
+              <strong>Mali:</strong>
+              <span>Ich möchte zwei <b>Äpfel</b>, bitte.</span>
+            </div>
+
+            <div class="vocab-dialogue-line">
+              <strong>Verkäufer:</strong>
+              <span>Natürlich. Möchten Sie auch <b>eine Tüte</b>?</span>
+            </div>
+          </article>
         </section>
 
         <!-- ARTICLE IN SENTENCE -->
-        <section class="section">
+        <section class="questions-shell vocabulary-shell">
           <div class="section-head">
             <div class="section-kicker">Artikel im Satz</div>
-            <h2 class="learn-section-title">artikel เปลี่ยนได้เมื่อเข้าไปอยู่ในประโยค</h2>
+            <h2>ทำไม artikel บางครั้งเปลี่ยนเมื่ออยู่ในประโยค</h2>
           </div>
 
-          <div class="mini-practice-box">
-            <h3>ดูแบบง่ายก่อน</h3>
-            <p>
-              <strong>der Apfel</strong><br>
-              <strong>Ich kaufe den Apfel.</strong><br>
-              <strong>Ich gehe mit dem Verkäufer.</strong><br><br>
+          <div class="questions-two-grid vocabulary-two-grid">
+            <article class="questions-type-card">
+              <div class="small-badge">Grundform</div>
+              <h3>เริ่มจากรูปพื้นฐาน</h3>
+              <p>
+                <b>der Apfel</b><br />
+                <b>die Banane</b><br />
+                <b>das Brot</b>
+              </p>
+            </article>
 
-              ในภาษาเยอรมัน artikel มักแสดงหน้าที่ของคำนามในประโยค
-              ซึ่งเป็นเรื่องใหม่สำหรับผู้เรียนไทย
-            </p>
+            <article class="questions-type-card">
+              <div class="small-badge">Im Satz</div>
+              <h3>เมื่อเข้าไปอยู่ในประโยค artikel อาจเปลี่ยน</h3>
+              <p>
+                <b>Ich kaufe den Apfel.</b><br />
+                <b>Ich nehme die Banane.</b><br />
+                <b>Ich esse das Brot.</b>
+              </p>
+            </article>
+          </div>
+
+          <div class="question-tip-box">
+            <div class="tip-icon">💡</div>
+            <div>
+              ในภาษาเยอรมัน artikel มักช่วยบอกหน้าที่ของคำนามในประโยค
+              ซึ่งเป็นเรื่องใหม่สำหรับผู้เรียนไทยมาก จึงควรเห็นจากตัวอย่างจริงตั้งแต่ต้น
+            </div>
           </div>
         </section>
 
-        <!-- COMMON ERRORS -->
-        <section class="section">
+        <!-- MISTAKES -->
+        <section class="questions-shell vocabulary-shell">
           <div class="section-head">
             <div class="section-kicker">Typische Fehler</div>
-            <h2 class="learn-section-title">ข้อผิดพลาดที่พบบ่อย</h2>
+            <h2>ข้อผิดพลาดที่ผู้เรียนไทยมักเจอ</h2>
           </div>
 
           <div class="vocab-mistake-grid">
-            <div class="vocab-mistake-card">
+            <article class="vocab-mistake-card">
               <div class="vocab-mistake-bad">Ich habe Auto.</div>
               <div class="vocab-mistake-good">Ich habe <strong>ein Auto</strong>.</div>
-              <p>ในเยอรมันมักต้องมี artikel</p>
-            </div>
+              <p>ในเยอรมันมักต้องมี artikel หรือ determiner</p>
+            </article>
 
-            <div class="vocab-mistake-card">
+            <article class="vocab-mistake-card">
               <div class="vocab-mistake-bad">Apfel ist frisch.</div>
               <div class="vocab-mistake-good"><strong>Der Apfel</strong> ist frisch.</div>
-              <p>ประธานมักไม่หายไปแบบไทย</p>
-            </div>
+              <p>ประธานมักไม่หายไปแบบภาษาไทย</p>
+            </article>
 
-            <div class="vocab-mistake-card">
-              <div class="vocab-mistake-bad">Ich sehe der Mann.</div>
-              <div class="vocab-mistake-good">Ich sehe <strong>den</strong> Mann.</div>
-              <p>หลัง sehen ใช้ Akkusativ</p>
-            </div>
+            <article class="vocab-mistake-card">
+              <div class="vocab-mistake-bad">Ich kaufe der Apfel.</div>
+              <div class="vocab-mistake-good">Ich kaufe <strong>den</strong> Apfel.</div>
+              <p>เมื่ออยู่ในประโยค artikel อาจเปลี่ยน</p>
+            </article>
 
-            <div class="vocab-mistake-card">
-              <div class="vocab-mistake-bad">Ich lerne nur “Apfel”.</div>
-              <div class="vocab-mistake-good">เรียน <strong>der Apfel – die Äpfel</strong></div>
-              <p>จำเป็นชุดจะช่วยมากกว่า</p>
-            </div>
+            <article class="vocab-mistake-card">
+              <div class="vocab-mistake-bad">เรียนแค่ “Banane”</div>
+              <div class="vocab-mistake-good"><strong>die Banane – die Bananen</strong></div>
+              <p>ควรจำ noun + artikel + plural เป็นชุด</p>
+            </article>
           </div>
         </section>
 
         <!-- MINI PRACTICE -->
-        <section class="section">
+        <section class="questions-shell vocabulary-shell">
           <div class="section-head">
             <div class="section-kicker">Mini practice</div>
-            <h2 class="learn-section-title">ฝึกสั้น ๆ ก่อนออกจากตลาด</h2>
+            <h2>ฝึกสั้น ๆ ก่อนออกจากตลาด</h2>
           </div>
 
-          <div class="pattern-build-grid">
-            <div class="pattern-build-card">
-              <span class="pattern-build-label">ข้อ 1</span>
+          <div class="vocab-practice-grid">
+            <article class="vocab-practice-card">
+              <span>ข้อ 1</span>
               <strong>เติม artikel</strong>
               <p>___ Apfel</p>
               <div class="pattern-answer">der</div>
-            </div>
+            </article>
 
-            <div class="pattern-build-card">
-              <span class="pattern-build-label">ข้อ 2</span>
+            <article class="vocab-practice-card">
+              <span>ข้อ 2</span>
               <strong>เติม plural</strong>
-              <p>die Banane → ?</p>
-              <div class="pattern-answer">die Bananen</div>
-            </div>
+              <p>die Orange → ?</p>
+              <div class="pattern-answer">die Orangen</div>
+            </article>
 
-            <div class="pattern-build-card">
-              <span class="pattern-build-label">ข้อ 3</span>
-              <strong>maak chunk</strong>
-              <p>คุณอยากได้ 2 แอปเปิล</p>
-              <div class="pattern-answer">Ich möchte zwei Äpfel.</div>
-            </div>
+            <article class="vocab-practice-card">
+              <span>ข้อ 3</span>
+              <strong>สร้าง chunk</strong>
+              <p>ฉันต้องการกล้วย 2 ลูก</p>
+              <div class="pattern-answer">Ich möchte zwei Bananen.</div>
+            </article>
 
-            <div class="pattern-build-card">
-              <span class="pattern-build-label">ข้อ 4</span>
-              <strong>แก้ให้ถูก</strong>
-              <p>Ich kaufe der Apfel.</p>
-              <div class="pattern-answer">Ich kaufe den Apfel.</div>
-            </div>
+            <article class="vocab-practice-card">
+              <span>ข้อ 4</span>
+              <strong>แก้ประโยค</strong>
+              <p>Ich kaufe der Salat.</p>
+              <div class="pattern-answer">Ich kaufe den Salat.</div>
+            </article>
           </div>
         </section>
 
         <!-- SUMMARY -->
-        <section class="section">
+        <section class="questions-shell vocabulary-shell">
           <div class="section-head">
             <div class="section-kicker">Zusammenfassung</div>
-            <h2 class="learn-section-title">สิ่งที่ต้องจำจาก Mission Markt</h2>
+            <h2>สิ่งที่ต้องจำจาก Mission Markt</h2>
           </div>
 
           <div class="mini-practice-box">
-            <ul class="article-list">
-              <li>เรียนคำศัพท์เป็นกลุ่มในสถานการณ์จริงจะจำง่ายกว่า</li>
-              <li>อย่าเรียนคำนามเดี่ยว เรียนพร้อม artikel และ plural</li>
-              <li>Nürnberg market scene ช่วยให้คำเชื่อมกับภาพและการใช้จริง</li>
-              <li>สีช่วยจำ der / die / das / plural ได้ดี</li>
-              <li>artikel บางครั้งเปลี่ยนในประโยค เพราะมันบอกหน้าที่ของคำนาม</li>
+            <ul class="vocab-summary-list">
+              <li>เรียนคำศัพท์เป็นฉากจริง จะจำง่ายกว่าคำสุ่ม</li>
+              <li>อย่าเรียน noun เดี่ยว เรียนพร้อม artikel และ plural</li>
+              <li>คำกริยาในรูป ich-form ช่วยให้เริ่มพูดได้เร็ว</li>
+              <li>Thai lauthilfe ช่วยเริ่มต้นได้ แต่ภายหลัง audio จะดีกว่า</li>
+              <li>สีช่วยให้เห็น pattern ของ der / die / das / plural ได้เร็วขึ้น</li>
             </ul>
           </div>
         </section>
 
       </div>
-
-      <aside class="lesson-sidebar">
-        <div class="hans-sidechat">
-          <div class="hans-sidechat-head">
-            <div class="hans-sidechat-avatar-wrap">
-              <div class="hans-sidechat-avatar">Hans</div>
-              <div class="hans-avatar-dot"></div>
-            </div>
-            <div>
-              <h3>Hans der Lehrer</h3>
-              <p>Mission Markt • Nürnberg</p>
-            </div>
-          </div>
-
-          <div class="hans-sidechat-mood">
-            <span>🛍️ Vocabulary</span>
-            <span>Artikel + Markt</span>
-          </div>
-
-          <div class="hans-sidechat-messages" id="hansMessages">
-            <div class="hans-msg hans-msg-bot">
-              <strong>Hans:</strong><br />
-              Servus 😄 วันนี้เราจะเรียนคำศัพท์บนตลาดใน Nürnberg
-              แบบที่ใช้ได้จริง พร้อม artikel, plural และ chunks สั้น ๆ
-            </div>
-          </div>
-
-          <div class="hans-sidechat-quick">
-            <button class="quick-chip" type="button">Markt?</button>
-            <button class="quick-chip" type="button">Artikel?</button>
-            <button class="quick-chip" type="button">Plural?</button>
-            <button class="quick-chip" type="button">Chunks?</button>
-            <button class="quick-chip" type="button">Fehler?</button>
-          </div>
-
-          <div class="hans-sidechat-input">
-            <input type="text" placeholder="ถาม Hans ได้ที่นี่..." />
-            <button type="button">ส่ง</button>
-          </div>
-        </div>
-      </aside>
     </div>
   </main>
+
+  <!-- FLOATING HANS -->
+  <button class="vocabulary-hans-fab" type="button" onclick="toggleVocabularyHans()">
+    <span class="vocabulary-hans-fab-owl">🦉</span>
+    <span class="vocabulary-hans-fab-copy">
+      <strong>Hans</strong>
+      <small>vraag iets</small>
+    </span>
+  </button>
+
+  <aside class="vocabulary-hans-floating" id="vocabularyHansPanel">
+    <div class="hans-sidechat">
+      <div class="hans-sidechat-head">
+        <div class="hans-sidechat-avatar-wrap">
+          <div class="hans-sidechat-avatar">Hans</div>
+          <div class="hans-avatar-dot"></div>
+        </div>
+        <div>
+          <h3>Hans der Lehrer</h3>
+          <p>Mission Markt • Nürnberg</p>
+        </div>
+      </div>
+
+      <div class="hans-sidechat-mood">
+        <span>🛍️ Vocabulary</span>
+        <span>Deutsch + Thai</span>
+      </div>
+
+      <div class="hans-sidechat-messages" id="hansMessages">
+        <div class="hans-msg hans-msg-bot">
+          <strong>Hans:</strong><br />
+          Servus 😄 วันนี้เราจะเรียนคำศัพท์บนตลาดใน Nürnberg
+          แบบใช้ได้จริง พร้อม artikel, plural, chunks และ mini help สำหรับ Thai learners
+        </div>
+      </div>
+
+      <div class="hans-sidechat-quick">
+        <button class="quick-chip" onclick="askHansChat('markt')">Markt?</button>
+        <button class="quick-chip" onclick="askHansChat('artikel')">Artikel?</button>
+        <button class="quick-chip" onclick="askHansChat('plural')">Plural?</button>
+        <button class="quick-chip" onclick="askHansChat('verb')">Verben?</button>
+        <button class="quick-chip" onclick="askHansChat('chunk')">Chunks?</button>
+        <button class="quick-chip" onclick="askHansChat('mistake')">Fehler?</button>
+      </div>
+
+      <div class="hans-sidechat-input">
+        <input
+          type="text"
+          id="hansInput"
+          placeholder="ถาม Hans ได้ที่นี่..."
+          onkeydown="if(event.key==='Enter'){sendHansMessage()}"
+        />
+        <button type="button" onclick="sendHansMessage()">ส่ง</button>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    function toggleVocabularyHans() {
+      document.getElementById('vocabularyHansPanel').classList.toggle('is-open');
+    }
+  </script>
+
+  <script src="assets/js/hans-vocabulary-data.js"></script>
+  <script src="assets/js/hans-vocabulary-logic.js"></script>
 </body>
 </html>
