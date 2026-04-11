@@ -536,3 +536,221 @@ body.questions-lesson-page.vocabulary-lesson-page .vocabulary-hans-floating .han
     max-width: calc(100vw - 28px);
   }
 }
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-card{
+  margin: 28px 0;
+  padding: 28px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #fffaf4 0%, #f8efe4 100%);
+  border: 1px solid rgba(120, 82, 48, 0.08);
+  box-shadow: 0 14px 32px rgba(92, 60, 34, 0.08);
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-label{
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a5764d;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-badge{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .article-der{
+  background: #e3efff;
+  color: #2457a6;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .article-die{
+  background: #ffe4ea;
+  color: #b64165;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .article-das{
+  background: #e3f5e7;
+  color: #2f7d4c;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-grid{
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-kicker{
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #c08a58;
+  margin: 0 0 8px;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-word{
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 0.95;
+  margin: 0;
+  color: #5c3820;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-thai{
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #8d5d39;
+  margin: 10px 0 8px;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-pronunciation{
+  margin: 0 0 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .pronunciation-label{
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 5px 10px;
+  background: #f3e4d6;
+  color: #9b6b46;
+  border-radius: 999px;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .pronunciation-text{
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #6c4528;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-meta{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-meta-box,
+body.questions-lesson-page.vocabulary-lesson-page .vocab-audio-box,
+body.questions-lesson-page.vocabulary-lesson-page .vocab-mini-note,
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-example,
+body.questions-lesson-page.vocabulary-lesson-page .hans-tip-box{
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(130, 91, 57, 0.08);
+  border-radius: 20px;
+  padding: 16px;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .meta-label,
+body.questions-lesson-page.vocabulary-lesson-page .audio-box-title,
+body.questions-lesson-page.vocabulary-lesson-page .mini-note-label,
+body.questions-lesson-page.vocabulary-lesson-page .example-label,
+body.questions-lesson-page.vocabulary-lesson-page .hans-tip-title{
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #b07b50;
+  margin-bottom: 8px;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .meta-value{
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5e3c26;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .plural-value{
+  color: #6d4bc4;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-side{
+  display: grid;
+  gap: 14px;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .audio-buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .audio-btn{
+  border: 0;
+  border-radius: 14px;
+  padding: 12px 12px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  background: #f3e4d6;
+  color: #6b452c;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .audio-btn:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(91, 59, 32, 0.08);
+  background: #edd8c4;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .mini-note-text,
+body.questions-lesson-page.vocabulary-lesson-page .hans-tip-text,
+body.questions-lesson-page.vocabulary-lesson-page .example-translation{
+  margin: 0;
+  color: #6f4a2f;
+  line-height: 1.55;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-example{
+  margin-top: 18px;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .example-sentence{
+  margin: 0 0 6px;
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: #52321c;
+}
+
+body.questions-lesson-page.vocabulary-lesson-page .hans-tip-box{
+  margin-top: 16px;
+  background: linear-gradient(180deg, #fff2d8 0%, #f9dfae 100%);
+}
+
+@media (max-width: 860px){
+  body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-grid{
+    grid-template-columns: 1fr;
+  }
+
+  body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-meta{
+    grid-template-columns: 1fr;
+  }
+
+  body.questions-lesson-page.vocabulary-lesson-page .audio-buttons{
+    grid-template-columns: 1fr;
+  }
+
+  body.questions-lesson-page.vocabulary-lesson-page .vocab-feature-card{
+    padding: 20px;
+    border-radius: 24px;
+  }
+}
